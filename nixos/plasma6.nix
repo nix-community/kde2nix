@@ -38,6 +38,7 @@ in {
     environment.systemPackages = with kdePackages; let
       requiredPackages = [
         frameworkintegration
+        pkgs.plasma5Packages.frameworkintegration
         kactivities
         kauth
         kcmutils
@@ -57,6 +58,7 @@ in {
         kidletime
         kimageformats
         kirigami # In system profile for SDDM theme. TODO: wrapper.
+        pkgs.plasma5Packages.kirigami
         kirigami-addons
         kio
         kjobwidgets
