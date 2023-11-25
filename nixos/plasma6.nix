@@ -213,10 +213,6 @@ in {
       theme = mkDefault "breeze";
     };
 
-    security.pam.services.kde = {allowNullPassword = true;};
-
-    security.pam.services.login.enableKwallet = true;
-
     xdg.portal.enable = true;
     xdg.portal.extraPortals = [kdePackages.xdg-desktop-portal-kde];
     xdg.portal.configPackages = mkDefault [kdePackages.xdg-desktop-portal-kde];
@@ -229,5 +225,13 @@ in {
     services.xserver.displayManager.sessionPackages = [kdePackages.plasma-workspace];
 
     services.xserver.displayManager.defaultSession = mkDefault "plasma";
+
+    security.pam.services = {
+      login.enableKwallet = true;
+      kde.enableKwallet = true;
+      # FIXME: do these actually work? https://invent.kde.org/plasma/kscreenlocker/-/merge_requests/163
+      kde-fingerprint.fprintAuth = true;
+      kde-smartcard.p11Auth = true;
+    };
   };
 }
