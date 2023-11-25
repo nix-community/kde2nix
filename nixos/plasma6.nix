@@ -58,7 +58,7 @@ in {
         kidletime
         kimageformats
         kirigami # In system profile for SDDM theme. TODO: wrapper.
-        pkgs.plasma5Packages.kirigami
+        pkgs.plasma5Packages.kirigami2
         kirigami-addons
         kio
         kjobwidgets
