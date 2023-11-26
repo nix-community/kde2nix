@@ -1,13 +1,14 @@
 diff --git a/src/data/debuggers/internal/gdbrc b/src/data/debuggers/internal/gdbrc
-index 76547fb0..c03f31e3 100644
+index 76547fb0..1d5793f4 100644
 --- a/src/data/debuggers/internal/gdbrc
 +++ b/src/data/debuggers/internal/gdbrc
-@@ -72,23 +72,23 @@ Name[wa]=gdb
+@@ -72,23 +72,24 @@ Name[wa]=gdb
  Name[x-test]=xxgdbxx
  Name[zh_CN]=gdb
  Name[zh_TW]=gdb
 -TryExec=gdb
 +TryExec=@gdb@
++CodeName=gdb
  Backends=KCrash|coredumpd|coredumpd-248+
  
  [KCrash]
