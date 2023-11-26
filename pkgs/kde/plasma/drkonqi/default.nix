@@ -3,26 +3,36 @@
   mkKdeDerivation,
   pkg-config,
   systemd,
+  gdb,
   python3,
-}:
-mkKdeDerivation {
-  pname = "drkonqi";
-
-  extraNativeBuildInputs = [pkg-config];
-  extraBuildInputs = [
-    systemd
-    (python3.withPackages (ps: [
+  substituteAll,
+}: let
+  gdb' = gdb.override {
+    hostCpuOnly = true;
+    python3 = python3.withPackages (ps: [
       ps.psutil
       ps.pygdbmi
       ps.sentry-sdk
-    ]))
-  ];
+    ]);
+  };
+in
+  mkKdeDerivation {
+    pname = "drkonqi";
 
-  # FIXME: figure out the GDB preamble nonsense
-  extraCmakeFlags = [
-    "-DWITH_GDB12=1"
-    "-DWITH_PYTHON_VENDORING=0"
-  ];
+    patches = [
+      (substituteAll {
+        src = ./gdb-path.patch;
+        gdb = "${gdb'}/bin/gdb";
+      })
+    ];
 
-  meta.license = null;
-}
+    extraNativeBuildInputs = [pkg-config];
+    extraBuildInputs = [systemd];
+
+    extraCmakeFlags = [
+      "-DWITH_GDB12=1"
+      "-DWITH_PYTHON_VENDORING=0"
+    ];
+
+    meta.license = null;
+  }

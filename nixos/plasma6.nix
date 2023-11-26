@@ -105,6 +105,7 @@ in {
         plasma-desktop
         plasma-workspace
         pkgs.plasma5Packages.plasma-workspace-wallpapers
+        drkonqi
 
         breeze-icons
         ocean-sound-theme
@@ -180,6 +181,8 @@ in {
       # This also means things won't work for people not on Plasma, but at least this way it
       # works for SOME people.
       KPACKAGE_DEP_RESOLVERS_PATH = "${kdePackages.frameworkintegration.out}/libexec/kf6/kpackagehandlers";
+      # FIXME: hack to make things find drkonqi
+      LIBEXEC_PATH = "${kdePackages.drkonqi}/libexec";
     };
 
     # Enable GTK applications to load SVG icons
@@ -210,6 +213,10 @@ in {
       pkgs.libmtp.out
       pkgs.media-player-info
     ];
+    # Set up Dr. Konqi as crash handler
+    systemd.packages = [kdePackages.drkonqi];
+    systemd.services."drkonqi-coredump-processor@".wantedBy = ["systemd-coredump@.service"];
+    systemd.user.sockets."drkonqi-coredump-launcher".wantedBy = ["sockets.target"];
 
     services.xserver.displayManager.sddm = {
       theme = mkDefault "breeze";
