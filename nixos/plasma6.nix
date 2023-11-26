@@ -130,7 +130,7 @@ in {
         kdegraphics-thumbnailers
         kde-inotify-survey
         kio-admin
-        kio-extras-kf6
+        kio-extras
       ];
       optionalPackages = [
         pkgs.aha # needed by kinfocenter for fwupd support
