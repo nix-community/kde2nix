@@ -5,7 +5,7 @@ self: {
   utils,
   ...
 }: let
-  kdePackages = self.packages.${pkgs.system};
+  kdePackages = self.packages.${pkgs.stdenv.system};
   xcfg = config.services.xserver;
   cfg = xcfg.desktopManager.plasma6;
 
