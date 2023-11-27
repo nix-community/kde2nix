@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtsvg];
 
-  meta.license = null;
+  meta.license = [ ];
 }

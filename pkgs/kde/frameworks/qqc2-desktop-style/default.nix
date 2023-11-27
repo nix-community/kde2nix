@@ -10,5 +10,5 @@ mkKdeDerivation {
   extraBuildInputs = [qtdeclarative];
   extraPropagatedBuildInputs = [sonnet];
 
-  meta.license = null;
+  meta.license = [ ];
 }

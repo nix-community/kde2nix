@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "libgravatar";
 
-  meta.license = null;
+  meta.license = [ ];
 }

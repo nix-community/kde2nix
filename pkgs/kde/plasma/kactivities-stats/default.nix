@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kactivities-stats";
 
-  meta.license = null;
+  meta.license = [ ];
 }

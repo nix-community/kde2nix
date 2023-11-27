@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [xorg.libXxf86vm];
 
-  meta.license = null;
+  meta.license = [ ];
 }

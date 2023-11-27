@@ -39,7 +39,7 @@ stdenv.mkDerivation {
   meta = with lib; {
     description = "Library to facilitate retrieval of weather information including forecasts and alerts";
     homepage = "https://invent.kde.org/libraries/kweathercore";
-    license = null;
+    license = [ ];
     mainProgram = "kweathercore";
     platforms = platforms.all;
   };

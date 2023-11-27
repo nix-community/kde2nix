@@ -18,5 +18,5 @@ mkKdeDerivation {
     runHook postInstall
   '';
 
-  meta.license = null;
+  meta.license = [ ];
 }

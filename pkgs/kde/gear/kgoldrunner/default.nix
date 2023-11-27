@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kgoldrunner";
 
-  meta.license = null;
+  meta.license = [ ];
 }

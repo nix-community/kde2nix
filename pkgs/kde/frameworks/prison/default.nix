@@ -11,5 +11,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtdeclarative qtmultimedia qrencode libdmtx];
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -45,5 +45,5 @@ mkKdeDerivation {
 
   passthru.providedSessions = ["plasma" "plasmax11"];
 
-  meta.license = null;
+  meta.license = [ ];
 }

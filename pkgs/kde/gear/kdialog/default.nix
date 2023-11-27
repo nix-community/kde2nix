@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kdialog";
 
-  meta.license = null;
+  meta.license = [ ];
 }

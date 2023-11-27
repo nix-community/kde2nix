@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kcharselect";
 
-  meta.license = null;
+  meta.license = [ ];
 }

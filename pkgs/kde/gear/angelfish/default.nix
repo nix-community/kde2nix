@@ -31,5 +31,5 @@ mkKdeDerivation rec {
 
   extraBuildInputs = [corrosion qtsvg qtwebengine qcoro];
 
-  meta.license = null;
+  meta.license = [ ];
 }

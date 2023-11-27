@@ -5,7 +5,7 @@
 mkKdeDerivation {
   pname = "kdev-php";
 
-  meta.license = null;
+  meta.license = [ ];
   # FIXME(qt5)
   meta.broken = true;
 }

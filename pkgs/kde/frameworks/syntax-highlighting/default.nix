@@ -11,5 +11,5 @@ mkKdeDerivation {
   extraBuildInputs = [qtdeclarative];
   extraNativeBuildInputs = [qttools perl];
 
-  meta.license = null;
+  meta.license = [ ];
 }

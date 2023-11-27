@@ -10,5 +10,5 @@ mkKdeDerivation {
   # FIXME: qmltermwidget is dead, check when sorted
   extraBuildInputs = [qtsvg qmltermwidget];
 
-  meta.license = null;
+  meta.license = [ ];
 }

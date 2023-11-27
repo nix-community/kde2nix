@@ -11,5 +11,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtwayland xorg.libXcursor];
 
-  meta.license = null;
+  meta.license = [ ];
 }

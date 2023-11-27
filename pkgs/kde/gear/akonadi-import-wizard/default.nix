@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "akonadi-import-wizard";
 
-  meta.license = null;
+  meta.license = [ ];
 }

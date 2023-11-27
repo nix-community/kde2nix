@@ -20,5 +20,5 @@ mkKdeDerivation {
     kquickcharts
   ];
 
-  meta.license = null;
+  meta.license = [ ];
 }

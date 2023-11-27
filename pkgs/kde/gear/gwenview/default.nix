@@ -29,5 +29,5 @@ mkKdeDerivation {
     wayland-protocols
   ];
 
-  meta.license = null;
+  meta.license = [ ];
 }

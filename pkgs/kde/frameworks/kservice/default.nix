@@ -11,5 +11,5 @@ mkKdeDerivation {
     ./qdiriterator-follow-symlinks.patch
   ];
 
-  meta.license = null;
+  meta.license = [ ];
 }

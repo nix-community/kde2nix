@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "ksquares";
 
-  meta.license = null;
+  meta.license = [ ];
 }

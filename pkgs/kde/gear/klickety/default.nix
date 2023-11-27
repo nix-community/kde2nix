@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "klickety";
 
-  meta.license = null;
+  meta.license = [ ];
 }

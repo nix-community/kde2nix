@@ -11,5 +11,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtsvg qtcharts qqc2-desktop-style kholidays];
 
-  meta.license = null;
+  meta.license = [ ];
 }

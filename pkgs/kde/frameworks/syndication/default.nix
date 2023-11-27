@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "syndication";
 
-  meta.license = null;
+  meta.license = [ ];
 }

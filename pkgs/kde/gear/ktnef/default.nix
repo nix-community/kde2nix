@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "ktnef";
 
-  meta.license = null;
+  meta.license = [ ];
 }

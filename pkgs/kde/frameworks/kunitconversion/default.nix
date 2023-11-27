@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kunitconversion";
 
-  meta.license = null;
+  meta.license = [ ];
 }

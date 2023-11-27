@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [sane-backends];
 
-  meta.license = null;
+  meta.license = [ ];
 }

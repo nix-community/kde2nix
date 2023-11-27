@@ -10,5 +10,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtdeclarative qtspeech editorconfig-core-c];
 
-  meta.license = null;
+  meta.license = [ ];
 }

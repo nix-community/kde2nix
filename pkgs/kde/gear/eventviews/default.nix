@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "eventviews";
 
-  meta.license = null;
+  meta.license = [ ];
 }

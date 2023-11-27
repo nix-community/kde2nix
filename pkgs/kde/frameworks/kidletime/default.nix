@@ -12,5 +12,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [qtwayland xorg.libXScrnSaver wayland-protocols];
 
-  meta.license = null;
+  meta.license = [ ];
 }

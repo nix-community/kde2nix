@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [shared-mime-info];
 
-  meta.license = null;
+  meta.license = [ ];
 }

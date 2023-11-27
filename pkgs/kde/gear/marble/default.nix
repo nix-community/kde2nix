@@ -5,7 +5,7 @@
 mkKdeDerivation {
   pname = "marble";
 
-  meta.license = null;
+  meta.license = [ ];
   # FIXME(qt5)
   meta.broken = true;
 }

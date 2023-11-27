@@ -14,5 +14,5 @@ mkKdeDerivation {
     qqc2-desktop-style
   ];
 
-  meta.license = null;
+  meta.license = [ ];
 }

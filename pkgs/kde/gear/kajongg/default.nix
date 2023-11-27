@@ -9,7 +9,7 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtsvg python3 python3.pkgs.twisted];
 
-  meta.license = null;
+  meta.license = [ ];
   # FIXME: completely horked, is actually a Python app, needs a lot of fixing
   meta.broken = true;
 }

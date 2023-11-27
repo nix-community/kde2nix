@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "pim-sieve-editor";
 
-  meta.license = null;
+  meta.license = [ ];
 }

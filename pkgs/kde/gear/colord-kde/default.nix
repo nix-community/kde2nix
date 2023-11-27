@@ -5,7 +5,7 @@
 mkKdeDerivation {
   pname = "colord-kde";
 
-  meta.license = null;
+  meta.license = [ ];
   # FIXME(qt5)
   meta.broken = true;
 }

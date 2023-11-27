@@ -21,5 +21,5 @@ mkKdeDerivation {
     mpfr
   ];
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -10,5 +10,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [shared-mime-info];
   extraBuildInputs = [qtsvg];
 
-  meta.license = null;
+  meta.license = [ ];
 }

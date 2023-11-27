@@ -9,5 +9,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtwayland qtmultimedia];
 
-  meta.license = null;
+  meta.license = [ ];
 }

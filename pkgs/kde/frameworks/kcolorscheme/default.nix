@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kcolorscheme";
 
-  meta.license = null;
+  meta.license = [ ];
 }

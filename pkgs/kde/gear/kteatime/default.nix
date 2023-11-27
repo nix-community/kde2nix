@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kteatime";
 
-  meta.license = null;
+  meta.license = [ ];
 }

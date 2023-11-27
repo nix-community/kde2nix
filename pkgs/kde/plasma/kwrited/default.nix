@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kwrited";
 
-  meta.license = null;
+  meta.license = [ ];
 }

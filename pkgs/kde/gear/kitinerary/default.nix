@@ -20,5 +20,5 @@ mkKdeDerivation {
     protobuf
   ];
 
-  meta.license = null;
+  meta.license = [ ];
 }

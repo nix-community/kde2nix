@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kmbox";
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "systemsettings";
 
-  meta.license = null;
+  meta.license = [ ];
 }

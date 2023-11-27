@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "libksane";
 
-  meta.license = null;
+  meta.license = [ ];
 }

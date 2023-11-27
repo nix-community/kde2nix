@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kgeography";
 
-  meta.license = null;
+  meta.license = [ ];
 }

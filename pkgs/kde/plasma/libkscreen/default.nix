@@ -11,5 +11,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [qttools qtwayland jq];
   extraBuildInputs = [qtwayland];
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "mailimporter";
 
-  meta.license = null;
+  meta.license = [ ];
 }

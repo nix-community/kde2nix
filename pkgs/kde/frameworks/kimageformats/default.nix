@@ -15,5 +15,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [libheif libjxl libavif libraw openexr_3];
 
-  meta.license = null;
+  meta.license = [ ];
 }

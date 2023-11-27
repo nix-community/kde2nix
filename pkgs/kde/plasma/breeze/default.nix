@@ -7,5 +7,5 @@ mkKdeDerivation {
 
   extraCmakeFlags = ["-DBUILD_QT5=0"];
 
-  meta.license = null;
+  meta.license = [ ];
 }

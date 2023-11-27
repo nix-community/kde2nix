@@ -9,5 +9,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtmultimedia vlc];
 
-  meta.license = null;
+  meta.license = [ ];
 }

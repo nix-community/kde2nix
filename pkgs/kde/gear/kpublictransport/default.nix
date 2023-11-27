@@ -10,5 +10,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [qtdeclarative];
 
-  meta.license = null;
+  meta.license = [ ];
 }

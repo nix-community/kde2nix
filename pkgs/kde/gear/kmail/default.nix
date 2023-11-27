@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kmail";
 
-  meta.license = null;
+  meta.license = [ ];
 }

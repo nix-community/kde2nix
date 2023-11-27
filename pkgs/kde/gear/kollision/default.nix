@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kollision";
 
-  meta.license = null;
+  meta.license = [ ];
 }

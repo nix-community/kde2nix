@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "knavalbattle";
 
-  meta.license = null;
+  meta.license = [ ];
 }

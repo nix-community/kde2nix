@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "markdownpart";
 
-  meta.license = null;
+  meta.license = [ ];
 }

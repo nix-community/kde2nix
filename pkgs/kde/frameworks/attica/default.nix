@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "attica";
 
-  meta.license = null;
+  meta.license = [ ];
 }

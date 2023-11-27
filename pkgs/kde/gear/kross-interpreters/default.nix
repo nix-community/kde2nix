@@ -8,7 +8,7 @@ mkKdeDerivation {
 
   extraBuildInputs = [extra-cmake-modules];
 
-  meta.license = null;
+  meta.license = [ ];
   # FIXME(qt5)
   meta.broken = true;
 }

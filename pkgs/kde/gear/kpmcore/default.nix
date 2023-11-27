@@ -19,5 +19,5 @@ mkKdeDerivation {
       --replace /usr/share/polkit-1/actions/org.kde.kpmcore.externalcommand.policy $out/share/polkit-1/actions/org.kde.kpmcore.externalcommand.policy
   '';
 
-  meta.license = null;
+  meta.license = [ ];
 }

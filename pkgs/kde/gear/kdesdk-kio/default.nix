@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kdesdk-kio";
 
-  meta.license = null;
+  meta.license = [ ];
 }

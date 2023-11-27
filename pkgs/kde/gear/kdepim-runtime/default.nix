@@ -14,5 +14,5 @@ mkKdeDerivation {
   # FIXME: libkolabxml, libetebase
   extraBuildInputs = [qtnetworkauth qtspeech qtwebengine cyrus_sasl];
 
-  meta.license = null;
+  meta.license = [ ];
 }

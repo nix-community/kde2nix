@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [cyrus_sasl];
 
-  meta.license = null;
+  meta.license = [ ];
 }

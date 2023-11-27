@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kmailtransport";
 
-  meta.license = null;
+  meta.license = [ ];
 }

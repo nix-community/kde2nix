@@ -12,5 +12,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [cdparanoia flac libogg libvorbis];
 
-  meta.license = null;
+  meta.license = [ ];
 }

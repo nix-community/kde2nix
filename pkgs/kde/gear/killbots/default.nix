@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "killbots";
 
-  meta.license = null;
+  meta.license = [ ];
 }

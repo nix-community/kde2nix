@@ -15,5 +15,5 @@ mkKdeDerivation {
 
   cmakeFlags = ["-DSYSTEMSTATS_DBUS_INTERFACE=${libksysguard}/share/dbus-1/interfaces/org.kde.ksystemstats.xml"];
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraPropagatedBuildInputs = [qtwebengine];
 
-  meta.license = null;
+  meta.license = [ ];
 }

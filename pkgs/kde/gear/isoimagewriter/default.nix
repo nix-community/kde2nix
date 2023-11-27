@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "isoimagewriter";
 
-  meta.license = null;
+  meta.license = [ ];
 }

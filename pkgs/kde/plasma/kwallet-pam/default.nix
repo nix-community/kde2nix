@@ -14,5 +14,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [pam libgcrypt];
 
-  meta.license = null;
+  meta.license = [ ];
 }

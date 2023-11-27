@@ -17,5 +17,5 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [pkg-config];
 
-  meta.license = null;
+  meta.license = [ ];
 }

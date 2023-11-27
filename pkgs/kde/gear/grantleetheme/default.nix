@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "grantleetheme";
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -9,5 +9,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qt5compat cyrus_sasl];
 
-  meta.license = null;
+  meta.license = [ ];
 }

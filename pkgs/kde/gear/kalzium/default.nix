@@ -14,5 +14,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [pkg-config ocaml];
   extraBuildInputs = [eigen openbabel qtsvg qtscxml];
 
-  meta.license = null;
+  meta.license = [ ];
 }

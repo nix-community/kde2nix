@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "sweeper";
 
-  meta.license = null;
+  meta.license = [ ];
 }

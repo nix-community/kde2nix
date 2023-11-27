@@ -10,5 +10,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [plymouth];
 
-  meta.license = null;
+  meta.license = [ ];
 }

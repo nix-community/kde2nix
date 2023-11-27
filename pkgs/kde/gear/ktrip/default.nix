@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "ktrip";
 
-  meta.license = null;
+  meta.license = [ ];
 }

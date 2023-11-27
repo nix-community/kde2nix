@@ -8,7 +8,7 @@ mkKdeDerivation {
 
   extraBuildInputs = [akonadi-contacts];
 
-  meta.license = null;
+  meta.license = [ ];
   # FIXME: not ported to new akonadi?
   meta.broken = true;
 }

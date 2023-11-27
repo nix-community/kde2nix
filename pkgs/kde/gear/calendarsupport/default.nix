@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "calendarsupport";
 
-  meta.license = null;
+  meta.license = [ ];
 }

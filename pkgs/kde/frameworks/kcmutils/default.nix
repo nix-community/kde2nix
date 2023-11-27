@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraPropagatedBuildInputs = [qtdeclarative];
 
-  meta.license = null;
+  meta.license = [ ];
 }

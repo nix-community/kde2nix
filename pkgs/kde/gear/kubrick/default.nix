@@ -9,5 +9,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtsvg libGLU];
 
-  meta.license = null;
+  meta.license = [ ];
 }

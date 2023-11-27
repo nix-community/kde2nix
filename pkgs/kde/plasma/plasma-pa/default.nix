@@ -11,5 +11,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [libcanberra pulseaudio];
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -10,5 +10,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [qtsensors];
 
-  meta.license = null;
+  meta.license = [ ];
 }

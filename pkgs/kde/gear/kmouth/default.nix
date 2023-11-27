@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtspeech];
 
-  meta.license = null;
+  meta.license = [ ];
 }

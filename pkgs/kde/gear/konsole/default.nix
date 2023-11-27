@@ -9,5 +9,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qt5compat qtmultimedia];
 
-  meta.license = null;
+  meta.license = [ ];
 }

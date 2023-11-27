@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kolourpaint";
 
-  meta.license = null;
+  meta.license = [ ];
 }

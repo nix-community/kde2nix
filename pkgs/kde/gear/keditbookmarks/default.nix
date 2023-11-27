@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "keditbookmarks";
 
-  meta.license = null;
+  meta.license = [ ];
 }

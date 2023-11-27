@@ -16,5 +16,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [qtsvg qttools qtwebchannel qtwebengine qt5compat pkg-config];
   extraBuildInputs = [hunspell];
 
-  meta.license = null;
+  meta.license = [ ];
 }

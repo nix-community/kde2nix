@@ -14,5 +14,5 @@ mkKdeDerivation {
     qttools
   ];
 
-  meta.license = null;
+  meta.license = [ ];
 }

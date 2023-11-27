@@ -16,5 +16,5 @@ mkKdeDerivation {
     freecell-solver
   ];
 
-  meta.license = null;
+  meta.license = [ ];
 }

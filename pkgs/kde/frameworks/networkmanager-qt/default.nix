@@ -12,5 +12,5 @@ mkKdeDerivation {
   extraBuildInputs = [qtdeclarative];
   extraPropagatedBuildInputs = [networkmanager];
 
-  meta.license = null;
+  meta.license = [ ];
 }

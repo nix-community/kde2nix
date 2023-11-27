@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kdecoration";
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -11,5 +11,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [qttools];
   extraBuildInputs = [qtdeclarative libcanberra];
 
-  meta.license = null;
+  meta.license = [ ];
 }

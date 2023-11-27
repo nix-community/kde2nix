@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kcalutils";
 
-  meta.license = null;
+  meta.license = [ ];
 }

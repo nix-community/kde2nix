@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kapidox";
 
-  meta.license = null;
+  meta.license = [ ];
 }

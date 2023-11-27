@@ -9,5 +9,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qt5compat boost];
 
-  meta.license = null;
+  meta.license = [ ];
 }

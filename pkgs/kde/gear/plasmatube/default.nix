@@ -14,5 +14,5 @@ mkKdeDerivation {
   extraBuildInputs = [qtquick3d qtsvg mpv];
   extraPropagatedBuildInputs = [purpose];
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -8,5 +8,5 @@ mkKdeDerivation {
   # Look for NixOS SUID wrapper first
   patches = [./kdesu-search-for-wrapped-daemon-first.patch];
 
-  meta.license = null;
+  meta.license = [ ];
 }

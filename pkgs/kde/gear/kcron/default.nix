@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kcron";
 
-  meta.license = null;
+  meta.license = [ ];
 }

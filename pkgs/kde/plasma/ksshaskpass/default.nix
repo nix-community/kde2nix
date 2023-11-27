@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "ksshaskpass";
 
-  meta.license = null;
+  meta.license = [ ];
 }

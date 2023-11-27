@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "plasma-disks";
 
-  meta.license = null;
+  meta.license = [ ];
 }

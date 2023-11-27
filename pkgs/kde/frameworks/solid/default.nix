@@ -13,5 +13,5 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [qttools bison flex];
 
-  meta.license = null;
+  meta.license = [ ];
 }

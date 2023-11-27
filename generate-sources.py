@@ -20,7 +20,7 @@ LEAF_TEMPLATE = jinja2.Template('''
 mkKdeDerivation {
   pname = "{{ pname }}";
 
-  meta.license = null;
+  meta.license = [ ];
 }
 '''.strip())
 

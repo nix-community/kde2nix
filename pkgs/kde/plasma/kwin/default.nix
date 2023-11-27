@@ -49,5 +49,5 @@ mkKdeDerivation {
     xorg.libxcvt
   ];
 
-  meta.license = null;
+  meta.license = [ ];
 }

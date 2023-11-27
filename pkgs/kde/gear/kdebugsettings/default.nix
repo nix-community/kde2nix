@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kdebugsettings";
 
-  meta.license = null;
+  meta.license = [ ];
 }

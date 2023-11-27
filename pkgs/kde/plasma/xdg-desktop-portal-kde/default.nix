@@ -13,5 +13,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [qtwayland wayland wayland-protocols cups];
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -9,5 +9,5 @@ mkKdeDerivation {
   # FIXME: cups-smb?
   extraBuildInputs = [cups];
 
-  meta.license = null;
+  meta.license = [ ];
 }

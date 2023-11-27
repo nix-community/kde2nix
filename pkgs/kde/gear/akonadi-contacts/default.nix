@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "akonadi-contacts";
 
-  meta.license = null;
+  meta.license = [ ];
 }

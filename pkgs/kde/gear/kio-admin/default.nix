@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kio-admin";
 
-  meta.license = null;
+  meta.license = [ ];
 }

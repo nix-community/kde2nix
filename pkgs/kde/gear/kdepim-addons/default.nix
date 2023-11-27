@@ -6,5 +6,5 @@
 mkKdeDerivation {
   pname = "kdepim-addons";
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -10,5 +10,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qt5compat gmp mpfr];
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "bomber";
 
-  meta.license = null;
+  meta.license = [ ];
 }

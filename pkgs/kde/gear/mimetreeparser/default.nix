@@ -10,5 +10,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qt5compat qtdeclarative qgpgme];
 
-  meta.license = null;
+  meta.license = [ ];
 }

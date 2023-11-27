@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "akonadi-calendar";
 
-  meta.license = null;
+  meta.license = [ ];
 }

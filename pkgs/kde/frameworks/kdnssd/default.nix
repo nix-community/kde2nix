@@ -10,5 +10,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [qttools];
   extraBuildInputs = [avahi];
 
-  meta.license = null;
+  meta.license = [ ];
 }

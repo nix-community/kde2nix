@@ -22,5 +22,5 @@ mkKdeDerivation {
     zanshin
   ];
 
-  meta.license = null;
+  meta.license = [ ];
 }

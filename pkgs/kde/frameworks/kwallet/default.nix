@@ -9,5 +9,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [libgcrypt kdoctools];
 
-  meta.license = null;
+  meta.license = [ ];
 }

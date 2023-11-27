@@ -11,5 +11,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [flatpak qtsvg];
 
-  meta.license = null;
+  meta.license = [ ];
 }

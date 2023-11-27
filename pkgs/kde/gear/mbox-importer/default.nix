@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "mbox-importer";
 
-  meta.license = null;
+  meta.license = [ ];
 }

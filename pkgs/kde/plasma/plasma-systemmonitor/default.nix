@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "plasma-systemmonitor";
 
-  meta.license = null;
+  meta.license = [ ];
 }

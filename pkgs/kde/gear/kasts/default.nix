@@ -20,7 +20,7 @@ mkKdeDerivation {
     libvlc
   ];
 
-  meta.license = null;
+  meta.license = [ ];
   # FIXME(qt5)
   meta.broken = true;
 }

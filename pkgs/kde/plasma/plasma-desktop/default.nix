@@ -59,5 +59,5 @@ in
     # wrap kaccess with wrapped gsettings so it can access accessibility schemas
     qtWrapperArgs = ["--prefix PATH : ${lib.makeBinPath [gsettings-wrapper]}"];
 
-    meta.license = null;
+    meta.license = [ ];
   }

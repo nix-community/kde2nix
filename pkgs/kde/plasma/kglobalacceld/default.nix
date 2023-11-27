@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kglobalacceld";
 
-  meta.license = null;
+  meta.license = [ ];
 }

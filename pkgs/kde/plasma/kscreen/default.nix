@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtsensors];
 
-  meta.license = null;
+  meta.license = [ ];
 }

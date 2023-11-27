@@ -54,5 +54,5 @@ in
       purpose
     ];
 
-    meta.license = null;
+    meta.license = [ ];
   }

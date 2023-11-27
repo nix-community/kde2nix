@@ -9,5 +9,5 @@ mkKdeDerivation {
 
   setupHook = ./ecm-hook.sh;
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "akonadi-notes";
 
-  meta.license = null;
+  meta.license = [ ];
 }

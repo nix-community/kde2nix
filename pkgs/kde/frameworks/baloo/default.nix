@@ -9,5 +9,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtdeclarative lmdb];
 
-  meta.license = null;
+  meta.license = [ ];
 }

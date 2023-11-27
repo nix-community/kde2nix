@@ -11,5 +11,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qt5compat boost gmp libgcrypt];
 
-  meta.license = null;
+  meta.license = [ ];
 }

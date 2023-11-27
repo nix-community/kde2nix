@@ -11,5 +11,5 @@ mkKdeDerivation {
   extraBuildInputs = [qtdeclarative];
   extraPropagatedBuildInputs = [kdeclarative prison];
 
-  meta.license = null;
+  meta.license = [ ];
 }

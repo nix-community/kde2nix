@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kaddressbook";
 
-  meta.license = null;
+  meta.license = [ ];
 }

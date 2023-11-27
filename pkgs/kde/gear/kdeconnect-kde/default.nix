@@ -43,5 +43,5 @@ mkKdeDerivation {
     "-DQtWaylandScanner_EXECUTABLE=${qtwayland}/libexec/qtwaylandscanner"
   ];
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [libical];
 
-  meta.license = null;
+  meta.license = [ ];
 }

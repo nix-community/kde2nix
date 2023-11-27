@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "knetwalk";
 
-  meta.license = null;
+  meta.license = [ ];
 }

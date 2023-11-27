@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [libcanberra];
 
-  meta.license = null;
+  meta.license = [ ];
 }

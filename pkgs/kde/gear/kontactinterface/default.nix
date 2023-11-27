@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kontactinterface";
 
-  meta.license = null;
+  meta.license = [ ];
 }

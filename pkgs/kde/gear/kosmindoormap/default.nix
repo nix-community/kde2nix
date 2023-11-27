@@ -10,5 +10,5 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [bison flex yacc];
 
-  meta.license = null;
+  meta.license = [ ];
 }

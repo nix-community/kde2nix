@@ -17,5 +17,5 @@ mkKdeDerivation {
   # FIXME: kunifiedpush
   extraBuildInputs = [qtmultimedia qtsvg qtwebsockets qtwebview mpv kitemmodels sonnet];
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -10,5 +10,5 @@ mkKdeDerivation {
   extraCmakeFlags = ["-DENABLE_CONSOLE=0" "-DENABLE_CLI=0"];
   extraNativeBuildInputs = [qttools];
 
-  meta.license = null;
+  meta.license = [ ];
 }

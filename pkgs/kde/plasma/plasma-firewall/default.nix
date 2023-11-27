@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "plasma-firewall";
 
-  meta.license = null;
+  meta.license = [ ];
 }

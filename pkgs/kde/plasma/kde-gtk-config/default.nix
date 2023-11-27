@@ -23,5 +23,5 @@ mkKdeDerivation {
 
   extraCmakeFlags = ["-DGLIB_SCHEMAS_DIR=${gsettings-desktop-schemas.out}/"];
 
-  meta.license = null;
+  meta.license = [ ];
 }

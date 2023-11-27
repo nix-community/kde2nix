@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qttools];
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "threadweaver";
 
-  meta.license = null;
+  meta.license = [ ];
 }

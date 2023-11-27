@@ -9,5 +9,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [libarchive libzip];
 
-  meta.license = null;
+  meta.license = [ ];
 }

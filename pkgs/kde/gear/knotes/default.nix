@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "knotes";
 
-  meta.license = null;
+  meta.license = [ ];
 }

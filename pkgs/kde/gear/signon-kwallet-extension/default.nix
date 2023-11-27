@@ -15,5 +15,5 @@ mkKdeDerivation {
   # FIXME: wrap signond with SSO_EXTENSIONS_DIR=$wrapper/lib/extensions
   extraCmakeFlags = ["-DINSTALL_BROKEN_SIGNON_EXTENSION=1"];
 
-  meta.license = null;
+  meta.license = [ ];
 }

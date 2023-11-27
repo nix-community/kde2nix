@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "filelight";
 
-  meta.license = null;
+  meta.license = [ ];
 }

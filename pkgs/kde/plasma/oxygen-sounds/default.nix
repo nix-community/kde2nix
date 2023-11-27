@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "oxygen-sounds";
 
-  meta.license = null;
+  meta.license = [ ];
 }

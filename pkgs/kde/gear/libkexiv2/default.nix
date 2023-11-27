@@ -11,5 +11,5 @@ mkKdeDerivation {
   extraBuildInputs = [qt5compat exiv2];
   extraNativeBuildInputs = [pkg-config];
 
-  meta.license = null;
+  meta.license = [ ];
 }

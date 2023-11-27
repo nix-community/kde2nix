@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "qqc2-breeze-style";
 
-  meta.license = null;
+  meta.license = [ ];
 }

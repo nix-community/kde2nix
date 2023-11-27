@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kde-inotify-survey";
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -14,5 +14,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [qtquick3d pipewire ffmpeg mesa libva];
 
-  meta.license = null;
+  meta.license = [ ];
 }

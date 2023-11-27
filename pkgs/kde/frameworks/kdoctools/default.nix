@@ -17,5 +17,5 @@ mkKdeDerivation {
   extraBuildInputs = [docbook_xml_dtd_45 docbook-xsl-nons];
   extraPropagatedBuildInputs = [perl perlPackages.URI];
 
-  meta.license = null;
+  meta.license = [ ];
 }

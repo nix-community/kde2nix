@@ -10,5 +10,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [libgphoto2];
 
-  meta.license = null;
+  meta.license = [ ];
 }

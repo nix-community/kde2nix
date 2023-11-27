@@ -13,5 +13,5 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [sass python3 python3Packages.pycairo];
 
-  meta.license = null;
+  meta.license = [ ];
 }

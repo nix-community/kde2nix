@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [boost];
 
-  meta.license = null;
+  meta.license = [ ];
 }

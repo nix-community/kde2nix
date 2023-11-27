@@ -9,5 +9,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtwebengine xapian];
 
-  meta.license = null;
+  meta.license = [ ];
 }

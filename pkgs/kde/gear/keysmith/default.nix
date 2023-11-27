@@ -11,5 +11,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [qtsvg libsodium];
 
-  meta.license = null;
+  meta.license = [ ];
 }

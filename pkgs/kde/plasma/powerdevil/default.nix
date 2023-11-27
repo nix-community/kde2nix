@@ -10,5 +10,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [libcap];
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "baloo-widgets";
 
-  meta.license = null;
+  meta.license = [ ];
 }

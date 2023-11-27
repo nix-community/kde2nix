@@ -9,5 +9,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtlocation qtwebview];
 
-  meta.license = null;
+  meta.license = [ ];
 }

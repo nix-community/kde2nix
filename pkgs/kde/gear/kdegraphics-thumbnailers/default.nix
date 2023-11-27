@@ -16,5 +16,5 @@ mkKdeDerivation {
     })
   ];
 
-  meta.license = null;
+  meta.license = [ ];
 }

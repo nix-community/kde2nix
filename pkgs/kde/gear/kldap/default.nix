@@ -9,5 +9,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [cyrus_sasl openldap];
 
-  meta.license = null;
+  meta.license = [ ];
 }

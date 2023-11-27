@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kde-dev-scripts";
 
-  meta.license = null;
+  meta.license = [ ];
 }

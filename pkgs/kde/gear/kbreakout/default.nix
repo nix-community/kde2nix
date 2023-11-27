@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kbreakout";
 
-  meta.license = null;
+  meta.license = [ ];
 }

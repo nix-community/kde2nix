@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [pam];
 
-  meta.license = null;
+  meta.license = [ ];
 }

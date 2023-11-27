@@ -10,5 +10,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [shared-mime-info];
   extraBuildInputs = [akonadi-mime];
 
-  meta.license = null;
+  meta.license = [ ];
 }

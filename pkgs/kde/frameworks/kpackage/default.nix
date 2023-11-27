@@ -9,5 +9,5 @@ mkKdeDerivation {
   # FIXME(later): upstream
   patches = [./follow-symlinks.patch];
 
-  meta.license = null;
+  meta.license = [ ];
 }

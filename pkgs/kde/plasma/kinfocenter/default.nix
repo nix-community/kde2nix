@@ -24,5 +24,5 @@ mkKdeDerivation {
     ln -sf ${systemsettings}/bin/systemsettings $out/bin/kinfocenter
   '';
 
-  meta.license = null;
+  meta.license = [ ];
 }

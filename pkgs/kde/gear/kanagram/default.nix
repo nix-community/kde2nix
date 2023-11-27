@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kanagram";
 
-  meta.license = null;
+  meta.license = [ ];
 }

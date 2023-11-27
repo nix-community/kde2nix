@@ -46,5 +46,5 @@ in
       "-DWITH_PYTHON_VENDORING=0"
     ];
 
-    meta.license = null;
+    meta.license = [ ];
   }

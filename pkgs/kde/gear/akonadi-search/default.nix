@@ -32,5 +32,5 @@ mkKdeDerivation rec {
 
   extraBuildInputs = [corrosion xapian];
 
-  meta.license = null;
+  meta.license = [ ];
 }

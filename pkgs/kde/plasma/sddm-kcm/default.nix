@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "sddm-kcm";
 
-  meta.license = null;
+  meta.license = [ ];
 }

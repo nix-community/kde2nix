@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "skanlite";
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -11,5 +11,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtsvg qtwebengine ncurses readline];
 
-  meta.license = null;
+  meta.license = [ ];
 }

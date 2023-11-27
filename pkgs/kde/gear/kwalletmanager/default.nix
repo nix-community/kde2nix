@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kwalletmanager";
 
-  meta.license = null;
+  meta.license = [ ];
 }

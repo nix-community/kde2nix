@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kparts";
 
-  meta.license = null;
+  meta.license = [ ];
 }

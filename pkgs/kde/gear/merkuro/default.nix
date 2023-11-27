@@ -9,5 +9,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtsvg plasma-framework];
 
-  meta.license = null;
+  meta.license = [ ];
 }

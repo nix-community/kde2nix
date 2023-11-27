@@ -10,5 +10,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtdeclarative qtsvg fluidsynth];
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "libkcddb";
 
-  meta.license = null;
+  meta.license = [ ];
 }

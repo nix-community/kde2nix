@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "incidenceeditor";
 
-  meta.license = null;
+  meta.license = [ ];
 }

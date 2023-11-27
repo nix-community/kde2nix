@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kompare";
 
-  meta.license = null;
+  meta.license = [ ];
 }

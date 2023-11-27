@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kaccounts-integration";
 
-  meta.license = null;
+  meta.license = [ ];
 }

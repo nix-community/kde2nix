@@ -16,5 +16,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtwebchannel qtwebengine qttools libpcap libnl lm_sensors];
 
-  meta.license = null;
+  meta.license = [ ];
 }

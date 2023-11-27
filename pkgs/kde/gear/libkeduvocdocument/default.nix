@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "libkeduvocdocument";
 
-  meta.license = null;
+  meta.license = [ ];
 }

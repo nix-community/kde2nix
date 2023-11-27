@@ -13,5 +13,5 @@ mkKdeDerivation {
   extraBuildInputs = [qtdeclarative aspell hunspell];
   extraNativeBuildInputs = [qttools pkg-config];
 
-  meta.license = null;
+  meta.license = [ ];
 }

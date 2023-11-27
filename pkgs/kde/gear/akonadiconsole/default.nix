@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [xapian];
 
-  meta.license = null;
+  meta.license = [ ];
 }

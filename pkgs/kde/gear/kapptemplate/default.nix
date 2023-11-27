@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kapptemplate";
 
-  meta.license = null;
+  meta.license = [ ];
 }

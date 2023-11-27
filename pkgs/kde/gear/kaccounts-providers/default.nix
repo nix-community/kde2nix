@@ -8,7 +8,7 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [intltool];
 
-  meta.license = null;
+  meta.license = [ ];
   # FIXME(qt5)
   meta.broken = true;
 }

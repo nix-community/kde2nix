@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "libkcompactdisc";
 
-  meta.license = null;
+  meta.license = [ ];
 }

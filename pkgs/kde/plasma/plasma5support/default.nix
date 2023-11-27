@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "plasma5support";
 
-  meta.license = null;
+  meta.license = [ ];
 }

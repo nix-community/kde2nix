@@ -51,5 +51,5 @@ mkKdeDerivation {
     taglib
   ];
 
-  meta.license = null;
+  meta.license = [ ];
 }

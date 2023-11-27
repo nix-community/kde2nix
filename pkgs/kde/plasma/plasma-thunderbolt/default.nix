@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "plasma-thunderbolt";
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kmenuedit";
 
-  meta.license = null;
+  meta.license = [ ];
 }

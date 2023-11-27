@@ -65,5 +65,5 @@ in
       )
     '';
 
-    meta.license = null;
+    meta.license = [ ];
   }

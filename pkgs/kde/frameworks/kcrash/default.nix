@@ -5,5 +5,5 @@
 mkKdeDerivation {
   pname = "kcrash";
 
-  meta.license = null;
+  meta.license = [ ];
 }

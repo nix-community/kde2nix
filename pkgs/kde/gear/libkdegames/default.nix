@@ -11,5 +11,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [openal libsndfile qtdeclarative qtsvg];
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -13,5 +13,5 @@ mkKdeDerivation {
   extraNativeBuildInputs = [qttools pkg-config];
   extraBuildInputs = [qtdeclarative qtwayland wayland];
 
-  meta.license = null;
+  meta.license = [ ];
 }

@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [kactivities];
 
-  meta.license = null;
+  meta.license = [ ];
 }

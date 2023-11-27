@@ -8,5 +8,5 @@ mkKdeDerivation {
 
   extraBuildInputs = [ffmpeg];
 
-  meta.license = null;
+  meta.license = [ ];
 }
