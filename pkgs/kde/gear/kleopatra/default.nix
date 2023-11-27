@@ -1,12 +1,14 @@
 {
   lib,
   mkKdeDerivation,
-  qgpgme,
+  shared-mime-info,
+  akonadi-mime,
 }:
 mkKdeDerivation {
   pname = "kleopatra";
 
-  extraBuildInputs = [qgpgme];
+  extraNativeBuildInputs = [shared-mime-info];
+  extraBuildInputs = [akonadi-mime];
 
   meta.license = null;
 }

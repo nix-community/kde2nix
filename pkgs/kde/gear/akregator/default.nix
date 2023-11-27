@@ -1,11 +1,12 @@
 {
   lib,
   mkKdeDerivation,
+  qtwebengine,
 }:
 mkKdeDerivation {
   pname = "akregator";
 
+  extraBuildInputs = [qtwebengine];
+
   meta.license = null;
-  # FIXME(signond)
-  meta.broken = true;
 }

@@ -16,6 +16,4 @@ mkKdeDerivation {
   extraBuildInputs = [kaccounts-integration accounts-qt xz];
 
   meta.license = null;
-  # FIXME(signond)
-  meta.broken = true;
 }

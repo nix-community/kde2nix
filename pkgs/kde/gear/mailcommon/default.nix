@@ -1,11 +1,13 @@
 {
   lib,
   mkKdeDerivation,
+  qtwebengine,
+  qttools,
 }:
 mkKdeDerivation {
   pname = "mailcommon";
 
+  extraBuildInputs = [qtwebengine qttools];
+
   meta.license = null;
-  # FIXME(signond)
-  meta.broken = true;
 }

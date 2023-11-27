@@ -1,11 +1,12 @@
 {
   lib,
   mkKdeDerivation,
+  qtwebengine,
 }:
 mkKdeDerivation {
   pname = "messagelib";
 
+  extraPropagatedBuildInputs = [qtwebengine];
+
   meta.license = null;
-  # FIXME(signond)
-  meta.broken = true;
 }

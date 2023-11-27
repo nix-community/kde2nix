@@ -1,11 +1,12 @@
 {
   lib,
   mkKdeDerivation,
+  boost,
 }:
 mkKdeDerivation {
   pname = "zanshin";
 
+  extraBuildInputs = [boost];
+
   meta.license = null;
-  # FIXME(signond)
-  meta.broken = true;
 }

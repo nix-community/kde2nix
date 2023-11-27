@@ -1,11 +1,12 @@
 {
   lib,
   mkKdeDerivation,
+  qttools,
 }:
 mkKdeDerivation {
   pname = "korganizer";
 
+  extraBuildInputs = [qttools];
+
   meta.license = null;
-  # FIXME(signond)
-  meta.broken = true;
 }

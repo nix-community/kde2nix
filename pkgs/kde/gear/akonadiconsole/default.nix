@@ -1,11 +1,12 @@
 {
   lib,
   mkKdeDerivation,
+  xapian,
 }:
 mkKdeDerivation {
   pname = "akonadiconsole";
 
+  extraBuildInputs = [xapian];
+
   meta.license = null;
-  # FIXME(signond)
-  meta.broken = true;
 }

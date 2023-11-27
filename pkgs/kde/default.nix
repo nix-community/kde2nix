@@ -53,6 +53,7 @@
       kquickimageeditor = qt6Packages.kquickimageedit;
 
       # MISC
+      kdiagram = self.callPackage ./misc/kdiagram {};
       kdsoap-ws-discovery-client = self.callPackage ./misc/kdsoap-ws-discovery-client {};
       kirigami-addons = self.callPackage ./misc/kirigami-addons {};
       ktextaddons = self.callPackage ./misc/ktextaddons {};
@@ -71,7 +72,6 @@
       libappimage = self.callPackage ./misc/libappimage {};
 
       # STUBS
-      kdiagram = null; # FIXME: is it dead?
       libmediawiki = null; # FIXME: package
       okteta = null; # FIXME: is it dead?
       selenium-webdriver-at-spi = null; # Used for integration tests that we don't run

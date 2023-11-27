@@ -8,7 +8,8 @@
 mkKdeDerivation {
   pname = "libkleo";
 
-  extraBuildInputs = [qt5compat boost qgpgme];
+  extraBuildInputs = [qt5compat boost];
+  extraPropagatedBuildInputs = [qgpgme];
 
   meta.license = null;
 }
