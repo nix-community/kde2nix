@@ -4,6 +4,7 @@
   pkg-config,
   qttools,
   qtsensors,
+  qtvirtualkeyboard,
   libinput,
   xorg,
   libdisplay-info,
@@ -34,6 +35,7 @@ mkKdeDerivation {
   extraBuildInputs = [
     qttools
     qtsensors
+    qtvirtualkeyboard
 
     krunner
 
