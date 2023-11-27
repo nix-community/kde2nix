@@ -243,5 +243,7 @@ in {
       kde-fingerprint.fprintAuth = true;
       kde-smartcard.p11Auth = true;
     };
+
+    programs.kdeconnect.package = kdePackages.kdeconnect-kde;
   };
 }
