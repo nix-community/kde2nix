@@ -98,6 +98,7 @@ in {
         kwrited
         libkscreen
         libksysguard
+        ksystemstats
         milou
         plasma-integration
         polkit-kde-agent-1
