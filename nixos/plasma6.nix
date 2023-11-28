@@ -84,7 +84,6 @@ in {
         threadweaver
 
         breeze
-        pkgs.plasma5Packages.breeze-qt5
         kactivitymanagerd
         kde-cli-tools
         kdecoration
