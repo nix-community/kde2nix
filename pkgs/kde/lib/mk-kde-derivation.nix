@@ -28,7 +28,7 @@ in
     hostDeps = pluckDeps splitDeps.wrong;
 
     defaultArgs = {
-      inherit pname version src;
+      inherit version src;
 
       # FIXME: move designer plugins to dev
       outputs = ["out" "dev"];
@@ -54,6 +54,12 @@ in
         // meta;
     };
 
-    cleanArgs = builtins.removeAttrs args ["extraBuildInputs" "extraNativeBuildInputs" "meta"];
+    cleanArgs = builtins.removeAttrs args [
+      "extraBuildInputs"
+      "extraNativeBuildInputs"
+      "extraPropagatedBuildInputs"
+      "extraCmakeFlags"
+      "meta"
+    ];
   in
     stdenv.mkDerivation (defaultArgs // cleanArgs)
