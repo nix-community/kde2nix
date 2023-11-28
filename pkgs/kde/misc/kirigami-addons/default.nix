@@ -1,4 +1,5 @@
 {
+  lib,
   mkKdeDerivation,
   fetchurl,
   qtdeclarative,
@@ -15,4 +16,16 @@ mkKdeDerivation rec {
 
   extraBuildInputs = [qtdeclarative];
   extraPropagatedBuildInputs = [qt5compat];
+
+  meta.license = with lib.licenses; [
+    bsd2
+    cc-by-sa-40
+    cc0
+    gpl2Plus
+    lgpl2Only
+    lgpl2Plus
+    lgpl21Only
+    lgpl21Plus
+    lgpl3Only
+  ];
 }

@@ -1,4 +1,5 @@
 {
+  lib,
   mkKdeDerivation,
   fetchurl,
   qtspeech,
@@ -14,4 +15,12 @@ mkKdeDerivation rec {
   };
 
   extraBuildInputs = [qtspeech qttools];
+
+  meta.license = with lib.licenses; [
+    bsd3
+    cc0
+    gpl2Plus
+    lgpl2Plus
+    lgpl21Plus
+  ];
 }

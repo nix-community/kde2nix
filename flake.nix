@@ -38,7 +38,7 @@
         };
 
         devShells.default = pkgs.mkShell {
-          packages = [python];
+          packages = [python pkgs.gnutar pkgs.jq pkgs.reuse];
           inherit (self.checks.${system}.pre-commit-check) shellHook;
         };
       }
