@@ -38,7 +38,6 @@ in {
     environment.systemPackages = with kdePackages; let
       requiredPackages = [
         frameworkintegration
-        pkgs.plasma5Packages.frameworkintegration
         kactivities
         kauth
         kcmutils
