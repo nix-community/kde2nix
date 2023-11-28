@@ -50,6 +50,4 @@ mkKdeDerivation {
       flac
     ]}"
   ];
-
-  meta.license = null;
 }

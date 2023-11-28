@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtdeclarative,
   qtsvg,
@@ -9,6 +8,4 @@ mkKdeDerivation {
   pname = "minuet";
 
   extraBuildInputs = [qtdeclarative qtsvg fluidsynth];
-
-  meta.license = null;
 }

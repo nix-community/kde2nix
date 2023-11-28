@@ -1,7 +1,4 @@
-{
-  lib,
-  mkKdeDerivation,
-}:
+{mkKdeDerivation}:
 mkKdeDerivation {
   pname = "kservice";
 
@@ -10,6 +7,4 @@ mkKdeDerivation {
     # FIXME(later): upstream
     ./qdiriterator-follow-symlinks.patch
   ];
-
-  meta.license = null;
 }

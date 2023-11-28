@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qttools,
   bison,
@@ -12,6 +11,4 @@ mkKdeDerivation {
   patches = [./fix-search-path.patch];
 
   extraNativeBuildInputs = [qttools bison flex];
-
-  meta.license = null;
 }

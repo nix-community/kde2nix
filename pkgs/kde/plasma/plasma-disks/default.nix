@@ -1,9 +1,4 @@
-{
-  lib,
-  mkKdeDerivation,
-}:
+{mkKdeDerivation}:
 mkKdeDerivation {
   pname = "plasma-disks";
-
-  meta.license = null;
 }

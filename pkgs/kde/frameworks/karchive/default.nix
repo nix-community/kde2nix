@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qttools,
   pkg-config,
@@ -10,6 +9,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [qttools pkg-config];
   extraBuildInputs = [lzma];
-
-  meta.license = null;
 }

@@ -64,6 +64,4 @@ in
         --prefix PATH : "${runtimeDeps}"
       )
     '';
-
-    meta.license = null;
   }

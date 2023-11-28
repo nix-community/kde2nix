@@ -1,9 +1,4 @@
-{
-  lib,
-  mkKdeDerivation,
-}:
+{mkKdeDerivation}:
 mkKdeDerivation {
   pname = "grantleetheme";
-
-  meta.license = null;
 }

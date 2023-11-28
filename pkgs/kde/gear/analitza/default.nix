@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qt5compat,
   qtsvg,
@@ -12,6 +11,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [qt5compat qtsvg qttools];
   extraBuildInputs = [qtdeclarative eigen];
-
-  meta.license = null;
 }

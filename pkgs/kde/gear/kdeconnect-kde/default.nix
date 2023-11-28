@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   fetchFromGitLab,
   fetchpatch,
@@ -42,6 +41,4 @@ mkKdeDerivation {
   extraCmakeFlags = [
     "-DQtWaylandScanner_EXECUTABLE=${qtwayland}/libexec/qtwaylandscanner"
   ];
-
-  meta.license = null;
 }

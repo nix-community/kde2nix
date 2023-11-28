@@ -1,9 +1,4 @@
-{
-  lib,
-  mkKdeDerivation,
-}:
+{mkKdeDerivation}:
 mkKdeDerivation {
   pname = "knotes";
-
-  meta.license = null;
 }

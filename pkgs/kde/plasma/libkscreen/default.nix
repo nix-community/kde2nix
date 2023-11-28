@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtwayland,
   qttools,
@@ -10,6 +9,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [qttools qtwayland jq];
   extraBuildInputs = [qtwayland];
-
-  meta.license = null;
 }

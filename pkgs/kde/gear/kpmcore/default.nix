@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   pkg-config,
 }:
@@ -18,6 +17,4 @@ mkKdeDerivation {
     substituteInPlace src/backend/corebackend.cpp \
       --replace /usr/share/polkit-1/actions/org.kde.kpmcore.externalcommand.policy $out/share/polkit-1/actions/org.kde.kpmcore.externalcommand.policy
   '';
-
-  meta.license = null;
 }

@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qttools,
   qtdeclarative,
@@ -12,6 +11,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [qttools pkg-config];
   extraBuildInputs = [qtdeclarative qtwayland wayland];
-
-  meta.license = null;
 }

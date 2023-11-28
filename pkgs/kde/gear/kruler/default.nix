@@ -1,9 +1,4 @@
-{
-  lib,
-  mkKdeDerivation,
-}:
+{mkKdeDerivation}:
 mkKdeDerivation {
   pname = "kruler";
-
-  meta.license = null;
 }

@@ -1,5 +1,4 @@
 {
-  lib,
   fetchpatch,
   mkKdeDerivation,
   qt5compat,
@@ -50,6 +49,4 @@ mkKdeDerivation {
     openexr
     taglib
   ];
-
-  meta.license = null;
 }

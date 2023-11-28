@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtsvg,
   qtcharts,
@@ -10,6 +9,4 @@ mkKdeDerivation {
   pname = "kweather";
 
   extraBuildInputs = [qtsvg qtcharts qqc2-desktop-style kholidays];
-
-  meta.license = null;
 }

@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtdeclarative,
   qtsvg,
@@ -10,6 +9,4 @@ mkKdeDerivation {
   pname = "libkdegames";
 
   extraBuildInputs = [openal libsndfile qtdeclarative qtsvg];
-
-  meta.license = null;
 }

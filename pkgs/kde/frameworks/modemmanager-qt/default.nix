@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   pkg-config,
   modemmanager,
@@ -9,6 +8,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [pkg-config];
   extraPropagatedBuildInputs = [modemmanager];
-
-  meta.license = null;
 }

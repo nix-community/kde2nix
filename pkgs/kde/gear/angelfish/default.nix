@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   sources,
   qtsvg,
@@ -30,6 +29,4 @@ mkKdeDerivation rec {
   ];
 
   extraBuildInputs = [corrosion qtsvg qtwebengine qcoro];
-
-  meta.license = null;
 }

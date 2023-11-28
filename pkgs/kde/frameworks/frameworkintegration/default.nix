@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   pkg-config,
   packagekit-qt,
@@ -9,6 +8,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [packagekit-qt];
-
-  meta.license = null;
 }

@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtdeclarative,
   qttools,
@@ -10,8 +9,6 @@
 mkKdeDerivation {
   pname = "sonnet";
 
-  extraBuildInputs = [qtdeclarative aspell hunspell];
   extraNativeBuildInputs = [qttools pkg-config];
-
-  meta.license = null;
+  extraBuildInputs = [qtdeclarative aspell hunspell];
 }

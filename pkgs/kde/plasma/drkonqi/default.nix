@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   pkg-config,
   systemd,
@@ -45,6 +44,4 @@ in
       "-DWITH_GDB12=1"
       "-DWITH_PYTHON_VENDORING=0"
     ];
-
-    meta.license = null;
   }

@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   pkg-config,
   libwacom,
@@ -10,6 +9,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [libwacom xf86_input_wacom];
-
-  meta.license = null;
 }

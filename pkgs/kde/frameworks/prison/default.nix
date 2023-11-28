@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtdeclarative,
   qtmultimedia,
@@ -10,6 +9,4 @@ mkKdeDerivation {
   pname = "prison";
 
   extraBuildInputs = [qtdeclarative qtmultimedia qrencode libdmtx];
-
-  meta.license = null;
 }

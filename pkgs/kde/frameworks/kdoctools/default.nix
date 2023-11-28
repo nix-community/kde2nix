@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   docbook_xml_dtd_45,
   docbook-xsl-nons,
@@ -16,6 +15,4 @@ mkKdeDerivation {
   extraNativeBuildInputs = [perl perlPackages.URI];
   extraBuildInputs = [docbook_xml_dtd_45 docbook-xsl-nons];
   extraPropagatedBuildInputs = [perl perlPackages.URI];
-
-  meta.license = null;
 }

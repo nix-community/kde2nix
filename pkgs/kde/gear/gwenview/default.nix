@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtsvg,
   qtwayland,
@@ -28,6 +27,4 @@ mkKdeDerivation {
     wayland
     wayland-protocols
   ];
-
-  meta.license = null;
 }

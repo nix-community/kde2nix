@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qttools,
   qtsvg,
@@ -14,6 +13,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [qttools qtsvg pkg-config shared-mime-info];
   extraBuildInputs = [eigen gsl libqalculate];
-
-  meta.license = null;
 }

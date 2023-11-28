@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qt5compat,
   libarchive,
@@ -10,6 +9,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [shared-mime-info];
   extraBuildInputs = [qt5compat libarchive];
-
-  meta.license = null;
 }

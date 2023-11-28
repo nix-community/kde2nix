@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtsvg,
   qtwebengine,
@@ -10,6 +9,4 @@ mkKdeDerivation {
   pname = "kalgebra";
 
   extraBuildInputs = [qtsvg qtwebengine ncurses readline];
-
-  meta.license = null;
 }

@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   pkg-config,
   wrapGAppsHook,
@@ -22,6 +21,4 @@ mkKdeDerivation {
   dontWrapGApps = true; # There is nothing to wrap
 
   extraCmakeFlags = ["-DGLIB_SCHEMAS_DIR=${gsettings-desktop-schemas.out}/"];
-
-  meta.license = null;
 }

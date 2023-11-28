@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtwebview,
   pkg-config,
@@ -11,6 +10,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [qtwebview flatpak fwupd];
-
-  meta.license = null;
 }

@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   pkg-config,
   signond,
@@ -14,6 +13,4 @@ mkKdeDerivation {
   # This is useless without a wrapped signond.
   # FIXME: wrap signond with SSO_EXTENSIONS_DIR=$wrapper/lib/extensions
   extraCmakeFlags = ["-DINSTALL_BROKEN_SIGNON_EXTENSION=1"];
-
-  meta.license = null;
 }

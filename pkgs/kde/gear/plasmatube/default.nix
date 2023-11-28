@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtquick3d,
   qtsvg,
@@ -13,6 +12,4 @@ mkKdeDerivation {
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [qtquick3d qtsvg mpv];
   extraPropagatedBuildInputs = [purpose];
-
-  meta.license = null;
 }

@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtsvg,
   qttools,
@@ -15,6 +14,4 @@ mkKdeDerivation {
   # cross is very broken here
   extraNativeBuildInputs = [qtsvg qttools qtwebchannel qtwebengine qt5compat pkg-config];
   extraBuildInputs = [hunspell];
-
-  meta.license = null;
 }

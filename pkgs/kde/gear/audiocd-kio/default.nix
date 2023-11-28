@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   cdparanoia,
   flac,
@@ -11,6 +10,4 @@ mkKdeDerivation {
   pname = "audiocd-kio";
 
   extraBuildInputs = [cdparanoia flac libogg libvorbis];
-
-  meta.license = null;
 }

@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   shared-mime-info,
   qtnetworkauth,
@@ -13,6 +12,4 @@ mkKdeDerivation {
   extraNativeBuildInputs = [shared-mime-info];
   # FIXME: libkolabxml, libetebase
   extraBuildInputs = [qtnetworkauth qtspeech qtwebengine cyrus_sasl];
-
-  meta.license = null;
 }

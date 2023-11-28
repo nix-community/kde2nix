@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtspeech,
   qttools,
@@ -11,6 +10,4 @@ mkKdeDerivation {
     qtspeech
     qttools
   ];
-
-  meta.license = null;
 }

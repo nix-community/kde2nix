@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtwebchannel,
   qtwebengine,
@@ -15,6 +14,4 @@ mkKdeDerivation {
   patches = [./0001-qdiriterator-follow-symlinks.patch];
 
   extraBuildInputs = [qtwebchannel qtwebengine qttools libpcap libnl lm_sensors];
-
-  meta.license = null;
 }

@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtwayland,
   pkg-config,
@@ -10,6 +9,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [qtwayland wayland];
-
-  meta.license = null;
 }

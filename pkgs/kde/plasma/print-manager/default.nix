@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   cups,
 }:
@@ -8,6 +7,4 @@ mkKdeDerivation {
 
   # FIXME: cups-smb?
   extraBuildInputs = [cups];
-
-  meta.license = null;
 }

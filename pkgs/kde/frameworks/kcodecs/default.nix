@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qttools,
   gperf,
@@ -9,6 +8,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [qttools];
   extraBuildInputs = [gperf];
-
-  meta.license = null;
 }

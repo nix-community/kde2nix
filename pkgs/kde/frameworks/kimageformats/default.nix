@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   pkg-config,
   libheif,
@@ -14,6 +13,4 @@ mkKdeDerivation {
   extraCmakeFlags = ["-DKIMAGEFORMATS_HEIF=1"];
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [libheif libjxl libavif libraw openexr_3];
-
-  meta.license = null;
 }

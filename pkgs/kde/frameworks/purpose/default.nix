@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtdeclarative,
   kdeclarative,
@@ -10,6 +9,4 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtdeclarative];
   extraPropagatedBuildInputs = [kdeclarative prison];
-
-  meta.license = null;
 }

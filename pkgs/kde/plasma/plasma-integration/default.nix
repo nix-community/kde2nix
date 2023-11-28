@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtbase,
   qtwayland,
@@ -60,6 +59,4 @@ mkKdeDerivation {
     mkdir -p $out/${libsForQt5.qtbase.qtPluginPrefix}/platformthemes
     mv $out/${qtbase.qtPluginPrefix}/platformthemes/KDEPlasmaPlatformTheme5.so $out/${libsForQt5.qtbase.qtPluginPrefix}/platformthemes
   '';
-
-  meta.license = null;
 }

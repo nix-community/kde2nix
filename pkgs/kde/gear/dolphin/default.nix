@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   fetchpatch,
 }:
@@ -13,6 +12,4 @@ mkKdeDerivation {
       hash = "sha256-z8WHV9y2+vpeCma+e+d+r6ahToY++k/8i2VkciQLwrw=";
     })
   ];
-
-  meta.license = null;
 }

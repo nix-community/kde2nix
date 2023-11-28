@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   substituteAll,
   pkg-config,
@@ -16,6 +15,4 @@ mkKdeDerivation {
   ];
 
   extraNativeBuildInputs = [pkg-config];
-
-  meta.license = null;
 }

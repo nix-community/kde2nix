@@ -1,7 +1,7 @@
 {
+  lib,
   stdenv,
   fetchFromGitLab,
-  lib,
   cmake,
   extra-cmake-modules,
   qttools,

@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtbase,
   libsForQt5,
@@ -40,6 +39,4 @@ mkKdeDerivation {
     mkdir -p $out/${libsForQt5.qtbase.qtPluginPrefix}/styles
     mv $out/${qtbase.qtPluginPrefix}/styles/breeze5.so $out/${libsForQt5.qtbase.qtPluginPrefix}/styles
   '';
-
-  meta.license = null;
 }

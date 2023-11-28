@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   python3,
   libxml2,
@@ -14,6 +13,4 @@ mkKdeDerivation {
 
   # lots of icons, takes forever, does absolutely nothing
   dontStrip = true;
-
-  meta.license = null;
 }

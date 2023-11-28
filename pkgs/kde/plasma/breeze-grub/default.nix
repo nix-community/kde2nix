@@ -1,7 +1,4 @@
-{
-  lib,
-  mkKdeDerivation,
-}:
+{mkKdeDerivation}:
 mkKdeDerivation {
   pname = "breeze-grub";
 
@@ -17,6 +14,4 @@ mkKdeDerivation {
 
     runHook postInstall
   '';
-
-  meta.license = null;
 }

@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtsvg,
   shared-mime-info,
@@ -15,6 +14,4 @@ mkKdeDerivation {
     black-hole-solver
     freecell-solver
   ];
-
-  meta.license = null;
 }

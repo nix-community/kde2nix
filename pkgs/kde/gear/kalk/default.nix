@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtdeclarative,
   qqc2-desktop-style,
@@ -20,6 +19,4 @@ mkKdeDerivation {
     gmp
     mpfr
   ];
-
-  meta.license = null;
 }

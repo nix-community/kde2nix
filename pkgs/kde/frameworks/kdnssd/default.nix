@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qttools,
   avahi,
@@ -9,6 +8,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [qttools];
   extraBuildInputs = [avahi];
-
-  meta.license = null;
 }

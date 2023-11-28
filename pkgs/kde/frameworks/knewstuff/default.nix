@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtdeclarative,
   qttools,
@@ -14,6 +13,4 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtdeclarative qttools];
   extraPropagatedBuildInputs = [kcmutils];
-
-  meta.license = null;
 }

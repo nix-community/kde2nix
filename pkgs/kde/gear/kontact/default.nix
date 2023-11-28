@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtwebengine,
   akregator,
@@ -21,6 +20,4 @@ mkKdeDerivation {
     korganizer
     zanshin
   ];
-
-  meta.license = null;
 }

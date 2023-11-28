@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtsvg,
   qtdeclarative,
@@ -19,6 +18,4 @@ mkKdeDerivation {
     libphonenumber
     protobuf
   ];
-
-  meta.license = null;
 }

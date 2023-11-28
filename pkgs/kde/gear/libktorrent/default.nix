@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qt5compat,
   boost,
@@ -10,6 +9,4 @@ mkKdeDerivation {
   pname = "libktorrent";
 
   extraBuildInputs = [qt5compat boost gmp libgcrypt];
-
-  meta.license = null;
 }

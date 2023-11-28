@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   substituteAll,
   ghostscript,
@@ -15,6 +14,4 @@ mkKdeDerivation {
       src = ./gs-paths.patch;
     })
   ];
-
-  meta.license = null;
 }

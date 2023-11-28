@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   pkg-config,
   qtlocation,
@@ -12,6 +11,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [pkg-config shared-mime-info];
   extraBuildInputs = [qtlocation qtpositioning libical];
-
-  meta.license = null;
 }

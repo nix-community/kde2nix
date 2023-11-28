@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qttools,
   accounts-qt,
@@ -14,6 +13,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [qttools shared-mime-info];
   extraBuildInputs = [kaccounts-integration accounts-qt xz];
-
-  meta.license = null;
 }

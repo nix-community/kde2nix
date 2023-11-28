@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qt5compat,
   pkg-config,
@@ -10,6 +9,4 @@ mkKdeDerivation {
 
   extraBuildInputs = [qt5compat exiv2];
   extraNativeBuildInputs = [pkg-config];
-
-  meta.license = null;
 }

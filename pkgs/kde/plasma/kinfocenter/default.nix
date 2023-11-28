@@ -23,6 +23,4 @@ mkKdeDerivation {
   preFixup = ''
     ln -sf ${systemsettings}/bin/systemsettings $out/bin/kinfocenter
   '';
-
-  meta.license = null;
 }

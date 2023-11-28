@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtdeclarative,
   pkg-config,
@@ -11,6 +10,4 @@ mkKdeDerivation {
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [qtdeclarative];
   extraPropagatedBuildInputs = [networkmanager];
-
-  meta.license = null;
 }

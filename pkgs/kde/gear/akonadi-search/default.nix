@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   sources,
   corrosion,
@@ -31,6 +30,4 @@ mkKdeDerivation rec {
   ];
 
   extraBuildInputs = [corrosion xapian];
-
-  meta.license = null;
 }

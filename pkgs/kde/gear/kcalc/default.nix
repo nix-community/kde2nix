@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qt5compat,
   gmp,
@@ -9,6 +8,4 @@ mkKdeDerivation {
   pname = "kcalc";
 
   extraBuildInputs = [qt5compat gmp mpfr];
-
-  meta.license = null;
 }

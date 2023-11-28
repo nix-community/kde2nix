@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtsvg,
   shared-mime-info,
@@ -9,6 +8,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [shared-mime-info];
   extraBuildInputs = [qtsvg];
-
-  meta.license = null;
 }

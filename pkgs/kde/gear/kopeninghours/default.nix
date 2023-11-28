@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtdeclarative,
   bison,
@@ -19,6 +18,4 @@ mkKdeDerivation {
       python = python3;
     })
   ];
-
-  meta.license = null;
 }

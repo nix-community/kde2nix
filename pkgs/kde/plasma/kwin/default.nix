@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   pkg-config,
   qttools,
@@ -48,6 +47,4 @@ mkKdeDerivation {
 
     xorg.libxcvt
   ];
-
-  meta.license = null;
 }

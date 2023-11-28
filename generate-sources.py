@@ -13,14 +13,9 @@ import utils
 
 
 LEAF_TEMPLATE = jinja2.Template('''
-{
-  lib,
-  mkKdeDerivation,
-}:
+{mkKdeDerivation}:
 mkKdeDerivation {
   pname = "{{ pname }}";
-
-  meta.license = null;
 }
 '''.strip())
 

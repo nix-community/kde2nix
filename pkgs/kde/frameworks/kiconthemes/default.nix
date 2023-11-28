@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtdeclarative,
   qtsvg,
@@ -13,6 +12,4 @@ mkKdeDerivation {
     qtsvg
     qttools
   ];
-
-  meta.license = null;
 }

@@ -13,6 +13,4 @@ mkKdeDerivation {
   # FIXME: look into how to make it find libfacile
   extraNativeBuildInputs = [pkg-config ocaml];
   extraBuildInputs = [eigen openbabel qtsvg qtscxml];
-
-  meta.license = null;
 }

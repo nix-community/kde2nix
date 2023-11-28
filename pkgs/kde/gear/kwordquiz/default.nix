@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtsvg,
   qtmultimedia,
@@ -13,6 +12,4 @@ mkKdeDerivation {
     qtmultimedia
     qqc2-desktop-style
   ];
-
-  meta.license = null;
 }

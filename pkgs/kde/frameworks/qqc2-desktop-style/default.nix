@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qtdeclarative,
   sonnet,
@@ -9,6 +8,4 @@ mkKdeDerivation {
 
   extraBuildInputs = [qtdeclarative];
   extraPropagatedBuildInputs = [sonnet];
-
-  meta.license = null;
 }

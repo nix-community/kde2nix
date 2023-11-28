@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qthttpserver,
   qtsvg,
@@ -19,6 +18,4 @@ mkKdeDerivation {
     kitemmodels
     kquickcharts
   ];
-
-  meta.license = null;
 }

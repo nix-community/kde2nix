@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   substituteAll,
   qtsvg,
@@ -15,16 +14,6 @@
 mkKdeDerivation {
   pname = "kdenlive";
 
-  extraBuildInputs = [
-    qtsvg
-    qtmultimedia
-    qtnetworkauth
-
-    mlt
-    shared-mime-info
-    libv4l
-  ];
-
   patches = [
     (
       substituteAll {
@@ -35,9 +24,17 @@ mkKdeDerivation {
     )
   ];
 
+  extraBuildInputs = [
+    qtsvg
+    qtmultimedia
+    qtnetworkauth
+
+    mlt
+    shared-mime-info
+    libv4l
+  ];
+
   qtWrapperArgs = [
     "--set FREI0R_PATH ${frei0r}/lib/frei0r-1"
   ];
-
-  meta.license = null;
 }

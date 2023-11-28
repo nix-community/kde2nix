@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   pkg-config,
   attr,
@@ -19,6 +18,4 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [attr ebook_tools exiv2 ffmpeg kconfig kdegraphics-mobipocket libappimage];
-
-  meta.license = null;
 }

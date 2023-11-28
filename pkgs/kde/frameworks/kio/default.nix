@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qt5compat,
   qttools,
@@ -14,6 +13,4 @@ mkKdeDerivation {
   patches = [./0001-Remove-impure-smbd-search-path.patch];
 
   extraBuildInputs = [qt5compat qttools acl attr];
-
-  meta.license = null;
 }

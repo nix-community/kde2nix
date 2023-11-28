@@ -16,6 +16,4 @@ mkKdeDerivation {
       freerdp
     ]}"
   ];
-
-  meta.license = null;
 }

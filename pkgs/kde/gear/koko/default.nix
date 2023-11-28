@@ -1,5 +1,4 @@
 {
-  lib,
   fetchurl,
   fetchpatch,
   mkKdeDerivation,
@@ -53,6 +52,4 @@ in
       kquickimageeditor
       purpose
     ];
-
-    meta.license = null;
   }

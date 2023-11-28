@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   qttools,
 }:
@@ -11,6 +10,4 @@ mkKdeDerivation {
   patches = [./fix-paths.patch];
 
   extraNativeBuildInputs = [qttools];
-
-  meta.license = null;
 }

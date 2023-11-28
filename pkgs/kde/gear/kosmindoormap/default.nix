@@ -1,5 +1,4 @@
 {
-  lib,
   mkKdeDerivation,
   bison,
   flex,
@@ -9,6 +8,4 @@ mkKdeDerivation {
   pname = "kosmindoormap";
 
   extraNativeBuildInputs = [bison flex yacc];
-
-  meta.license = null;
 }
