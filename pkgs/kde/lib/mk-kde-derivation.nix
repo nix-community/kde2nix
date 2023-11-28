@@ -1,6 +1,7 @@
 self: {
   lib,
   stdenv,
+  makeSetupHook,
   fetchurl,
   cmake,
   qt6,
@@ -11,6 +12,8 @@ self: {
 
   alwaysNativeBuildInputs = ["extra-cmake-modules"];
   pluckDeps = builtins.map (dep: self.${dep});
+
+  moveDevHook = makeSetupHook {name = "kf6-move-dev-hook";} ./move-dev-hook.sh;
 in
   {
     pname,
@@ -30,10 +33,9 @@ in
     defaultArgs = {
       inherit version src;
 
-      # FIXME: move designer plugins to dev
       outputs = ["out" "dev"];
 
-      nativeBuildInputs = [cmake qt6.wrapQtAppsHook] ++ nativeDeps ++ extraNativeBuildInputs;
+      nativeBuildInputs = [cmake qt6.wrapQtAppsHook moveDevHook] ++ nativeDeps ++ extraNativeBuildInputs;
 
       # FIXME: remove ECM
       buildInputs = [qt6.qtbase] ++ nativeDeps ++ extraBuildInputs;
