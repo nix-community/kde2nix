@@ -10,9 +10,6 @@ self: {
   dependencies = (readJson ../generated/dependencies.json).dependencies;
   projectInfo = readJson ../generated/projects.json;
 
-  alwaysNativeBuildInputs = ["extra-cmake-modules"];
-  pluckDeps = builtins.map (dep: self.${dep});
-
   moveDevHook = makeSetupHook {name = "kf6-move-dev-hook";} ./move-dev-hook.sh;
 in
   {
@@ -26,22 +23,20 @@ in
     meta ? {},
     ...
   } @ args: let
-    splitDeps = builtins.partition (dep: builtins.elem dep alwaysNativeBuildInputs) (dependencies.${pname} or []);
-    nativeDeps = pluckDeps splitDeps.right;
-    hostDeps = pluckDeps splitDeps.wrong;
+    # FIXME(later): this is wrong for cross, some of these things really need to go into nativeBuildInputs,
+    # but cross is currently very broken anyway, so we can figure this out later.
+    deps = map (dep: self.${dep}) (dependencies.${pname} or []);
 
     defaultArgs = {
       inherit version src;
 
       outputs = ["out" "dev"];
 
-      nativeBuildInputs = [cmake qt6.wrapQtAppsHook moveDevHook] ++ nativeDeps ++ extraNativeBuildInputs;
-
-      # FIXME: remove ECM
-      buildInputs = [qt6.qtbase] ++ nativeDeps ++ extraBuildInputs;
+      nativeBuildInputs = [cmake qt6.wrapQtAppsHook moveDevHook] ++ extraNativeBuildInputs;
+      buildInputs = [qt6.qtbase] ++ extraBuildInputs;
 
       # FIXME: figure out what to propagate here
-      propagatedBuildInputs = hostDeps ++ extraPropagatedBuildInputs;
+      propagatedBuildInputs = deps ++ extraPropagatedBuildInputs;
       strictDeps = true;
 
       cmakeFlags = ["-DQT_MAJOR_VERSION=6"] ++ extraCmakeFlags;
