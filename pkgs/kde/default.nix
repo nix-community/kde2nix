@@ -57,6 +57,7 @@
       kdsoap-ws-discovery-client = self.callPackage ./misc/kdsoap-ws-discovery-client {};
       kirigami-addons = self.callPackage ./misc/kirigami-addons {};
       ktextaddons = self.callPackage ./misc/ktextaddons {};
+      krdp = self.callPackage ./misc/krdp {};
       kweathercore = self.callPackage ./misc/kweathercore {};
 
       mpvqt = self.callPackage ./misc/mpvqt {};
