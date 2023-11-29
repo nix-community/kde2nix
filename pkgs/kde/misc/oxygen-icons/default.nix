@@ -1,11 +1,9 @@
 {
-  stdenv,
+  lib,
+  mkKdeDerivation,
   fetchurl,
-  cmake,
-  extra-cmake-modules,
-  qtbase,
 }:
-stdenv.mkDerivation rec {
+mkKdeDerivation rec {
   pname = "oxygen-icons";
   version = "5.245.0";
 
@@ -14,13 +12,7 @@ stdenv.mkDerivation rec {
     hash = "sha256-sIKhqabQbN7uKGNVWVFgnpXdSZ8TMDXQRxmhb4UASX8=";
   };
 
-  nativeBuildInputs = [
-    cmake
-    extra-cmake-modules
-  ];
-
-  buildInputs = [qtbase];
-
-  dontWrapQtApps = true;
   dontStrip = true;
+
+  meta.license = [lib.licenses.lgpl3Plus];
 }

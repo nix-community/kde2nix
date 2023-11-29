@@ -1,13 +1,10 @@
 {
-  stdenv,
+  mkKdeDerivation,
   fetchFromGitLab,
-  cmake,
-  extra-cmake-modules,
   mpv,
-  qtbase,
   qtdeclarative,
 }:
-stdenv.mkDerivation {
+mkKdeDerivation {
   pname = "mpvqt";
   version = "unstable-2023-11-18";
 
@@ -19,10 +16,5 @@ stdenv.mkDerivation {
     hash = "sha256-ym70rqNugZ1ZLd72urJVfDugtsWrZU5Q/dJndsnNqQ0=";
   };
 
-  dontWrapQtApps = true;
-
-  cmakeFlags = ["-DQT_MAJOR_VERSION=6"];
-
-  nativeBuildInputs = [cmake extra-cmake-modules];
-  buildInputs = [mpv qtbase qtdeclarative];
+  extraBuildInputs = [mpv qtdeclarative];
 }

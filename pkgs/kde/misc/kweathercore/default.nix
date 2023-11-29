@@ -1,15 +1,10 @@
 {
   lib,
-  stdenv,
+  mkKdeDerivation,
   fetchFromGitLab,
-  cmake,
-  extra-cmake-modules,
-  qtbase,
   qtpositioning,
-  kholidays,
-  ki18n,
 }:
-stdenv.mkDerivation {
+mkKdeDerivation {
   pname = "kweathercore";
   version = "unstable-2023-11-20";
 
@@ -21,26 +16,7 @@ stdenv.mkDerivation {
     hash = "sha256-NIOfr+qM05emFcM43BTFOXeHlxmDmH7yOE8hakVdJ28=";
   };
 
-  nativeBuildInputs = [
-    cmake
-    extra-cmake-modules
-  ];
+  extraBuildInputs = [qtpositioning];
 
-  buildInputs = [
-    qtbase
-    qtpositioning
-    kholidays
-    ki18n
-  ];
-
-  cmakeFlags = ["-DQT_MAJOR_VERSION=6"];
-  dontWrapQtApps = true;
-
-  meta = with lib; {
-    description = "Library to facilitate retrieval of weather information including forecasts and alerts";
-    homepage = "https://invent.kde.org/libraries/kweathercore";
-    license = null;
-    mainProgram = "kweathercore";
-    platforms = platforms.all;
-  };
+  meta.license = with lib.licenses; [cc-by-40 cc0 lgpl2Plus];
 }
