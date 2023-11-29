@@ -67,6 +67,7 @@ def main(nixpkgs: pathlib.Path, set: str, version: str):
     }[set]
 
     sources = httpx.get(f"https://www-staging.kde.org/info/sources/source-{set_url}-{version}.html")
+    sources.raise_for_status()
     bs = bs4.BeautifulSoup(sources.text, features="html.parser")
 
     results = {}
