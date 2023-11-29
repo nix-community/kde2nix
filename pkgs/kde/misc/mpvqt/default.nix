@@ -1,4 +1,5 @@
 {
+  lib,
   mkKdeDerivation,
   fetchFromGitLab,
   mpv,
@@ -17,4 +18,6 @@ mkKdeDerivation {
   };
 
   extraBuildInputs = [mpv qtdeclarative];
+
+  meta.license = with lib.licenses; [bsd2 bsd3 cc-by-sa-40 cc0 lgpl21Only lgpl3Only lgpl3Plus mit];
 }
