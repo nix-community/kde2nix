@@ -1,19 +1,16 @@
 {
   lib,
   mkKdeDerivation,
-  fetchFromGitLab,
+  fetchurl,
   qtpositioning,
 }:
-mkKdeDerivation {
+mkKdeDerivation rec {
   pname = "kweathercore";
-  version = "unstable-2023-11-20";
+  version = "0.8.0";
 
-  src = fetchFromGitLab {
-    domain = "invent.kde.org";
-    owner = "libraries";
-    repo = "kweathercore";
-    rev = "d6408746c3cf7423e4e89ea4a8a9b82f550d789b";
-    hash = "sha256-NIOfr+qM05emFcM43BTFOXeHlxmDmH7yOE8hakVdJ28=";
+  src = fetchurl {
+    url = "mirror://kde/stable/${pname}/${version}/${pname}-${version}.tar.xz";
+    hash = "sha256-m8rBPa+YcF4vDVsGshoahpSWIHj84b9iDbvDZIc6Dv4=";
   };
 
   extraBuildInputs = [qtpositioning];
