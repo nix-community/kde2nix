@@ -3,6 +3,7 @@ import base64
 import binascii
 import json
 import pathlib
+from urllib.parse import urlparse
 
 import bs4
 import click
@@ -84,7 +85,7 @@ def main(nixpkgs: pathlib.Path, set: str, version: str):
 
         results[project_name] = {
             "version": version,
-            "url": link.attrs["href"],
+            "url": "mirror://kde" + urlparse(link.attrs["href"]).path,
             "hash": to_sri(hash.text)
         }
 
