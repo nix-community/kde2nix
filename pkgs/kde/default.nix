@@ -58,6 +58,7 @@
       kirigami-addons = self.callPackage ./misc/kirigami-addons {};
       ktextaddons = self.callPackage ./misc/ktextaddons {};
       krdp = self.callPackage ./misc/krdp {};
+      kunifiedpush = self.callPackage ./misc/kunifiedpush {};
       kweathercore = self.callPackage ./misc/kweathercore {};
 
       mpvqt = self.callPackage ./misc/mpvqt {};
