@@ -31,7 +31,7 @@ mkKdeDerivation {
     })
     (fetchpatch {
       url = "https://invent.kde.org/network/kdeconnect-kde/-/merge_requests/612.diff";
-      hash = "sha256-asNIIBf9rfU4PcMUMzw8HJjm6uVWdXuU0IocNMHXNAI=";
+      hash = "sha256-jdWeWkP4RjVBd8fHgfq0OixHzwyX6YhAgbq3h8eaLdE=";
     })
   ];
 

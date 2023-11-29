@@ -18,6 +18,4 @@ mkKdeDerivation {
     taglib
     libvlc
   ];
-  # FIXME(qt5)
-  meta.broken = true;
 }

@@ -1,4 +1,4 @@
 {mkKdeDerivation}:
 mkKdeDerivation {
-  pname = "kiten";
+  pname = "plasma-activities-stats";
 }

@@ -45,7 +45,6 @@ in {
     environment.systemPackages = with kdePackages; let
       requiredPackages = [
         frameworkintegration
-        kactivities
         kauth
         kcmutils
         kconfig
@@ -84,13 +83,14 @@ in {
         pkgs.plasma5Packages.kwayland-integration
         kwidgetsaddons
         kxmlgui
-        plasma-framework
         solid
         sonnet
         threadweaver
 
         breeze
+        plasma-activities
         kactivitymanagerd
+        libplasma
         kde-cli-tools
         kdecoration
         kdeplasma-addons

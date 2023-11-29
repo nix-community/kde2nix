@@ -112,7 +112,7 @@
   kimap = callPackage ./kimap {};
   kio-admin = callPackage ./kio-admin {};
   kio-extras = callPackage ./kio-extras {};
-  kio-extras-kf6 = callPackage ./kio-extras-kf6 {};
+  kio-extras-kf5 = callPackage ./kio-extras-kf5 {};
   kio-gdrive = callPackage ./kio-gdrive {};
   kio-zeroconf = callPackage ./kio-zeroconf {};
   kipi-plugins = callPackage ./kipi-plugins {};

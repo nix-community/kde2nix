@@ -1,10 +1,10 @@
 {
   mkKdeDerivation,
   qtsvg,
-  plasma-framework,
+  libplasma,
 }:
 mkKdeDerivation {
   pname = "merkuro";
 
-  extraBuildInputs = [qtsvg plasma-framework];
+  extraBuildInputs = [qtsvg libplasma];
 }

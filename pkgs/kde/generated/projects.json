@@ -3431,6 +3431,12 @@
     "project_path": "kde/workspace/plasma-welcome",
     "repo_path": "plasma/plasma-welcome"
   },
+  "plasma-activities-stats": {
+    "name": "plasma-activities-stats",
+    "description": "A library for accessing the usage data collected by the activities system.",
+    "project_path": "kde/workspace/plasma-activities-stats",
+    "repo_path": "plasma/plasma-activities-stats"
+  },
   "ksshaskpass": {
     "name": "ksshaskpass",
     "description": "ssh-add helper that uses KWallet and KPasswordDialog",
@@ -3491,12 +3497,6 @@
     "project_path": "kde/workspace/xdg-desktop-portal-kde",
     "repo_path": "plasma/xdg-desktop-portal-kde"
   },
-  "kactivities-stats": {
-    "name": "kactivities-stats",
-    "description": "A library for accessing the usage data collected by the activities system.",
-    "project_path": "kde/workspace/kactivities-stats",
-    "repo_path": "plasma/kactivities-stats"
-  },
   "kde-vdg-extras": {
     "name": "kde-vdg-extras",
     "description": "Colour schemes, avatars and other additional visual assets for KDE Software created by the KDE VDG",
@@ -3526,12 +3526,6 @@
     "description": "View information about your computer's hardware",
     "project_path": "kde/workspace/kinfocenter",
     "repo_path": "plasma/kinfocenter"
-  },
-  "plasma-framework": {
-    "name": "plasma-framework",
-    "description": "Plasma library and runtime components",
-    "project_path": "kde/workspace/plasma-framework",
-    "repo_path": "plasma/plasma-framework"
   },
   "ksysguard": {
     "name": "ksysguard",
@@ -3593,11 +3587,11 @@
     "project_path": "kde/workspace/plasma5support",
     "repo_path": "plasma/plasma5support"
   },
-  "kactivities": {
-    "name": "kactivities",
-    "description": "Core components for the KDE's Activities System",
-    "project_path": "kde/workspace/kactivities",
-    "repo_path": "plasma/kactivities"
+  "lightdm-greeter-kde": {
+    "name": "lightdm-greeter-kde",
+    "description": "Login screen using the LightDM framework.\n \n* \"LightDM project\":https://launchpad.net/lightdm\n* \"Bug Tracker\":https://bugs.kde.org/describecomponents.cgi?product=lightdm",
+    "project_path": "playground/base/lightdm-greeter-kde",
+    "repo_path": "plasma/lightdm-greeter-kde"
   },
   "kgamma": {
     "name": "kgamma",
@@ -3610,6 +3604,12 @@
     "description": "The Oxygen Style for Qt/KDE Applications",
     "project_path": "kde/workspace/oxygen",
     "repo_path": "plasma/oxygen"
+  },
+  "plasma-activities": {
+    "name": "plasma-activities",
+    "description": "Core components for the KDE's Activities System",
+    "project_path": "kde/workspace/plasma-activities",
+    "repo_path": "plasma/plasma-activities"
   },
   "milou": {
     "name": "milou",
@@ -3712,6 +3712,12 @@
     "description": "Qt Platform Theme integration plugins for Plasma Workspaces",
     "project_path": "kde/workspace/plasma-integration",
     "repo_path": "plasma/plasma-integration"
+  },
+  "libplasma": {
+    "name": "libplasma",
+    "description": "Plasma library and runtime components",
+    "project_path": "kde/workspace/libplasma",
+    "repo_path": "plasma/libplasma"
   },
   "plasma-systemmonitor": {
     "name": "plasma-systemmonitor",
@@ -6034,12 +6040,6 @@
     "description": "Android port of Qt Framework",
     "project_path": "unmaintained/necessitas/android-qt",
     "repo_path": "unmaintained/android-qt"
-  },
-  "lightdm": {
-    "name": "lightdm",
-    "description": "Login screen using the LightDM framework.\n \n* \"LightDM project\":https://launchpad.net/lightdm\n* \"Bug Tracker\":https://bugs.kde.org/describecomponents.cgi?product=lightdm",
-    "project_path": "playground/base/lightdm",
-    "repo_path": "unmaintained/lightdm"
   },
   "akonadi-facebook": {
     "name": "akonadi-facebook",

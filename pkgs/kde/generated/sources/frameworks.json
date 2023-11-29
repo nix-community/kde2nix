@@ -1,362 +1,362 @@
 {
   "attica": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/attica-5.245.0.tar.xz",
-    "hash": "sha256-fsibyRsGn+vwHsOFxBKk+DeyZOfRRhWAKi2EjpRiDC0="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/attica-5.246.0.tar.xz",
+    "hash": "sha256-y2l4wPkn+dEnU7zq3hTUVswdzDWZi2SnN4D4W0Gcrw4="
   },
   "baloo": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/baloo-5.245.0.tar.xz",
-    "hash": "sha256-gqt/GjQ0CMxEHeyPYkRGBosTcGYmdlZ6aZiE4+Ue7DI="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/baloo-5.246.0.tar.xz",
+    "hash": "sha256-FPABjFlZqd2PWntzdqlQeskk6/o/N0d/GU0/FwWdsys="
   },
   "bluez-qt": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/bluez-qt-5.245.0.tar.xz",
-    "hash": "sha256-fmXCYLSQhGPxCLGHKqZmbIDlKPYPgyAcjEaQEwIK8pk="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/bluez-qt-5.246.0.tar.xz",
+    "hash": "sha256-vOyIoXUKeX6BqrUOpIu4Tzuf4j6hkpQoUwPCpzHqFlU="
   },
   "breeze-icons": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/breeze-icons-5.245.0.tar.xz",
-    "hash": "sha256-JfU2YTu0kEnJVZkooWcUikWkuNfYzaA8m54x7TCuA4w="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/breeze-icons-5.246.0.tar.xz",
+    "hash": "sha256-TSX/8HtTY5GJNY9TWo8lASUz+WaFxhXLgOrJqwHs2DU="
   },
   "extra-cmake-modules": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/extra-cmake-modules-5.245.0.tar.xz",
-    "hash": "sha256-8YEz4eoKqEGq87/O2qeSz1JGcJCN8NvTUOqSsoAQ/j4="
+    "version": "5.246.1",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/extra-cmake-modules-5.246.1.tar.xz",
+    "hash": "sha256-kXtKnQxDGYSs3KlEItyP/A1WvZ6+5ZHagmM/w42f6lQ="
   },
   "frameworkintegration": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/frameworkintegration-5.245.0.tar.xz",
-    "hash": "sha256-ur1Km776CqjnmesflFLhTA1C9/j7eOrhAuFZyxW0QyA="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/frameworkintegration-5.246.0.tar.xz",
+    "hash": "sha256-To8Ebx9OmHpYyfX+U7KPI9WwvHSXChI+ojy8RIt0pIE="
   },
   "kapidox": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kapidox-5.245.0.tar.xz",
-    "hash": "sha256-zL4/nUO38S4Bw0zYqCPqW03gphmOanJ6u2hwLxWgXRQ="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kapidox-5.246.0.tar.xz",
+    "hash": "sha256-NFspdmMDyArc/GLsDQ/WHcqF71chln2zM+6xFHNolIw="
   },
   "karchive": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/karchive-5.245.0.tar.xz",
-    "hash": "sha256-cJf8DkUpW5uVh0p4hmYk5rLNz862TtdeCDnOhxW/lpc="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/karchive-5.246.0.tar.xz",
+    "hash": "sha256-BW83/mH9BGdiNPUSk3EQ+EAzJvYcXT7hDh1cxZTYtB4="
   },
   "kauth": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kauth-5.245.0.tar.xz",
-    "hash": "sha256-581hvSdzaKw7/Bc97FAG0oVNxBc8HuQkElgfrzKO+lA="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kauth-5.246.0.tar.xz",
+    "hash": "sha256-ypg0EXEkC5Ne5u6vyYMmkkp3DPOlhO9kQOFJ3npZRxI="
   },
   "kbookmarks": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kbookmarks-5.245.0.tar.xz",
-    "hash": "sha256-Uv29+4775xeZywHgixhpPUfXECqbA8Gsda6t3GNIkHw="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kbookmarks-5.246.0.tar.xz",
+    "hash": "sha256-OJo+cjfenSj8UhfuJRd/DIQOeZA96cjFep67Lk9CZzo="
   },
   "kcalendarcore": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kcalendarcore-5.245.0.tar.xz",
-    "hash": "sha256-DMQ30isxnCihzIWCPAFocMrzXAAPBlJCUS7kUok5VOI="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kcalendarcore-5.246.0.tar.xz",
+    "hash": "sha256-5Fo+SmF9+pe85kj27rxSemckb5WWqGzpbTgtNgg535Q="
   },
   "kcmutils": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kcmutils-5.245.0.tar.xz",
-    "hash": "sha256-P+5y/zjNolvbWq48yaW95rEGMCD+QQvtk+e/H3PomDQ="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kcmutils-5.246.0.tar.xz",
+    "hash": "sha256-pA3uCL3L7DYL79l3tfS44VAsg9llfFa2ZJLLmXVUPNA="
   },
   "kcodecs": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kcodecs-5.245.0.tar.xz",
-    "hash": "sha256-kEGpNJrGcNAcissmIDuWabPGUbVlpzEUoApbBjnPTrA="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kcodecs-5.246.0.tar.xz",
+    "hash": "sha256-plZ43eBfIEkLhoxM3SkwjOvOJtL+K6mhuYAO5mWJfWw="
   },
   "kcolorscheme": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kcolorscheme-5.245.0.tar.xz",
-    "hash": "sha256-+YfgJzXa8yVSE6Fx7OAjvKG8pJI5QMqewhcdSD1I5B0="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kcolorscheme-5.246.0.tar.xz",
+    "hash": "sha256-TTtiytCOKzkNfyJYM91m74FyWCZGeNOKaOZgIEvUzXg="
   },
   "kcompletion": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kcompletion-5.245.0.tar.xz",
-    "hash": "sha256-jXN5oZIRT065n8P3YT0HaGFz3EREl1P2r3SmzDYSZqo="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kcompletion-5.246.0.tar.xz",
+    "hash": "sha256-IEO++nppYhGzK/wyuuy/QBCivntLFYIghDMo6ldjzc4="
   },
   "kconfig": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kconfig-5.245.0.tar.xz",
-    "hash": "sha256-5u2UZwO8iNyAxhQQ0gtzHkB8aRTmL+y1S97rr4yhFI4="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kconfig-5.246.0.tar.xz",
+    "hash": "sha256-6GNIRYAFqTLwxh9/P8VAB2W4sVD+TPjYPsFXqWy9AHY="
   },
   "kconfigwidgets": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kconfigwidgets-5.245.0.tar.xz",
-    "hash": "sha256-DrGruhXbZY0nc90E5rrp1qXWnvnNC1AOBOSvYB78vI4="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kconfigwidgets-5.246.0.tar.xz",
+    "hash": "sha256-yGFPIRchLTlsYtIrcKp2KPUYMcFN29gPTfoy5xwhJPU="
   },
   "kcontacts": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kcontacts-5.245.0.tar.xz",
-    "hash": "sha256-5lZJuD+5nOXtFhB9Jo4OE4ugRxWFq0qEzzzm+VWprTg="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kcontacts-5.246.0.tar.xz",
+    "hash": "sha256-qj2UDJxClBmJVDq+ViMFmxNGypyw9Gs4fi+cqh2DkR4="
   },
   "kcoreaddons": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kcoreaddons-5.245.0.tar.xz",
-    "hash": "sha256-E95lhTUw4g2VqQUzhvGsDCcHE8Y8XkJ3iHzytRPsmrI="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kcoreaddons-5.246.0.tar.xz",
+    "hash": "sha256-TBq5vV71nnsmOplXWx80BekajUqHFP5sa3zKZCc5Rd8="
   },
   "kcrash": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kcrash-5.245.0.tar.xz",
-    "hash": "sha256-bdVKkQqE3K9SdyqanyLWHVJ7/J/j9gZ4zBOlrmxmJ4s="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kcrash-5.246.0.tar.xz",
+    "hash": "sha256-NknMQ7lPxSrpenFbRFunDWxC+YObL/msBa75RGeMJ+U="
   },
   "kdav": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kdav-5.245.0.tar.xz",
-    "hash": "sha256-xioCOaGEkv8lYwng8x5GF2lCuFyqcGFbzMnLS3qbc+g="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kdav-5.246.0.tar.xz",
+    "hash": "sha256-x25fkye5raDBc4jKm7GMgTBON9OYCiYl7V5Qc03wMAc="
   },
   "kdbusaddons": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kdbusaddons-5.245.0.tar.xz",
-    "hash": "sha256-/d7d7m4Gi73z/sN6Pp5UEQi0bvgtGua5JCoZw7qdNoM="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kdbusaddons-5.246.0.tar.xz",
+    "hash": "sha256-aNZ0O61kG9HqDsgVrcT4kT319V6V54rvOc3ZZkDrvWE="
   },
   "kdeclarative": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kdeclarative-5.245.0.tar.xz",
-    "hash": "sha256-DDcd/0rC9Mlb3e9Hd8sIIBsG6yeDSlZyaZOjeOA1DaY="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kdeclarative-5.246.0.tar.xz",
+    "hash": "sha256-DrFqmIzqW5WiGo0yj16aKTsBEyo9Fqqz2nv+oFc7Jzc="
   },
   "kded": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kded-5.245.0.tar.xz",
-    "hash": "sha256-okT5xa5+zqND7ISc1tkS7A/CagW73mAcjlJoBxMllvU="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kded-5.246.0.tar.xz",
+    "hash": "sha256-FbrXReGB2nKurQPRj96a7noodAajWpt7XZ1CNou6llc="
   },
   "kdesu": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kdesu-5.245.0.tar.xz",
-    "hash": "sha256-Z3dZuNJTpHc71dyI3BTIMjun3EPwv0UAjABOn3jUvdI="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kdesu-5.246.0.tar.xz",
+    "hash": "sha256-eyteEAjdWwyCe3LrOkc4PttevZY6vcJIATDMYqKZSyo="
   },
   "kdnssd": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kdnssd-5.245.0.tar.xz",
-    "hash": "sha256-YWYyrgdu9vFuqn6djzQA8BgLcObX5InsBLKtwnHYDks="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kdnssd-5.246.0.tar.xz",
+    "hash": "sha256-B4mtvaA4iKO6eW+gqmb6xtCNn0KQyTG6pdW45EScgHY="
   },
   "kdoctools": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kdoctools-5.245.0.tar.xz",
-    "hash": "sha256-BCCEdBv3nVJ/Ctkq/pYp5ZXEdqkP6F6UaIgZKz+Jr/I="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kdoctools-5.246.0.tar.xz",
+    "hash": "sha256-F5tDQpAH2iOdNez7iA9wMMdVEkc3usRdBz56VQB2Qak="
   },
   "kfilemetadata": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kfilemetadata-5.245.0.tar.xz",
-    "hash": "sha256-EpC4NsiCMUiLMZln04TDyAfHfegW73JlqOSI53cjF5Y="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kfilemetadata-5.246.0.tar.xz",
+    "hash": "sha256-zYTSBF9wAJvDC6FdyDIFQa/1J/rgaWkGcqbYxpvHeu4="
   },
   "kglobalaccel": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kglobalaccel-5.245.0.tar.xz",
-    "hash": "sha256-JFtP4OuGLf+BxmL0bjGEAf1EH94R3mLPLh4PE1gD/SY="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kglobalaccel-5.246.0.tar.xz",
+    "hash": "sha256-CTdMJQR3uxihRpEmrbMXAd7e2eJl+BP3tIPd8Y/jFY4="
   },
   "kguiaddons": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kguiaddons-5.245.0.tar.xz",
-    "hash": "sha256-Vn5NP0PhA4h950hCDWen/msnKf9CrxQq6EfSwrTJxSc="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kguiaddons-5.246.0.tar.xz",
+    "hash": "sha256-dWy6ri7oN49eYHmnV40HUSSsV8XpA6u6EKlu/eOx+qc="
   },
   "kholidays": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kholidays-5.245.0.tar.xz",
-    "hash": "sha256-pzelJxfp4FFDWP3TOEEXxRy0FT+5kTXSjrak+9obEtU="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kholidays-5.246.0.tar.xz",
+    "hash": "sha256-NKLbtayKmJH4pRLbb4/ZPVGgsGtdLyQNPa2tInAGE1k="
   },
   "ki18n": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/ki18n-5.245.0.tar.xz",
-    "hash": "sha256-rJRjMIK8D1tTUOw/ZAWkiG7dFHsjIs5B7bShdEv0OyA="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/ki18n-5.246.0.tar.xz",
+    "hash": "sha256-RSfOmLHRWdVn4OaFijsrjVWbiSZ+lE84tIbDl11wnW4="
   },
   "kiconthemes": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kiconthemes-5.245.0.tar.xz",
-    "hash": "sha256-+8sTmWaN3is1j3ITz1NdqCXjfbdPwC9x8EeTq4dcrOY="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kiconthemes-5.246.0.tar.xz",
+    "hash": "sha256-CRlyY9hOXJrEFNHBJa0yfarT749+3SxkZ96Cy5Ftr0I="
   },
   "kidletime": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kidletime-5.245.0.tar.xz",
-    "hash": "sha256-UlkHJy5CAW0rviKbarB/3OiYZrFz5YWyYAb8G2os7b8="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kidletime-5.246.0.tar.xz",
+    "hash": "sha256-2Bdycm4iEVfCvYTm05iQ2pbkNAHpHPXRzH5RstbP5Rw="
   },
   "kimageformats": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kimageformats-5.245.0.tar.xz",
-    "hash": "sha256-gsAcU2zR7st5KOFNAiSXtDZ9rxRRsHDPKWB3aZv1TfQ="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kimageformats-5.246.0.tar.xz",
+    "hash": "sha256-DB7zRdPoYXaG5QRx4rPRl9WQmisYuJ7O4SvDa2IokBY="
   },
   "kio": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kio-5.245.0.tar.xz",
-    "hash": "sha256-W+CR1UHLkwiloQQBLezLHH9V5EefX7QsWSUJtoIkzv4="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kio-5.246.0.tar.xz",
+    "hash": "sha256-njd7st3e8IciBCQoVJnmHzsXZttYdpbZR54GndHj2O4="
   },
   "kirigami": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kirigami-5.245.0.tar.xz",
-    "hash": "sha256-fz0XU0e/UOkEgh2RDhYKEtLU5XfIS4qvGT/cKEw8g/w="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kirigami-5.246.0.tar.xz",
+    "hash": "sha256-3z8h7Ro8jSWi58pQ2QB2AD2hfiAFNKcIWXl77jx2Ag4="
   },
   "kitemmodels": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kitemmodels-5.245.0.tar.xz",
-    "hash": "sha256-DbdJHShNaH/TYAadguw7xxnhypuxaM+Jud5iNbGmgAk="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kitemmodels-5.246.0.tar.xz",
+    "hash": "sha256-d3b+wM9TBh1RHYzeMKQjVTarHLntzAUHTg6BnsgXZLw="
   },
   "kitemviews": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kitemviews-5.245.0.tar.xz",
-    "hash": "sha256-CnuYlREnd+Isu00UgLMmfIay+lWhWc/F5o9Pl2j7Sp0="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kitemviews-5.246.0.tar.xz",
+    "hash": "sha256-APt6aVyKCbtCjMcYY4vBp+0jv4U1JEOjDVBnqajvtP8="
   },
   "kjobwidgets": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kjobwidgets-5.245.0.tar.xz",
-    "hash": "sha256-UBtwWJp4DCJNKCTOKwCMo9iQjf4LTnNuZo0fKb+9qqI="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kjobwidgets-5.246.0.tar.xz",
+    "hash": "sha256-1jvjNBq643AElNOHCkmRGbksobgbbKtx59SJ3XGK4vs="
   },
   "knewstuff": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/knewstuff-5.245.0.tar.xz",
-    "hash": "sha256-vIQc7dgkn23Frvh8MDWiecdw3y2iqF92Mb0ZfHr4fp0="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/knewstuff-5.246.0.tar.xz",
+    "hash": "sha256-A2syN6OCs3veoRApSKD9htt2JjtYEm3mb5UYncBzQ20="
   },
   "knotifications": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/knotifications-5.245.0.tar.xz",
-    "hash": "sha256-mV13w29EMHnV3mXy/xpz4Og9pVTwEfgVqZreL2f6T3Q="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/knotifications-5.246.0.tar.xz",
+    "hash": "sha256-27/yN3LnrMVl8GU7rzrt7zHYw9/9/AfInnzwRtHxvzY="
   },
   "knotifyconfig": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/knotifyconfig-5.245.0.tar.xz",
-    "hash": "sha256-oey3ciMqeaG0NWuT3OTw10NEVagoViIewZS8k003USM="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/knotifyconfig-5.246.0.tar.xz",
+    "hash": "sha256-ys0jpfMQnauQ0ew3PtO+ccyzAhhcKszZLEbc1FRvavc="
   },
   "kpackage": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kpackage-5.245.0.tar.xz",
-    "hash": "sha256-8XmhqooSxpnRjcXOKqi97dhqQpsQtOzJJZNwvtc8snM="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kpackage-5.246.0.tar.xz",
+    "hash": "sha256-kOTjYEJ3OPA9+etX3y8IX1qeNx6EV9OYHOv6Zn6r25E="
   },
   "kparts": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kparts-5.245.0.tar.xz",
-    "hash": "sha256-sHpCYCzpHtZeMHQ/Rc86A2pbHeYDIdy/vpN7L2XC/Dk="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kparts-5.246.0.tar.xz",
+    "hash": "sha256-DUG954Z+s3Vm/4KQZdaYf9AufBKv1iIopkhJjDp4Gpk="
   },
   "kpeople": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kpeople-5.245.0.tar.xz",
-    "hash": "sha256-TubJ9FFrcJLFH73aLmJ6LpyIcmuOYeyCXuGnjNijdXs="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kpeople-5.246.0.tar.xz",
+    "hash": "sha256-OPH5GBEDaQk+6Mcu/31RKTHUeclZXc4gv6cJap5tljo="
   },
   "kplotting": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kplotting-5.245.0.tar.xz",
-    "hash": "sha256-c7qcZU8eLC0idAvuz4yJ8WcYuOE5rGsUkXqXKiMLq3c="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kplotting-5.246.0.tar.xz",
+    "hash": "sha256-5GIXaR5ERUEzLamNdq7hIKW/Wj/DXmDfIyvJZFHqibM="
   },
   "kpty": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kpty-5.245.0.tar.xz",
-    "hash": "sha256-ST+Q/2a+a87iVBZ1PyF+6B1tkXPbrfA9PR7dRBD5qVg="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kpty-5.246.0.tar.xz",
+    "hash": "sha256-PDORuov0r17cUDD0hv0ykhJuHrCYCIAvHUPp4HGGSSY="
   },
   "kquickcharts": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kquickcharts-5.245.0.tar.xz",
-    "hash": "sha256-tMd8QcUxnBBHWfurTa8KhfY6mu99xUi4hdnHTsPaJw0="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kquickcharts-5.246.0.tar.xz",
+    "hash": "sha256-jDPApfKSBsdK+zt/1Yvt/C5X7peOdvJO8+NCqnSl0h0="
   },
   "krunner": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/krunner-5.245.0.tar.xz",
-    "hash": "sha256-UYfDC57kVLp22tInytae/4/e/eTVNzA1AFFSUDHxUj8="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/krunner-5.246.0.tar.xz",
+    "hash": "sha256-kS8a+cJXc1cJP3s8AsSPUraUqyCfx3q18gCgKUMJimw="
   },
   "kservice": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kservice-5.245.0.tar.xz",
-    "hash": "sha256-40GEQzRWAANOcmy6jYbtwoAWIOhcKKPRm2HvRYFenUc="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kservice-5.246.0.tar.xz",
+    "hash": "sha256-KuAbjWoLqiUExfdpfFkoBWCojir39ejSf+QGX4UxxWA="
   },
   "kstatusnotifieritem": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kstatusnotifieritem-5.245.0.tar.xz",
-    "hash": "sha256-RGBd2AsG2W+T1JKvE+oM1sWdZ8DbJztkCqRbO1LCliw="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kstatusnotifieritem-5.246.0.tar.xz",
+    "hash": "sha256-FK3BkZEupuc7M9EzIzg9Qc2YzG610ZBdmCuXm4F4Dyk="
   },
   "ksvg": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/ksvg-5.245.0.tar.xz",
-    "hash": "sha256-/F/QQgY4r9/jflzC5LKUK4LP1oCJkLEuYFaROtOd45E="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/ksvg-5.246.0.tar.xz",
+    "hash": "sha256-t4EGAWD26/JXJQRAU8pgGSpTA0OPGRAJOaicA8E2auw="
   },
   "ktexteditor": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/ktexteditor-5.245.0.tar.xz",
-    "hash": "sha256-VBoGyKWECaeTWRhUMaOrqyYbv6kICrEWLBB7Nu2qzhg="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/ktexteditor-5.246.0.tar.xz",
+    "hash": "sha256-+0sXW9WDVwm/fnpW7qCuXXifQV9anH/hRrSxBQcsYaY="
   },
   "ktexttemplate": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/ktexttemplate-5.245.0.tar.xz",
-    "hash": "sha256-vkgvTMS0cWgdv+7tO9pQgPhXBbNmPriYnD7hvvCApcQ="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/ktexttemplate-5.246.0.tar.xz",
+    "hash": "sha256-STuI09SKihujzzNwUyVyV/+POO2//Zs2MH6dXRqZFZo="
   },
   "ktextwidgets": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/ktextwidgets-5.245.0.tar.xz",
-    "hash": "sha256-NedjIs+iYopw9uT/Tr56W22Iwc+hht6rIOMK47iC1c8="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/ktextwidgets-5.246.0.tar.xz",
+    "hash": "sha256-BQFRvPdkHpDKzr7yv2cbSVAU2h0r1tP39EZiTLiOnNM="
   },
   "kunitconversion": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kunitconversion-5.245.0.tar.xz",
-    "hash": "sha256-F7j0BvMmC8Q5+vl1CB4F8n8w+S0vt0xn8gMC5D9e6c0="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kunitconversion-5.246.0.tar.xz",
+    "hash": "sha256-RzVd4FKq0TFIZ2zEuxvnHG0JE0L7f4XVoPczYQ8I1E0="
   },
   "kuserfeedback": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kuserfeedback-5.245.0.tar.xz",
-    "hash": "sha256-jmcRgL1tNyvjv51+JUTLA7GilM9acQqtzzgqUi7QNxA="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kuserfeedback-5.246.0.tar.xz",
+    "hash": "sha256-oiLyssrbs6s/jb7jOZtAfIa0WipboB96oRA7/tN+Wuc="
   },
   "kwallet": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kwallet-5.245.0.tar.xz",
-    "hash": "sha256-UuuIei/tWd2aHoKMMa54Ua5uMN8FDnAnvK4bxAjEscI="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kwallet-5.246.0.tar.xz",
+    "hash": "sha256-1UrEsaSm5MBWs9f7tzPYc/UYYNOL0pbvzXOGDJuT/IA="
   },
   "kwidgetsaddons": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kwidgetsaddons-5.245.0.tar.xz",
-    "hash": "sha256-DPcbo8p8FrLIHnll1VbRBmCnzcSSXXkDQpUnmo7lpuU="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kwidgetsaddons-5.246.0.tar.xz",
+    "hash": "sha256-sefcDv+b0we4vM6gpq1l50oRE51LDaT3F71v/YTDdvI="
   },
   "kwindowsystem": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kwindowsystem-5.245.0.tar.xz",
-    "hash": "sha256-i5tYpOckPAJ5f8z82QIJ7v8b0C6CvvLzT1w7PMUZbbk="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kwindowsystem-5.246.0.tar.xz",
+    "hash": "sha256-81NDE2adrM7mKGFEZ+jvM/lDYBbbfi1YGPW/oHHytSo="
   },
   "kxmlgui": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/kxmlgui-5.245.0.tar.xz",
-    "hash": "sha256-ZIh58SNsUsrb6CzU6/+4+To25D4C4yuP+mSuLva1Qd8="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/kxmlgui-5.246.0.tar.xz",
+    "hash": "sha256-3MqtyU1rO0xfE/uU7lQG05PZPlD/RBzfnNcVrPBSrbU="
   },
   "modemmanager-qt": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/modemmanager-qt-5.245.0.tar.xz",
-    "hash": "sha256-0gCMz8jtFLDK9HL6uHk8tyME2/5z/UdVTUta20pMISw="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/modemmanager-qt-5.246.0.tar.xz",
+    "hash": "sha256-jvXoQ1bk0IeaJPCRSmPLq8FtkjLmOPGR86KHzxlTzyc="
   },
   "networkmanager-qt": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/networkmanager-qt-5.245.0.tar.xz",
-    "hash": "sha256-WLd08KKV2Hpag9KPknD81XysWJYvNitbaTrRgMumQ3k="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/networkmanager-qt-5.246.0.tar.xz",
+    "hash": "sha256-cGesnZFsTtvp9DSUxJBDnfkyh/n2vvNg9/ZIjVNQU5E="
   },
   "prison": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/prison-5.245.0.tar.xz",
-    "hash": "sha256-TcgEkgdM1E/tv2n8LHz0DS4R9U4VkYRLkx9dgDIat5M="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/prison-5.246.0.tar.xz",
+    "hash": "sha256-Q0zfkxRGs78IAurqzYpufCCgVP9yQ+z7Dt/44yMj4+k="
   },
   "purpose": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/purpose-5.245.0.tar.xz",
-    "hash": "sha256-k8MqxL16NWNiOX6PmwYv+9SceAPI2UresDInGq0pQH4="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/purpose-5.246.0.tar.xz",
+    "hash": "sha256-eURVUl86drl4r0IB4EN/L/jggcvBe7l6O5u2+ZSrppg="
   },
   "qqc2-desktop-style": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/qqc2-desktop-style-5.245.0.tar.xz",
-    "hash": "sha256-OdlT/D5dExfzDYfuPU0U8YRpOtKro95sndnUcjyZFQE="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/qqc2-desktop-style-5.246.0.tar.xz",
+    "hash": "sha256-93yGutSWNUbvgtS7q0qzfdbY8Rm6hed+U7UbwotV58o="
   },
   "solid": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/solid-5.245.0.tar.xz",
-    "hash": "sha256-Sz91LNu+BmEO2XWdVRNnl3lS/rk5MOblBTFIO1IrS68="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/solid-5.246.0.tar.xz",
+    "hash": "sha256-1N022Od37RQteGOOb2KtKPaBvTiY3RCg+kG1DWfpFws="
   },
   "sonnet": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/sonnet-5.245.0.tar.xz",
-    "hash": "sha256-T89Bnu1GGfs8aWnjQa3w3iTQYz5kYx5t/DzZtFhxCGo="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/sonnet-5.246.0.tar.xz",
+    "hash": "sha256-tBJc1nu9sVh/4817KDhcHUxxrok7jKq4GavapSON48g="
   },
   "syndication": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/syndication-5.245.0.tar.xz",
-    "hash": "sha256-ScAUZh2bfJhzX6MLIYlfRpZM6eNAZjLJ09tDu//+D6I="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/syndication-5.246.0.tar.xz",
+    "hash": "sha256-//z4HuCMXivVDdBvK5v+rzZ8IAQJb/KnhIAtBdb27n0="
   },
   "syntax-highlighting": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/syntax-highlighting-5.245.0.tar.xz",
-    "hash": "sha256-NoXhlpfNv8iXlx6/WIqn7xNoVTSE5xt4GzcO0kI1MRE="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/syntax-highlighting-5.246.0.tar.xz",
+    "hash": "sha256-NVD2Jrg9YNMfK6sd9ZB3euyKLhrbJCg0QpOSejwXOSA="
   },
   "threadweaver": {
-    "version": "5.245.0",
-    "url": "http://download.kde.org/unstable/frameworks/5.245.0/threadweaver-5.245.0.tar.xz",
-    "hash": "sha256-ep8RKjxnk1INXXRluqqvr5lkhJnx3B/liHCrj47uTW4="
+    "version": "5.246.0",
+    "url": "mirror://kde/unstable/frameworks/5.246.0/threadweaver-5.246.0.tar.xz",
+    "hash": "sha256-p5/3PThkSrpIGFg0Bh9m5d6Nx8/kqDmb2HrqYbPuNDA="
   }
 }

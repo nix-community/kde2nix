@@ -4,6 +4,7 @@
   qttools,
   qtsensors,
   qtvirtualkeyboard,
+  qtwayland,
   libinput,
   xorg,
   libdisplay-info,
@@ -35,6 +36,7 @@ mkKdeDerivation {
     qttools
     qtsensors
     qtvirtualkeyboard
+    qtwayland
 
     krunner
 

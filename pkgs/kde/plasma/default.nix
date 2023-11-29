@@ -7,8 +7,6 @@
   discover = callPackage ./discover {};
   drkonqi = callPackage ./drkonqi {};
   flatpak-kcm = callPackage ./flatpak-kcm {};
-  kactivities = callPackage ./kactivities {};
-  kactivities-stats = callPackage ./kactivities-stats {};
   kactivitymanagerd = callPackage ./kactivitymanagerd {};
   kde-cli-tools = callPackage ./kde-cli-tools {};
   kdecoration = callPackage ./kdecoration {};
@@ -31,16 +29,20 @@
   layer-shell-qt = callPackage ./layer-shell-qt {};
   libkscreen = callPackage ./libkscreen {};
   libksysguard = callPackage ./libksysguard {};
+  libplasma = callPackage ./libplasma {};
+  # FIXME: missing tarball
+  # lightdm-greeter-kde = callPackage ./lightdm-greeter-kde {};
   milou = callPackage ./milou {};
   ocean-sound-theme = callPackage ./ocean-sound-theme {};
   oxygen = callPackage ./oxygen {};
   oxygen-sounds = callPackage ./oxygen-sounds {};
   plasma5support = callPackage ./plasma5support {};
+  plasma-activities = callPackage ./plasma-activities {};
+  plasma-activities-stats = callPackage ./plasma-activities-stats {};
   plasma-browser-integration = callPackage ./plasma-browser-integration {};
   plasma-desktop = callPackage ./plasma-desktop {};
   plasma-disks = callPackage ./plasma-disks {};
   plasma-firewall = callPackage ./plasma-firewall {};
-  plasma-framework = callPackage ./plasma-framework {};
   plasma-integration = callPackage ./plasma-integration {};
   plasma-mobile = callPackage ./plasma-mobile {};
   plasma-nano = callPackage ./plasma-nano {};

@@ -6,7 +6,7 @@
   pkg-config,
 }:
 mkKdeDerivation {
-  pname = "plasma-framework";
+  pname = "libplasma";
 
   extraNativeBuildInputs = [pkg-config];
   extraBuildInputs = [qtsvg qtwayland wayland];

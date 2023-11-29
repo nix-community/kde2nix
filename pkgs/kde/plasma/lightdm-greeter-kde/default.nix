@@ -1,4 +1,4 @@
 {mkKdeDerivation}:
 mkKdeDerivation {
-  pname = "kactivities-stats";
+  pname = "lightdm-greeter-kde";
 }

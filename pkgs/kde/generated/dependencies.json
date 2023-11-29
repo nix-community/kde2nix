@@ -1,5 +1,5 @@
 {
-  "version": "f1b2a48b",
+  "version": "12df35e4",
   "dependencies": {
     "phonon-gstreamer": [
       "phonon"
@@ -10,6 +10,16 @@
     ],
     "gpgme": [
       "libgpg-error"
+    ],
+    "accessibility-inspector": [
+      "extra-cmake-modules",
+      "kconfigwidgets",
+      "kcoreaddons",
+      "kcrash",
+      "kdbusaddons",
+      "ki18n",
+      "kxmlgui",
+      "libqaccessibilityclient"
     ],
     "kmag": [
       "extra-cmake-modules",
@@ -107,20 +117,24 @@
       "kio",
       "kwidgetsaddons",
       "kxmlgui",
-      "plasma-framework"
+      "libplasma"
     ],
     "kalzium": [
       "extra-cmake-modules",
       "karchive",
       "kconfig",
+      "kconfigwidgets",
       "kcoreaddons",
       "kdoctools",
       "ki18n",
+      "kio",
+      "kitemviews",
       "knewstuff",
-      "kparts",
       "kplotting",
+      "ktextwidgets",
       "kunitconversion",
-      "kwidgetsaddons"
+      "kwidgetsaddons",
+      "kxmlgui"
     ],
     "kanagram": [
       "extra-cmake-modules",
@@ -212,7 +226,6 @@
       "kdoctools",
       "ki18n",
       "kio",
-      "knotifications",
       "kxmlgui"
     ],
     "klettres": [
@@ -1150,7 +1163,7 @@
       "kwidgetsaddons",
       "kxmlgui",
       "libkdegames",
-      "plasma-framework"
+      "libplasma"
     ],
     "kolf": [
       "extra-cmake-modules",
@@ -1327,7 +1340,6 @@
       "kcrash",
       "kdoctools",
       "ki18n",
-      "kio",
       "kwidgetsaddons",
       "kxmlgui",
       "libkdegames"
@@ -1389,8 +1401,19 @@
       "kdbusaddons",
       "kdoctools",
       "ki18n",
-      "kio",
       "knewstuff",
+      "kwidgetsaddons",
+      "kxmlgui",
+      "libkdegames"
+    ],
+    "skladnik": [
+      "extra-cmake-modules",
+      "kconfig",
+      "kconfigwidgets",
+      "kcoreaddons",
+      "kdoctools",
+      "ki18n",
+      "kio",
       "kwidgetsaddons",
       "kxmlgui",
       "libkdegames"
@@ -1439,7 +1462,6 @@
     ],
     "gwenview": [
       "extra-cmake-modules",
-      "kactivities",
       "kconfig",
       "kcoreaddons",
       "kdbusaddons",
@@ -1458,6 +1480,7 @@
       "kxmlgui",
       "libkdcraw",
       "phonon",
+      "plasma-activities",
       "purpose",
       "wayland",
       "wayland-protocols"
@@ -1644,7 +1667,6 @@
     ],
     "okular": [
       "breeze-icons",
-      "kactivities",
       "karchive",
       "kbookmarks",
       "kdegraphics-mobipocket",
@@ -1653,6 +1675,7 @@
       "kpty",
       "libkexiv2",
       "phonon",
+      "plasma-activities",
       "purpose",
       "threadweaver"
     ],
@@ -2128,7 +2151,6 @@
       "solid"
     ],
     "elisa": [
-      "baloo",
       "extra-cmake-modules",
       "kcolorscheme",
       "kconfig",
@@ -2158,7 +2180,8 @@
       "ki18n",
       "kiconthemes",
       "kio",
-      "kirigami"
+      "kirigami",
+      "mpvqt"
     ],
     "juk": [
       "kcompletion",
@@ -2455,7 +2478,6 @@
       "kitemviews",
       "knotifications",
       "knotifyconfig",
-      "kparts",
       "kservice",
       "ktextwidgets",
       "kwallet",
@@ -2466,8 +2488,6 @@
     ],
     "kio-extras": [
       "extra-cmake-modules",
-      "kactivities",
-      "kactivities-stats",
       "karchive",
       "kcmutils",
       "kconfig",
@@ -2483,6 +2503,8 @@
       "kio",
       "libkexiv2",
       "phonon",
+      "plasma-activities",
+      "plasma-activities-stats",
       "qcoro",
       "solid",
       "syntax-highlighting"
@@ -2518,7 +2540,6 @@
     ],
     "konqueror": [
       "extra-cmake-modules",
-      "kactivities",
       "karchive",
       "kcmutils",
       "kcrash",
@@ -2530,7 +2551,8 @@
       "kiconthemes",
       "kio",
       "kparts",
-      "kwindowsystem"
+      "kwindowsystem",
+      "plasma-activities"
     ],
     "konversation": [
       "extra-cmake-modules",
@@ -2576,7 +2598,6 @@
     ],
     "krdc": [
       "extra-cmake-modules",
-      "kactivities",
       "kbookmarks",
       "kcmutils",
       "kcompletion",
@@ -2590,7 +2611,8 @@
       "kwallet",
       "kwidgetsaddons",
       "kwindowsystem",
-      "kxmlgui"
+      "kxmlgui",
+      "plasma-activities"
     ],
     "krfb": [
       "extra-cmake-modules",
@@ -2626,6 +2648,7 @@
       "knotifyconfig",
       "kparts",
       "kplotting",
+      "kstatusnotifieritem",
       "ktextwidgets",
       "kxmlgui",
       "libktorrent",
@@ -2725,7 +2748,7 @@
       "kwidgetsaddons",
       "kwindowsystem",
       "kxmlgui",
-      "plasma-framework",
+      "libplasma",
       "solid"
     ],
     "tokodon": [
@@ -2740,6 +2763,7 @@
       "kirigami-addons",
       "kitemmodels",
       "knotifications",
+      "kunifiedpush",
       "kwindowsystem",
       "mpvqt",
       "purpose",
@@ -2758,11 +2782,10 @@
       "knewstuff",
       "ktextwidgets",
       "kxmlgui",
-      "plasma-framework"
+      "libplasma"
     ],
     "calligra": [
       "extra-cmake-modules",
-      "kactivities",
       "karchive",
       "kcmutils",
       "kcodecs",
@@ -2788,12 +2811,12 @@
       "kwidgetsaddons",
       "kwindowsystem",
       "kxmlgui",
+      "plasma-activities",
       "sonnet",
       "threadweaver"
     ],
     "calligraplan": [
       "extra-cmake-modules",
-      "kactivities",
       "karchive",
       "kcmutils",
       "kconfig",
@@ -2816,6 +2839,7 @@
       "kwidgetsaddons",
       "kwindowsystem",
       "kxmlgui",
+      "plasma-activities",
       "threadweaver"
     ],
     "ghostwriter": [
@@ -2926,7 +2950,6 @@
     ],
     "skrooge": [
       "extra-cmake-modules",
-      "kactivities",
       "karchive",
       "kcompletion",
       "kconfig",
@@ -2944,7 +2967,8 @@
       "kwallet",
       "kwidgetsaddons",
       "kwindowsystem",
-      "kxmlgui"
+      "kxmlgui",
+      "plasma-activities"
     ],
     "tellico": [
       "extra-cmake-modules",
@@ -2961,7 +2985,8 @@
       "ktexteditor",
       "kwallet",
       "kxmlgui",
-      "libkcddb"
+      "libkcddb",
+      "libksane"
     ],
     "akonadi": [
       "extra-cmake-modules",
@@ -3280,7 +3305,6 @@
       "kconfigwidgets",
       "kcontacts",
       "kdav",
-      "kdoctools",
       "kidentitymanagement",
       "kimap",
       "kio",
@@ -3812,7 +3836,7 @@
       "kstatusnotifieritem",
       "kwidgetsaddons",
       "kwindowsystem",
-      "plasma-framework",
+      "libplasma",
       "plasma-workspace",
       "solid",
       "wayland"
@@ -3871,9 +3895,9 @@
       "kio",
       "kirigami-addons",
       "kservice",
+      "libplasma",
       "modemmanager-qt",
       "networkmanager-qt",
-      "plasma-framework",
       "solid"
     ],
     "qmlkonsole": [
@@ -3940,7 +3964,7 @@
       "kservice",
       "kwidgetsaddons",
       "kwindowsystem",
-      "plasma-framework",
+      "libplasma",
       "plasma-workspace",
       "solid"
     ],
@@ -3965,7 +3989,7 @@
       "kwidgetsaddons",
       "kwindowsystem",
       "kxmlgui",
-      "plasma-framework",
+      "libplasma",
       "solid"
     ],
     "breeze": [
@@ -4049,16 +4073,6 @@
       "ki18n",
       "kitemmodels"
     ],
-    "kactivities": [
-      "extra-cmake-modules",
-      "kconfig",
-      "kcoreaddons",
-      "kwindowsystem"
-    ],
-    "kactivities-stats": [
-      "extra-cmake-modules",
-      "kactivities"
-    ],
     "kactivitymanagerd": [
       "extra-cmake-modules",
       "kauth",
@@ -4138,7 +4152,7 @@
       "kunitconversion",
       "kwidgetsaddons",
       "kxmlgui",
-      "plasma-framework",
+      "libplasma",
       "plasma-nano",
       "plasma-workspace",
       "plasma5support",
@@ -4223,7 +4237,7 @@
       "kxmlgui",
       "layer-shell-qt",
       "libkscreen",
-      "plasma-framework"
+      "libplasma"
     ],
     "kscreenlocker": [
       "extra-cmake-modules",
@@ -4245,7 +4259,7 @@
       "kxmlgui",
       "layer-shell-qt",
       "libkscreen",
-      "plasma-framework",
+      "libplasma",
       "wayland"
     ],
     "ksshaskpass": [
@@ -4278,7 +4292,6 @@
       "breeze",
       "breeze-icons",
       "extra-cmake-modules",
-      "kactivities",
       "kcmutils",
       "kconfig",
       "kconfigwidgets",
@@ -4303,8 +4316,9 @@
       "kwidgetsaddons",
       "kwindowsystem",
       "kxmlgui",
+      "libplasma",
       "libqaccessibilityclient",
-      "plasma-framework",
+      "plasma-activities",
       "plasma-wayland-protocols",
       "wayland",
       "wayland-protocols"
@@ -4319,7 +4333,6 @@
     ],
     "latte-dock": [
       "extra-cmake-modules",
-      "kactivities",
       "karchive",
       "kcoreaddons",
       "kcrash",
@@ -4338,7 +4351,8 @@
       "kwidgetsaddons",
       "kwindowsystem",
       "kxmlgui",
-      "plasma-framework",
+      "libplasma",
+      "plasma-activities",
       "plasma-workspace"
     ],
     "layer-shell-qt": [
@@ -4371,11 +4385,33 @@
       "kwindowsystem",
       "solid"
     ],
+    "libplasma": [
+      "extra-cmake-modules",
+      "karchive",
+      "kcmutils",
+      "kconfig",
+      "kconfigwidgets",
+      "kcoreaddons",
+      "kdbusaddons",
+      "kglobalaccel",
+      "kguiaddons",
+      "ki18n",
+      "kiconthemes",
+      "kio",
+      "kirigami",
+      "knotifications",
+      "kpackage",
+      "kparts",
+      "ksvg",
+      "kwidgetsaddons",
+      "kwindowsystem",
+      "plasma-activities"
+    ],
     "milou": [
       "extra-cmake-modules",
       "ki18n",
       "krunner",
-      "plasma-framework"
+      "libplasma"
     ],
     "ocean-sound-theme": [
       "extra-cmake-modules"
@@ -4414,13 +4450,21 @@
       "kservice",
       "kwidgetsaddons",
       "kwindowsystem",
-      "plasma-framework",
+      "libplasma",
       "plasma-workspace",
       "solid"
     ],
+    "plasma-activities": [
+      "extra-cmake-modules",
+      "kconfig",
+      "kcoreaddons",
+      "kwindowsystem"
+    ],
+    "plasma-activities-stats": [
+      "extra-cmake-modules",
+      "plasma-activities"
+    ],
     "plasma-bigscreen": [
-      "kactivities",
-      "kactivities-stats",
       "kauth",
       "kcmutils",
       "kcodecs",
@@ -4438,14 +4482,15 @@
       "kwayland",
       "kwidgetsaddons",
       "kwindowsystem",
-      "plasma-framework",
+      "libplasma",
+      "plasma-activities",
+      "plasma-activities-stats",
       "plasma-workspace",
       "plasma5support",
       "solid"
     ],
     "plasma-browser-integration": [
       "extra-cmake-modules",
-      "kactivities",
       "kconfig",
       "kcoreaddons",
       "kcrash",
@@ -4458,6 +4503,7 @@
       "krunner",
       "kservice",
       "kstatusnotifieritem",
+      "plasma-activities",
       "plasma-workspace",
       "purpose"
     ],
@@ -4466,8 +4512,6 @@
       "baloo",
       "breeze",
       "extra-cmake-modules",
-      "kactivities",
-      "kactivities-stats",
       "kactivitymanagerd",
       "kauth",
       "kcmutils",
@@ -4502,8 +4546,10 @@
       "kwindowsystem",
       "kxmlgui",
       "libksysguard",
+      "libplasma",
       "packagekit-qt",
-      "plasma-framework",
+      "plasma-activities",
+      "plasma-activities-stats",
       "plasma-integration",
       "plasma-workspace",
       "powerdevil",
@@ -4538,28 +4584,6 @@
       "kconfig",
       "kcoreaddons",
       "ki18n"
-    ],
-    "plasma-framework": [
-      "extra-cmake-modules",
-      "kactivities",
-      "karchive",
-      "kcmutils",
-      "kconfig",
-      "kconfigwidgets",
-      "kcoreaddons",
-      "kdbusaddons",
-      "kglobalaccel",
-      "kguiaddons",
-      "ki18n",
-      "kiconthemes",
-      "kio",
-      "kirigami",
-      "knotifications",
-      "kpackage",
-      "kparts",
-      "ksvg",
-      "kwidgetsaddons",
-      "kwindowsystem"
     ],
     "plasma-integration": [
       "breeze",
@@ -4598,10 +4622,10 @@
       "kwin",
       "kwindowsystem",
       "libkscreen",
+      "libplasma",
       "milou",
       "modemmanager-qt",
       "networkmanager-qt",
-      "plasma-framework",
       "plasma-nm",
       "plasma-pa",
       "plasma-workspace",
@@ -4617,7 +4641,7 @@
       "ksvg",
       "kwayland",
       "kwindowsystem",
-      "plasma-framework"
+      "libplasma"
     ],
     "plasma-nm": [
       "extra-cmake-modules",
@@ -4640,9 +4664,9 @@
       "kwallet",
       "kwidgetsaddons",
       "kwindowsystem",
+      "libplasma",
       "modemmanager-qt",
       "networkmanager-qt",
-      "plasma-framework",
       "qcoro",
       "solid"
     ],
@@ -4658,7 +4682,7 @@
       "kpackage",
       "kstatusnotifieritem",
       "ksvg",
-      "plasma-framework",
+      "libplasma",
       "plasma-workspace",
       "selenium-webdriver-at-spi"
     ],
@@ -4666,7 +4690,7 @@
       "extra-cmake-modules",
       "ki18n",
       "kitemmodels",
-      "plasma-framework",
+      "libplasma",
       "plasma5support"
     ],
     "plasma-sdk": [
@@ -4693,7 +4717,7 @@
       "kwidgetsaddons",
       "kwindowsystem",
       "kxmlgui",
-      "plasma-framework",
+      "libplasma",
       "plasma5support",
       "solid",
       "sonnet",
@@ -4702,7 +4726,7 @@
     "plasma-simplemenu": [
       "extra-cmake-modules",
       "ki18n",
-      "plasma-framework"
+      "libplasma"
     ],
     "plasma-systemmonitor": [
       "attica",
@@ -4734,7 +4758,6 @@
     ],
     "plasma-vault": [
       "extra-cmake-modules",
-      "kactivities",
       "kauth",
       "kcodecs",
       "kcompletion",
@@ -4751,8 +4774,9 @@
       "kwidgetsaddons",
       "kwindowsystem",
       "libksysguard",
+      "libplasma",
       "networkmanager-qt",
-      "plasma-framework",
+      "plasma-activities",
       "solid"
     ],
     "plasma-welcome": [
@@ -4768,15 +4792,13 @@
       "knotifications",
       "ksvg",
       "kwindowsystem",
-      "plasma-framework"
+      "libplasma"
     ],
     "plasma-workspace": [
       "appstream-qt",
       "attica",
       "baloo",
       "extra-cmake-modules",
-      "kactivities",
-      "kactivities-stats",
       "kauth",
       "kbookmarks",
       "kcmutils",
@@ -4828,11 +4850,13 @@
       "libkexiv2",
       "libkscreen",
       "libksysguard",
+      "libplasma",
       "milou",
       "networkmanager-qt",
       "packagekit-qt",
       "phonon",
-      "plasma-framework",
+      "plasma-activities",
+      "plasma-activities-stats",
       "plasma-nano",
       "plasma-wayland-protocols",
       "plasma5support",
@@ -4850,7 +4874,7 @@
       "kconfig",
       "kcoreaddons",
       "ki18n",
-      "plasma-framework"
+      "libplasma"
     ],
     "plymouth-kcm": [
       "extra-cmake-modules",
@@ -4879,7 +4903,6 @@
     ],
     "powerdevil": [
       "extra-cmake-modules",
-      "kactivities",
       "kauth",
       "kcmutils",
       "kcodecs",
@@ -4901,6 +4924,7 @@
       "kwindowsystem",
       "kxmlgui",
       "libkscreen",
+      "plasma-activities",
       "plasma-workspace",
       "solid"
     ],
@@ -4919,7 +4943,7 @@
       "knotifications",
       "kwidgetsaddons",
       "kwindowsystem",
-      "plasma-framework"
+      "libplasma"
     ],
     "qqc2-breeze-style": [
       "extra-cmake-modules",
@@ -4952,7 +4976,6 @@
     ],
     "systemsettings": [
       "extra-cmake-modules",
-      "kactivities",
       "kcmutils",
       "kconfig",
       "kcrash",
@@ -4970,7 +4993,8 @@
       "kservice",
       "kwidgetsaddons",
       "kwindowsystem",
-      "kxmlgui"
+      "kxmlgui",
+      "plasma-activities"
     ],
     "wacomtablet": [
       "extra-cmake-modules",
@@ -4986,7 +5010,7 @@
       "kwidgetsaddons",
       "kwindowsystem",
       "kxmlgui",
-      "plasma-framework",
+      "libplasma",
       "plasma5support"
     ],
     "xdg-desktop-portal-kde": [
@@ -5031,7 +5055,6 @@
     ],
     "codevis": [
       "extra-cmake-modules",
-      "kactivities",
       "kcmutils",
       "kcrash",
       "kdoctools",
@@ -5040,7 +5063,8 @@
       "knewstuff",
       "ktexteditor",
       "ktextwidgets",
-      "kuserfeedback"
+      "kuserfeedback",
+      "plasma-activities"
     ],
     "dolphin-plugins": [
       "dolphin",
@@ -5270,7 +5294,6 @@
       "baloo",
       "baloo-widgets",
       "extra-cmake-modules",
-      "kactivities",
       "kbookmarks",
       "kcmutils",
       "kcodecs",
@@ -5293,6 +5316,7 @@
       "kwindowsystem",
       "packagekit-qt",
       "phonon",
+      "plasma-activities",
       "solid"
     ],
     "kalternatives": [
@@ -5405,7 +5429,7 @@
       "kjobwidgets",
       "knotifications",
       "kwidgetsaddons",
-      "plasma-framework",
+      "libplasma",
       "plasma5support",
       "solid"
     ],
@@ -5556,7 +5580,6 @@
     ],
     "kalk": [
       "extra-cmake-modules",
-      "kconfig",
       "kcoreaddons",
       "ki18n",
       "kirigami",
@@ -5627,7 +5650,7 @@
       "kirigami-addons",
       "knotifications",
       "kstatusnotifieritem",
-      "plasma-framework"
+      "libplasma"
     ],
     "kdebugsettings": [
       "extra-cmake-modules",
@@ -5883,7 +5906,6 @@
       "ki18n",
       "kirigami",
       "kirigami-addons",
-      "kitemmodels",
       "kpublictransport",
       "qqc2-desktop-style"
     ],
@@ -5915,7 +5937,7 @@
       "kirigami-addons",
       "knotifications",
       "kweathercore",
-      "plasma-framework"
+      "libplasma"
     ],
     "markdownpart": [
       "extra-cmake-modules",
@@ -6002,7 +6024,6 @@
     ],
     "sweeper": [
       "extra-cmake-modules",
-      "kactivities-stats",
       "kbookmarks",
       "kconfig",
       "kconfigwidgets",
@@ -6010,9 +6031,9 @@
       "kcrash",
       "kdoctools",
       "ki18n",
-      "kio",
       "ktextwidgets",
-      "kxmlgui"
+      "kxmlgui",
+      "plasma-activities"
     ],
     "symmy": [
       "extra-cmake-modules",

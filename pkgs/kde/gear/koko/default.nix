@@ -1,6 +1,5 @@
 {
   fetchurl,
-  fetchpatch,
   mkKdeDerivation,
   pkg-config,
   qtpositioning,
@@ -28,14 +27,6 @@
 in
   mkKdeDerivation {
     pname = "koko";
-
-    # Build fix
-    patches = [
-      (fetchpatch {
-        url = "https://invent.kde.org/graphics/koko/-/commit/14327c4461cdcfd4f034f1e7bc47d43a09caea81.patch";
-        hash = "sha256-yCgjKeIcnzKxATwE08zhGFhix3VGfU+azbg5iOyXjfo=";
-      })
-    ];
 
     prePatch = ''
       ln -s ${admin1}     src/admin1CodesASCII.txt
