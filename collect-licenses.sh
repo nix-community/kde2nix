@@ -16,6 +16,11 @@ echo "# Collecting licenses..."
 for k in "${!sources[@]}"; do
     echo "- Processing $k..."
 
+    if [ ! -f "${sources[$k]}" ]; then
+        echo "Not found!"
+        continue
+    fi
+
     mkdir "$TMPDIR/$k"
     tar -C "$TMPDIR/$k" -xf "${sources[$k]}"
 
