@@ -4,6 +4,7 @@
   shared-mime-info,
   black-hole-solver,
   freecell-solver,
+  libkdegames,
 }:
 mkKdeDerivation {
   pname = "kpat";
@@ -14,4 +15,6 @@ mkKdeDerivation {
     black-hole-solver
     freecell-solver
   ];
+
+  qtWrapperArgs = ["--prefix XDG_DATA_DIRS : ${libkdegames}/share"];
 }
