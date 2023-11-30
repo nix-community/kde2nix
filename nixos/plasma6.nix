@@ -110,7 +110,7 @@ in {
 
         plasma-desktop
         plasma-workspace
-        pkgs.plasma5Packages.plasma-workspace-wallpapers
+        plasma-workspace-wallpapers
         drkonqi
 
         breeze-icons
