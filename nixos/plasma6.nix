@@ -135,6 +135,20 @@ in {
         kde-inotify-survey
         kio-admin
         kio-extras
+
+        # FIXME: not an overlay because too many rebuilds
+        (lib.hiPrio (pkgs.xdg-utils.overrideAttrs (old: {
+          patches =
+            old.patches
+            or []
+            ++ [
+              # Add KDE6 support
+              (pkgs.fetchpatch {
+                url = "https://gitlab.freedesktop.org/xdg/xdg-utils/-/merge_requests/67.diff";
+                hash = "sha256-DRepY4zZ+AYgEti9qm0gizWoXZZnObcweM5pKLNATh0=";
+              })
+            ];
+        })))
       ];
       optionalPackages = [
         pkgs.aha # needed by kinfocenter for fwupd support
@@ -252,7 +266,7 @@ in {
 
     # FIXME: make this overrideable upstream, also this wrapper is very hacky
     nixpkgs.overlays = [
-      (_: prev: {
+      (final: prev: {
         libsForQt5 = prev.libsForQt5.overrideScope (_: __: {
           sddm = kdePackages.sddm.overrideAttrs (old: {
             buildInputs = old.buildInputs ++ (with kdePackages; [kirigami qtsvg ksvg plasma5support qt5compat breeze-icons]);
