@@ -62,9 +62,6 @@ in {
         kiconthemes
         kidletime
         kimageformats
-        kirigami # In system profile for SDDM theme. TODO: wrapper.
-        pkgs.plasma5Packages.kirigami2
-        kirigami-addons
         kio
         kjobwidgets
         knewstuff
@@ -252,5 +249,16 @@ in {
     };
 
     programs.kdeconnect.package = kdePackages.kdeconnect-kde;
+
+    # FIXME: make this overrideable upstream, also this wrapper is very hacky
+    nixpkgs.overlays = [
+      (_: prev: {
+        libsForQt5 = prev.libsForQt5.overrideScope (_: __: {
+          sddm = kdePackages.sddm.overrideAttrs (old: {
+            buildInputs = old.buildInputs ++ (with kdePackages; [kirigami qtsvg ksvg plasma5support qt5compat breeze-icons]);
+          });
+        });
+      })
+    ];
   };
 }
