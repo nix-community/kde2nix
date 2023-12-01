@@ -7,11 +7,11 @@
   qt5compat,
   pkg-config,
   hunspell,
+  kdoctools,
 }:
 mkKdeDerivation {
   pname = "ghostwriter";
 
-  # cross is very broken here
-  extraNativeBuildInputs = [qtsvg qttools qtwebchannel qtwebengine qt5compat pkg-config];
-  extraBuildInputs = [hunspell];
+  extraNativeBuildInputs = [pkg-config kdoctools];
+  extraBuildInputs = [qtsvg qttools qtwebchannel qtwebengine qt5compat hunspell];
 }
