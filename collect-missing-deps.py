@@ -32,7 +32,7 @@ def main():
             with log.open() as fd:
                 for line in fd:
                     line = line.strip()
-                    if line == "-- The following OPTIONAL packages have not been found:":
+                    if line == "-- The following OPTIONAL packages have not been found:" or line == "-- The following RECOMMENDED packages have not been found:":
                         is_in_block = True
                     elif line.startswith("--") and is_in_block:
                         is_in_block = False
