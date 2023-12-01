@@ -4,6 +4,7 @@
   substituteAll,
   xorg,
   pkg-config,
+  spirv-tools,
   qtsvg,
   qtwayland,
   libcanberra,
@@ -28,7 +29,7 @@ mkKdeDerivation {
     })
   ];
 
-  extraNativeBuildInputs = [pkg-config];
+  extraNativeBuildInputs = [pkg-config spirv-tools];
   extraBuildInputs = [
     qtsvg
     qtwayland
