@@ -1,5 +1,7 @@
 {
   mkKdeDerivation,
+  _7zz,
+  svgcleaner,
   qtdeclarative,
   qtsvg,
   openal,
@@ -8,5 +10,6 @@
 mkKdeDerivation {
   pname = "libkdegames";
 
+  extraNativeBuildInputs = [_7zz svgcleaner];
   extraBuildInputs = [openal libsndfile qtdeclarative qtsvg];
 }
