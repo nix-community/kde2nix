@@ -1,10 +1,14 @@
 {
   mkKdeDerivation,
-  tesseract4,
+  tesseractLanguages ? [],
+  tesseract5,
   leptonica,
 }:
 mkKdeDerivation {
   pname = "skanpage";
 
-  extraBuildInputs = [tesseract4 leptonica];
+  extraBuildInputs = [
+    (tesseract5.override {enableLanguages = tesseractLanguages;})
+    leptonica
+  ];
 }
