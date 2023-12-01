@@ -15,6 +15,8 @@ OK_MISSING = {
     'OsmTools',
     'Protobuf',
     'PolyClipping',
+    # dev only
+    'ClangFormat',
 }
 
 def main():
