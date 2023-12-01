@@ -3,6 +3,7 @@
   qttools,
   bison,
   flex,
+  libimobiledevice,
 }:
 mkKdeDerivation {
   pname = "solid";
@@ -11,4 +12,5 @@ mkKdeDerivation {
   patches = [./fix-search-path.patch];
 
   extraNativeBuildInputs = [qttools bison flex];
+  extraBuildInputs = [libimobiledevice];
 }
