@@ -27,8 +27,9 @@
           ps.jinja2
           ps.pyyaml
         ]);
-      in {
-        packages = pkgs.callPackage ./pkgs/kde {};
+      in rec {
+        legacyPackages = pkgs.callPackage ./pkgs/kde {};
+        packages = legacyPackages;
 
         checks.pre-commit-check = pre-commit-hooks.lib.${system}.run {
           src = ./.;
