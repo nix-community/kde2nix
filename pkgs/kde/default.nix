@@ -73,6 +73,8 @@
       # FIXME: upstream this
       libappimage = self.callPackage ./misc/libappimage {};
 
+      syncthingtray = self.callPackage ./third-party/syncthingtray {};
+
       # STUBS
       libmediawiki = null; # FIXME: package
       okteta = null; # FIXME: is it dead?
