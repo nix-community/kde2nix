@@ -17,6 +17,8 @@ OK_MISSING = {
     'PolyClipping',
     # dev only
     'ClangFormat',
+    # doesn't exist
+    'Qt6X11Extras',
 }
 
 def main():
