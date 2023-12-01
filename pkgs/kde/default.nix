@@ -1,7 +1,7 @@
 {
   generateSplicesForMkScope,
   makeScopeWithSplicing',
-  buildEnv,
+  runCommand,
   fetchurl,
   cmark,
   gpgme,
@@ -84,10 +84,9 @@
       # FIXME: hacks for testing
       all = let
         mkAll = set:
-          buildEnv {
-            name = "all";
-            paths = builtins.filter (s: lib.isDerivation s && !s.meta.broken) (builtins.attrValues set);
-          };
+          runCommand "all" {
+            buildInputs = builtins.filter (s: lib.isDerivation s && !s.meta.broken) (builtins.attrValues set);
+          } "touch $out";
       in {
         frameworks = mkAll frameworks;
         gear = mkAll gear;
