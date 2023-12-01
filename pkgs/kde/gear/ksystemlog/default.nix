@@ -1,9 +1,12 @@
 {
   mkKdeDerivation,
+  pkg-config,
   qt5compat,
+  audit,
 }:
 mkKdeDerivation {
   pname = "ksystemlog";
 
-  extraBuildInputs = [qt5compat];
+  extraNativeBuildInputs = [pkg-config];
+  extraBuildInputs = [qt5compat audit];
 }
