@@ -13,6 +13,7 @@
   openexr,
   taglib,
   shared-mime-info,
+  libappimage,
 }:
 mkKdeDerivation {
   pname = "kio-extras";
@@ -31,5 +32,6 @@ mkKdeDerivation {
     libtirpc
     openexr
     taglib
+    libappimage
   ];
 }
