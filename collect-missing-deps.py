@@ -14,6 +14,7 @@ OK_MISSING = {
     # map generation
     'OsmTools',
     'Protobuf',
+    'PolyClipping',
 }
 
 def main():
