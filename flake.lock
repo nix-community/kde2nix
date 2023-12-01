@@ -57,11 +57,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1701438246,
-        "narHash": "sha256-KTKHui8KIk+KkavqG55fFMaVEZawq5cBgFQZ3LNhCIU=",
+        "lastModified": 1701467629,
+        "narHash": "sha256-8/pK+7P7mAxatBrJb+DMx9h542eKagG4gdrE/wHOsE0=",
         "owner": "K900",
         "repo": "nixpkgs",
-        "rev": "c7305922fadf8511ee1e046afe347dc6ccadb02d",
+        "rev": "e4e775efcad5355b444e5c82c0710410e8406916",
         "type": "github"
       },
       "original": {
