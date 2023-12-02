@@ -121,6 +121,7 @@ in {
         qtwayland
 
         pkgs.xdg-user-dirs # Update user dirs as described in https://freedesktop.org/wiki/Software/xdg-user-dirs/
+        xdg-desktop-portal-kde # FIXME: figure out how to install this properly
 
         kinfocenter
         kmenuedit
