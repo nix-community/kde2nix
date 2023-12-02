@@ -79,26 +79,23 @@ def main():
 
         missing = []
         is_in_block = False
-        try:
-            with log.open() as fd:
-                for line in fd:
-                    line = line.strip()
-                    if line == "-- The following OPTIONAL packages have not been found:" or line == "-- The following RECOMMENDED packages have not been found:":
-                        is_in_block = True
-                    elif line.startswith("--") and is_in_block:
-                        is_in_block = False
-                    elif line.startswith("*") and is_in_block:
-                        package = line.removeprefix("* ")
-                        if not any(package.startswith(i) for i in OK_MISSING | OK_MISSING_BY_PACKAGE.get(pname, set())):
-                            missing.append(package)
+        with log.open(errors="replace") as fd:
+            for line in fd:
+                line = line.strip()
+                if line == "-- The following OPTIONAL packages have not been found:" or line == "-- The following RECOMMENDED packages have not been found:":
+                    is_in_block = True
+                elif line.startswith("--") and is_in_block:
+                    is_in_block = False
+                elif line.startswith("*") and is_in_block:
+                    package = line.removeprefix("* ")
+                    if not any(package.startswith(i) for i in OK_MISSING | OK_MISSING_BY_PACKAGE.get(pname, set())):
+                        missing.append(package)
 
-            if missing:
-                print(pname + ":")
-                for line in missing:
-                    print("  -", line)
-                print()
-        except UnicodeDecodeError:
-            print("Failed to parse", log.name)
+        if missing:
+            print(pname + ":")
+            for line in missing:
+                print("  -", line)
+            print()
 
 if __name__ == '__main__':
     main()
