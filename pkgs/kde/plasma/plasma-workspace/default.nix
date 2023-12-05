@@ -1,6 +1,7 @@
 {
   lib,
   mkKdeDerivation,
+  fetchpatch,
   substituteAll,
   xorg,
   pkg-config,
@@ -26,6 +27,10 @@ mkKdeDerivation {
     (substituteAll {
       src = ./wallpaper-paths.patch;
       wallpapers = "${lib.getBin breeze}/share/wallpapers";
+    })
+    (fetchpatch {
+      url = "https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/3646.diff";
+      hash = "sha256-gUti+VZuQgjVpjr3Oj6zbFra0tNyICFsG8aZRGdIv4g=";
     })
   ];
 
