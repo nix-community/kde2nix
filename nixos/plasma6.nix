@@ -263,6 +263,8 @@ in {
       kde-smartcard.p11Auth = true;
     };
 
+    programs.dconf.enable = true;
+
     programs.kdeconnect.package = kdePackages.kdeconnect-kde;
 
     # FIXME: make this overrideable upstream, also this wrapper is very hacky
