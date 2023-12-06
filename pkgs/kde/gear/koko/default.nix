@@ -2,6 +2,7 @@
   fetchurl,
   mkKdeDerivation,
   pkg-config,
+  qtmultimedia,
   qtpositioning,
   qtsvg,
   exiv2,
@@ -36,6 +37,7 @@ in
 
     extraNativeBuildInputs = [pkg-config];
     extraBuildInputs = [
+      qtmultimedia
       qtpositioning
       qtsvg
       exiv2
