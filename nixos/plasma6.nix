@@ -127,6 +127,9 @@ in {
         kio-admin
         kio-extras
 
+        # HACK: required by sddm, consider rewrapping sddm
+        qtvirtualkeyboard
+
         # FIXME: not an overlay because too many rebuilds
         (lib.hiPrio (pkgs.xdg-utils.overrideAttrs (old: {
           patches =
