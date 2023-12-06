@@ -44,91 +44,81 @@ in {
     qt.enable = true;
     environment.systemPackages = with kdePackages; let
       requiredPackages = [
-        frameworkintegration
-        kauth
-        kcmutils
-        kconfig
-        kconfigwidgets
-        kcoreaddons
-        kdoctools
-        kdbusaddons
-        kdeclarative
-        kded
-        kdesu
-        kdnssd
-        kfilemetadata
-        kglobalaccel
-        kguiaddons
-        kiconthemes
-        kidletime
-        kimageformats
-        kio
-        kjobwidgets
-        knewstuff
-        knotifications
-        knotifyconfig
-        kpackage
-        kparts
-        kpeople
-        krunner
-        kservice
-        ktextwidgets
-        kwallet
-        kwallet-pam
-        kwalletmanager
-        kwayland
-        pkgs.plasma5Packages.kwayland-integration
-        kwidgetsaddons
-        kxmlgui
-        solid
-        sonnet
-        threadweaver
+        # Hack? To make everything run on Wayland
+        qtwayland
 
-        breeze
-        plasma-activities
-        kactivitymanagerd
-        libplasma
-        kde-cli-tools
-        kdecoration
-        kdeplasma-addons
-        kgamma
-        kscreen
-        kscreenlocker
-        kwayland
+        # Frameworks with globally loadable bits
+        frameworkintegration # provides Qt plugin
+        kauth # provides helper service
+        kcoreaddons # provides extra mime type info
+        kded # provides helper service
+        kfilemetadata # provides Qt plugins
+        kguiaddons # provides geo URL handlers
+        kiconthemes # provides Qt plugins
+        kimageformats # provides Qt plugins
+        kio # provides helper service + a bunch of other stuff
+        kpackage # provides kpackagetool tool
+        kservice # provides kbuildsycoca6 tool
+        kwallet # provides helper service
+        kwallet-pam # provides helper service
+        kwalletmanager # provides KCMs and stuff
+        plasma-activities # provides plasma-activities-cli tool
+        solid # provides solid-hardware6 tool
+
+        # Core Plasma parts
         kwin
         pkgs.xwayland
-        kwrited
+
+        kscreen
         libkscreen
-        libksysguard
-        ksystemstats
+
+        kscreenlocker
+
+        kactivitymanagerd
+        kde-cli-tools
+        kwrited # wall message proxy, not to be confused with kwrite
+
         milou
-        plasma-integration
         polkit-kde-agent-1
 
         plasma-desktop
         plasma-workspace
-        plasma-workspace-wallpapers
+
+        # Crash handler
         drkonqi
 
-        breeze-icons
-        ocean-sound-theme
-        pkgs.hicolor-icon-theme
-
+        # Application integration
+        libplasma # provides Kirigami platform theme
+        plasma-integration # provides Qt platform theme
+        pkgs.plasma5Packages.kwayland-integration # provides Qt5 Wayland integration
         kde-gtk-config
+
+        # Artwork + themes
+        breeze
+        breeze-icons
         breeze-gtk
+        ocean-sound-theme
+        plasma-workspace-wallpapers
+        pkgs.hicolor-icon-theme # fallback icons
 
-        qtvirtualkeyboard
-        qtwayland
+        # misc Plasma extras
+        kdeplasma-addons
 
-        pkgs.xdg-user-dirs # Update user dirs as described in https://freedesktop.org/wiki/Software/xdg-user-dirs/
+        pkgs.xdg-user-dirs # recommended upstream
         xdg-desktop-portal-kde # FIXME: figure out how to install this properly
 
-        kinfocenter
+        # Plasma utilities
         kmenuedit
+
+        kinfocenter
         plasma-systemmonitor
+        ksystemstats
+        libksysguard
+
         spectacle
         systemsettings
 
+        # Gear
         dolphin
         dolphin-plugins
         ffmpegthumbs
@@ -152,7 +142,6 @@ in {
         })))
       ];
       optionalPackages = [
-        pkgs.aha # needed by kinfocenter for fwupd support
         plasma-browser-integration
         konsole
         (lib.getBin qttools) # Expose qdbus in PATH
@@ -180,11 +169,6 @@ in {
       ++ lib.optional config.services.xserver.wacom.enable wacomtablet
       ++ lib.optional config.services.flatpak.enable flatpak-kcm;
 
-    # Extra services for D-Bus activation
-    services.dbus.packages = [
-      kdePackages.kactivitymanagerd
-    ];
-
     environment.pathsToLink = [
       # FIXME: modules should link subdirs of `/share` rather than relying on this
       "/share"
@@ -192,23 +176,19 @@ in {
 
     environment.etc."X11/xkb".source = xcfg.xkb.dir;
 
-    environment.sessionVariables = {
-      # Needed for things that depend on other store.kde.org packages to install correctly,
-      # notably Plasma look-and-feel packages (a.k.a. Global Themes)
-      #
-      # FIXME: this is annoyingly impure and should really be fixed at source level somehow,
-      # but kpackage is a library so we can't just wrap the one thing invoking it and be done.
-      # This also means things won't work for people not on Plasma, but at least this way it
-      # works for SOME people.
-      KPACKAGE_DEP_RESOLVERS_PATH = "${kdePackages.frameworkintegration.out}/libexec/kf6/kpackagehandlers";
-      # FIXME: hack to make things find drkonqi
-      LIBEXEC_PATH = "${kdePackages.drkonqi}/libexec";
-    };
+    # Needed for things that depend on other store.kde.org packages to install correctly,
+    # notably Plasma look-and-feel packages (a.k.a. Global Themes)
+    #
+    # FIXME: this is annoyingly impure and should really be fixed at source level somehow,
+    # but kpackage is a library so we can't just wrap the one thing invoking it and be done.
+    # This also means things won't work for people not on Plasma, but at least this way it
+    # works for SOME people.
+    environment.sessionVariables.KPACKAGE_DEP_RESOLVERS_PATH = "${kdePackages.frameworkintegration.out}/libexec/kf6/kpackagehandlers";
 
     # Enable GTK applications to load SVG icons
     services.xserver.gdk-pixbuf.modulePackages = [pkgs.librsvg];
 
-    fonts.packages = with pkgs; [cfg.notoPackage hack-font];
+    fonts.packages = [cfg.notoPackage pkgs.hack-font];
     fonts.fontconfig.defaultFonts = {
       monospace = ["Hack" "Noto Sans Mono"];
       sansSerif = ["Noto Sans"];
@@ -221,6 +201,7 @@ in {
     services.accounts-daemon.enable = true;
     # when changing an account picture the accounts-daemon reads a temporary file containing the image which systemsettings5 may place under /tmp
     systemd.services.accounts-daemon.serviceConfig.PrivateTmp = false;
+
     services.power-profiles-daemon.enable = mkDefault true;
     services.system-config-printer.enable = mkIf config.services.printing.enable (mkDefault true);
     services.udisks2.enable = true;
@@ -233,27 +214,22 @@ in {
       pkgs.libmtp.out
       pkgs.media-player-info
     ];
+
     # Set up Dr. Konqi as crash handler
     systemd.packages = [kdePackages.drkonqi];
     systemd.services."drkonqi-coredump-processor@".wantedBy = ["systemd-coredump@.service"];
     systemd.user.sockets."drkonqi-coredump-launcher".wantedBy = ["sockets.target"];
 
-    services.xserver.displayManager.sddm = {
-      theme = mkDefault "breeze";
-    };
-
     xdg.portal.enable = true;
     xdg.portal.extraPortals = [kdePackages.xdg-desktop-portal-kde];
     xdg.portal.configPackages = mkDefault [kdePackages.xdg-desktop-portal-kde];
-    # xdg-desktop-portal-kde expects PipeWire to be running.
-    # This does not, by default, replace PulseAudio.
     services.pipewire.enable = mkDefault true;
 
-    programs.firefox.nativeMessagingHosts.packages = [kdePackages.plasma-browser-integration];
-
-    services.xserver.displayManager.sessionPackages = [kdePackages.plasma-workspace];
-
-    services.xserver.displayManager.defaultSession = mkDefault "plasma";
+    services.xserver.displayManager = {
+      sessionPackages = [kdePackages.plasma-workspace];
+      defaultSession = mkDefault "plasma";
+    };
+    services.xserver.displayManager.sddm.theme = mkDefault "breeze";
 
     security.pam.services = {
       login.enableKwallet = true;
@@ -264,7 +240,7 @@ in {
     };
 
     programs.dconf.enable = true;
-
+    programs.firefox.nativeMessagingHosts.packages = [kdePackages.plasma-browser-integration];
     programs.kdeconnect.package = kdePackages.kdeconnect-kde;
 
     # FIXME: make this overrideable upstream, also this wrapper is very hacky
