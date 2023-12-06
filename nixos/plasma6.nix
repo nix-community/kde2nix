@@ -76,6 +76,7 @@ in {
 
         kactivitymanagerd
         kde-cli-tools
+        kglobalacceld
         kwrited # wall message proxy, not to be confused with kwrite
 
         milou
