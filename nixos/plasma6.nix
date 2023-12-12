@@ -236,8 +236,10 @@ in {
     services.xserver.displayManager.sddm.theme = mkDefault "breeze";
 
     security.pam.services = {
-      login.enableKwallet = true;
-      kde.enableKwallet = true;
+      # FIXME: needs to use Qt6 kwallet somehow
+      # login.enableKwallet = true;
+      # kde.enableKwallet = true;
+      kde = {};
       # FIXME: do these actually work? https://invent.kde.org/plasma/kscreenlocker/-/merge_requests/163
       kde-fingerprint.fprintAuth = true;
       kde-smartcard.p11Auth = true;
