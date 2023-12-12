@@ -153,7 +153,7 @@ in {
         ark
         elisa
         gwenview
-        pkgs.plasma5Packages.okular
+        okular
         khelpcenter
         print-manager
       ];
