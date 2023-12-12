@@ -29,7 +29,7 @@ in {
       description = lib.mdDoc "List of default packages to exclude from the configuration";
       type = types.listOf types.package;
       default = [];
-      example = literalExpression "[ pkgs.plasma5Packages.oxygen ]";
+      example = literalExpression "[ pkgs.kdePackages.elisa ]";
     };
   };
 
