@@ -6,6 +6,8 @@
 mkKdeDerivation {
   pname = "breeze";
 
+  outputs = ["out" "dev" "qt5"];
+
   # We can't add qt5 stuff to dependencies or the hooks blow up,
   # so manually point everything to everything. Oof.
   extraCmakeFlags = [
@@ -36,7 +38,7 @@ mkKdeDerivation {
 
   # Move Qt5 plugin to Qt5 plugin path
   postInstall = ''
-    mkdir -p $out/${libsForQt5.qtbase.qtPluginPrefix}/styles
-    mv $out/${qtbase.qtPluginPrefix}/styles/breeze5.so $out/${libsForQt5.qtbase.qtPluginPrefix}/styles
+    mkdir -p $qt5/${libsForQt5.qtbase.qtPluginPrefix}/styles
+    mv $out/${qtbase.qtPluginPrefix}/styles/breeze5.so $qt5/${libsForQt5.qtbase.qtPluginPrefix}/styles
   '';
 }
