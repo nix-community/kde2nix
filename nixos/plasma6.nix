@@ -19,6 +19,12 @@ in {
         description = lib.mdDoc "Enable the Plasma 6 (KDE 6) desktop environment.";
       };
 
+      enableQt5Theme = mkOption {
+        type = types.bool;
+        default = true;
+        description = lib.mdDoc "Enable Qt 5 theme integration. Disable for a pure Qt 6 system.";
+      };
+
       notoPackage = mkPackageOptionMD pkgs "Noto fonts" {
         default = ["noto-fonts"];
         example = "noto-fonts-lgc-plus";
@@ -91,7 +97,6 @@ in {
         # Application integration
         libplasma # provides Kirigami platform theme
         plasma-integration # provides Qt platform theme
-        pkgs.plasma5Packages.kwayland-integration # provides Qt5 Wayland integration
         kde-gtk-config
 
         # Artwork + themes
@@ -160,6 +165,11 @@ in {
     in
       requiredPackages
       ++ utils.removePackagesByName optionalPackages config.environment.plasma6.excludePackages
+      ++ lib.optionals config.services.xserver.desktopManager.plasma6.enableQt5Theme [
+        breeze.qt5
+        plasma-integration.qt5
+        pkgs.plasma5Packages.kwayland-integration
+      ]
       # Optional hardware support features
       ++ lib.optionals config.hardware.bluetooth.enable [bluedevil bluez-qt pkgs.openobex pkgs.obexftp]
       ++ lib.optional config.networking.networkmanager.enable plasma-nm
