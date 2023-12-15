@@ -5,7 +5,7 @@
   qttools,
   xdpyinfo,
   systemsettings,
-  libusb,
+  libusb1,
 }:
 mkKdeDerivation {
   pname = "kinfocenter";
@@ -25,5 +25,5 @@ mkKdeDerivation {
     ln -sf ${systemsettings}/bin/systemsettings $out/bin/kinfocenter
   '';
 
-  extraBuildInputs = [libusb];
+  extraBuildInputs = [libusb1];
 }
