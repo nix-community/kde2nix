@@ -106,7 +106,7 @@ in
         {
           description = projectInfo.${pname}.description;
           homepage = "https://invent.kde.org/${projectInfo.${pname}.repo_path}";
-          license = map (l: licensesBySpdxId.${l}) licenseInfo.${pname};
+          license = lib.filter (l: l != null) (map (l: licensesBySpdxId.${l}) licenseInfo.${pname});
         }
         // meta;
     };
