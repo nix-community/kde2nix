@@ -7,5 +7,5 @@ mkKdeDerivation {
   pname = "kconfig";
 
   extraNativeBuildInputs = [qttools];
-  extraBuildInputs = [qtdeclarative];
+  extraPropagatedBuildInputs = [qtdeclarative];
 }
