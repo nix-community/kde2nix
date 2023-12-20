@@ -10,6 +10,7 @@
   pkg-config,
   qtsvg,
   qtwayland,
+  kaccounts-integration,
   SDL2,
   xkeyboard_config,
   xorg,
@@ -43,6 +44,8 @@ in
     extraBuildInputs = [
       qtsvg
       qtwayland
+
+      kaccounts-integration
 
       SDL2
       libcanberra

@@ -1,6 +1,7 @@
 {
   mkKdeDerivation,
   qtsvg,
+  _7zz,
   shared-mime-info,
   black-hole-solver,
   freecell-solver,
@@ -9,7 +10,7 @@
 mkKdeDerivation {
   pname = "kpat";
 
-  extraNativeBuildInputs = [shared-mime-info];
+  extraNativeBuildInputs = [_7zz shared-mime-info];
   extraBuildInputs = [
     qtsvg
     black-hole-solver
