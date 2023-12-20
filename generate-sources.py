@@ -67,7 +67,7 @@ def main(nixpkgs: pathlib.Path, set: str, version: str):
         "plasma": "plasma",
     }[set]
 
-    sources = httpx.get(f"https://www-staging.kde.org/info/sources/source-{set_url}-{version}.html")
+    sources = httpx.get(f"https://kde.org/info/sources/source-{set_url}-{version}.html")
     sources.raise_for_status()
     bs = bs4.BeautifulSoup(sources.text, features="html.parser")
 
