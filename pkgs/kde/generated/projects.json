@@ -20,7 +20,7 @@
   "accessibility-inspector": {
     "description": "Inspect your application accessibility tree",
     "name": "accessibility-inspector",
-    "project_path": "playground/accessibility/accessibility-inspector",
+    "project_path": "extragear/accessibility/accessibility-inspector",
     "repo_path": "accessibility/accessibility-inspector"
   },
   "accounts-qt": {
@@ -190,6 +190,12 @@
     "name": "alligator",
     "project_path": "extragear/network/alligator",
     "repo_path": "network/alligator"
+  },
+  "alpaka": {
+    "description": "Kirigami client for Ollama",
+    "name": "alpaka",
+    "project_path": "playground/utils/alpaka",
+    "repo_path": "utilities/alpaka"
   },
   "amarok": {
     "description": "Powerful music player that lets you rediscover your music",
@@ -4487,11 +4493,11 @@
     "project_path": "kdereview/licentia",
     "repo_path": "sdk/licentia"
   },
-  "lightdm-greeter-kde": {
+  "lightdm-kde-greeter": {
     "description": "Login screen using the LightDM framework.\n \n* \"LightDM project\":https://launchpad.net/lightdm\n* \"Bug Tracker\":https://bugs.kde.org/describecomponents.cgi?product=lightdm",
-    "name": "lightdm-greeter-kde",
-    "project_path": "playground/base/lightdm-greeter-kde",
-    "repo_path": "plasma/lightdm-greeter-kde"
+    "name": "lightdm-kde-greeter",
+    "project_path": "playground/base/lightdm-kde-greeter",
+    "repo_path": "plasma/lightdm-kde-greeter"
   },
   "liquidshell": {
     "description": "Basic desktop shell using QtWidgets",
@@ -7325,11 +7331,11 @@
     "project_path": "websites/kid3-kde-org",
     "repo_path": "websites/kid3-kde-org"
   },
-  "websites-kirogi-kde-org": {
+  "websites-kirogi-org": {
     "description": "Website for Kirogi \u2014 kirogi.org",
-    "name": "websites-kirogi-kde-org",
-    "project_path": "websites/kirogi-kde-org",
-    "repo_path": "websites/kirogi-kde-org"
+    "name": "websites-kirogi-org",
+    "project_path": "websites/kirogi-org",
+    "repo_path": "websites/kirogi-org"
   },
   "websites-kmymoney-org": {
     "description": "Website for KMyMoney \u2014 kmymoney.org",
@@ -7462,6 +7468,12 @@
     "name": "websites-mediawiki-kde-extensions",
     "project_path": "websites/mediawiki-kde-extensions",
     "repo_path": "websites/mediawiki-kde-extensions"
+  },
+  "websites-mentorship-kde-org": {
+    "description": "Website for KDE Mentor Programs (GSoC and Summer of KDE)",
+    "name": "websites-mentorship-kde-org",
+    "project_path": "websites/mentorship-kde-org",
+    "repo_path": "websites/mentorship-kde-org"
   },
   "websites-minuet-kde-org": {
     "description": "Website for Minuet \u2014 minuet.kde.org",
