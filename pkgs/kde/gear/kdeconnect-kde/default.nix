@@ -1,6 +1,5 @@
 {
   mkKdeDerivation,
-  fetchFromGitLab,
   fetchpatch,
   qtconnectivity,
   qtmultimedia,
@@ -12,15 +11,6 @@
 }:
 mkKdeDerivation {
   pname = "kdeconnect-kde";
-  version = "unstable-2023-11-26";
-
-  src = fetchFromGitLab {
-    domain = "invent.kde.org";
-    owner = "network";
-    repo = "kdeconnect-kde";
-    rev = "b19267598e6115a886fe34c4ff183141454dd2b8";
-    hash = "sha256-H85p9e5jLU9FGwBEJXZ6z18Gi3Yfa2sp7pPN3MofDHY=";
-  };
 
   # more qt6 porting
   patches = [
@@ -28,10 +18,6 @@ mkKdeDerivation {
       url = "https://invent.kde.org/network/kdeconnect-kde/-/merge_requests/611.diff";
       hash = "sha256-HiWCK8sxSIvbvfgXX25j9LYoI2uuwStChe3rqnX0KVY=";
       excludes = ["CMakeLists.txt"];
-    })
-    (fetchpatch {
-      url = "https://invent.kde.org/network/kdeconnect-kde/-/merge_requests/612.diff";
-      hash = "sha256-jdWeWkP4RjVBd8fHgfq0OixHzwyX6YhAgbq3h8eaLdE=";
     })
   ];
 

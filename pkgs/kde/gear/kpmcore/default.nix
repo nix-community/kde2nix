@@ -1,7 +1,6 @@
 {
   lib,
   mkKdeDerivation,
-  fetchpatch,
   writeText,
   pkg-config,
   cryptsetup,
@@ -59,15 +58,6 @@
 in
   mkKdeDerivation {
     pname = "kpmcore";
-
-    patches = [
-      # Fixes command lookups in multiple ways
-      # Upstream: https://invent.kde.org/system/kpmcore/-/merge_requests/50
-      (fetchpatch {
-        url = "https://invent.kde.org/system/kpmcore/-/commit/7e805b1af350e0d082d0a7b49225c0ab0ffce3a9.patch";
-        hash = "sha256-dM7kCQuJKx8FGrpqw/wIQVT68MXPkTUpIi3jHz/Rjlw=";
-      })
-    ];
 
     postPatch = ''
       cp ${trustedprefixes} src/util/trustedprefixes
