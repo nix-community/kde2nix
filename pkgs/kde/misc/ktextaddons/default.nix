@@ -4,6 +4,7 @@
   fetchurl,
   qtspeech,
   qttools,
+  kxmlgui,
 }:
 mkKdeDerivation rec {
   pname = "ktextaddons";
@@ -14,7 +15,7 @@ mkKdeDerivation rec {
     hash = "sha256-KIu7HO+x6LVwo4PHkuul/KKRxG3QFV28JTHwo2aEp9s=";
   };
 
-  extraBuildInputs = [qtspeech qttools];
+  extraBuildInputs = [qtspeech qttools kxmlgui];
 
   meta.license = with lib.licenses; [
     bsd3

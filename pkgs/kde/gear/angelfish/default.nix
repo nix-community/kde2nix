@@ -8,7 +8,7 @@
   cargo,
   rustc,
   # provided as callPackage input to enable easier overrides through overlays
-  cargoSha256 ? "sha256-fVlWDVcZCbPM5u7kowgda41vCDeEft1tuTf+7yZUdfU=",
+  cargoSha256 ? "sha256-Z6+DzFsYaxNsa2mJqV3Z5x6K9g2oZsHJPHkNp/azR4c=",
   qcoro,
 }:
 mkKdeDerivation rec {

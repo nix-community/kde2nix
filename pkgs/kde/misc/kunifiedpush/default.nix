@@ -3,6 +3,8 @@
   mkKdeDerivation,
   fetchFromGitLab,
   qtwebsockets,
+  kdeclarative,
+  kpackage,
 }:
 mkKdeDerivation {
   pname = "kunifiedpush";
@@ -16,7 +18,7 @@ mkKdeDerivation {
     hash = "sha256-xysFgF+IH1Ak1/REJ4PsVVTPxtZ7SA58khZArEmrRyY=";
   };
 
-  extraBuildInputs = [qtwebsockets];
+  extraBuildInputs = [qtwebsockets kdeclarative kpackage];
 
   meta.license = with lib.licenses; [bsd2 bsd3 cc0 lgpl2Plus];
 }
