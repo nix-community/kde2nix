@@ -30,8 +30,6 @@
   libkscreen = callPackage ./libkscreen {};
   libksysguard = callPackage ./libksysguard {};
   libplasma = callPackage ./libplasma {};
-  # FIXME: missing tarball
-  # lightdm-greeter-kde = callPackage ./lightdm-greeter-kde {};
   milou = callPackage ./milou {};
   ocean-sound-theme = callPackage ./ocean-sound-theme {};
   oxygen = callPackage ./oxygen {};
