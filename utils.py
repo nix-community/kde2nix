@@ -157,11 +157,11 @@ class KDERepoMetadata:
         root.mkdir(parents=True, exist_ok=True)
 
         with (root / "projects.json").open("w") as fd:
-            json.dump(self.projects_by_name, fd, cls=DataclassEncoder, indent=2)
+            json.dump(self.projects_by_name, fd, cls=DataclassEncoder, sort_keys=True, indent=2)
 
         with (root / "dependencies.json").open("w") as fd:
             deps = {k.name: sorted(dep.name for dep in v) for k, v in self.dep_graph.items()}
-            json.dump({"version": self.version, "dependencies": deps}, fd, cls=DataclassEncoder, indent=2)
+            json.dump({"version": self.version, "dependencies": deps}, fd, cls=DataclassEncoder, sort_keys=True, indent=2)
 
     @classmethod
     def from_json(cls, root: pathlib.Path):
