@@ -186,6 +186,7 @@ in {
     environment.pathsToLink = [
       # FIXME: modules should link subdirs of `/share` rather than relying on this
       "/share"
+      "/libexec" # for drkonqi
     ];
 
     environment.etc."X11/xkb".source = xcfg.xkb.dir;
@@ -232,7 +233,6 @@ in {
     # Set up Dr. Konqi as crash handler
     systemd.packages = [kdePackages.drkonqi];
     systemd.services."drkonqi-coredump-processor@".wantedBy = ["systemd-coredump@.service"];
-    systemd.user.sockets."drkonqi-coredump-launcher".wantedBy = ["sockets.target"];
 
     xdg.portal.enable = true;
     xdg.portal.extraPortals = [kdePackages.xdg-desktop-portal-kde];
