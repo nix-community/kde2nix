@@ -12,6 +12,7 @@
   pipewire,
   breeze,
   qttools,
+  qqc2-breeze-style,
 }:
 mkKdeDerivation {
   pname = "plasma-workspace";
@@ -33,6 +34,8 @@ mkKdeDerivation {
   extraBuildInputs = [
     qtsvg
     qtwayland
+
+    qqc2-breeze-style
 
     libcanberra
     libqalculate
