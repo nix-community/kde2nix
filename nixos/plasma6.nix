@@ -137,18 +137,7 @@ in {
         qtvirtualkeyboard
 
         # FIXME: not an overlay because too many rebuilds
-        (lib.hiPrio (pkgs.xdg-utils.overrideAttrs (old: {
-          patches =
-            old.patches
-            or []
-            ++ [
-              # Add KDE6 support
-              (pkgs.fetchpatch {
-                url = "https://gitlab.freedesktop.org/xdg/xdg-utils/-/merge_requests/67.diff";
-                hash = "sha256-DRepY4zZ+AYgEti9qm0gizWoXZZnObcweM5pKLNATh0=";
-              })
-            ];
-        })))
+        (lib.hiPrio xdg-utils)
       ];
       optionalPackages = [
         plasma-browser-integration
@@ -243,7 +232,13 @@ in {
       sessionPackages = [kdePackages.plasma-workspace];
       defaultSession = mkDefault "plasma";
     };
-    services.xserver.displayManager.sddm.theme = mkDefault "breeze";
+    services.xserver.displayManager.sddm = {
+      # FIXME: extremely hacky wrapper
+      package = kdePackages.sddm.overrideAttrs (old: {
+        buildInputs = old.buildInputs ++ (with kdePackages; [kirigami qtsvg ksvg plasma5support qt5compat breeze-icons]);
+      });
+      theme = mkDefault "breeze";
+    };
 
     security.pam.services = {
       # FIXME: needs to use Qt6 kwallet somehow
@@ -258,16 +253,5 @@ in {
     programs.dconf.enable = true;
     programs.firefox.nativeMessagingHosts.packages = [kdePackages.plasma-browser-integration];
     programs.kdeconnect.package = kdePackages.kdeconnect-kde;
-
-    # FIXME: make this overrideable upstream, also this wrapper is very hacky
-    nixpkgs.overlays = [
-      (final: prev: {
-        libsForQt5 = prev.libsForQt5.overrideScope (_: __: {
-          sddm = kdePackages.sddm.overrideAttrs (old: {
-            buildInputs = old.buildInputs ++ (with kdePackages; [kirigami qtsvg ksvg plasma5support qt5compat breeze-icons]);
-          });
-        });
-      })
-    ];
   };
 }

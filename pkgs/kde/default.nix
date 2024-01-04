@@ -1,16 +1,19 @@
 {
+  lib,
   generateSplicesForMkScope,
   makeScopeWithSplicing',
   runCommand,
   fetchurl,
-  cmark,
-  gpgme,
-  lib,
+  fetchFromGitLab,
   libsForQt5,
   qt6Packages,
+  cmark,
+  docbook_xml_dtd_43,
+  gpgme,
   taglib,
-  wayland,
   wayland-protocols,
+  wayland,
+  xdg-utils,
   zxing-cpp,
 }: let
   allPackages = self: let
@@ -50,29 +53,98 @@
         zxing-cpp
         ;
 
+      # Alias to match metadata
       kquickimageeditor = qt6Packages.kquickimageedit;
 
-      # MISC
-      kdiagram = self.callPackage ./misc/kdiagram {};
-      kdsoap-ws-discovery-client = self.callPackage ./misc/kdsoap-ws-discovery-client {};
-      kirigami-addons = self.callPackage ./misc/kirigami-addons {};
-      ktextaddons = self.callPackage ./misc/ktextaddons {};
-      krdp = self.callPackage ./misc/krdp {};
-      kunifiedpush = self.callPackage ./misc/kunifiedpush {};
-      kweathercore = self.callPackage ./misc/kweathercore {};
-
-      mpvqt = self.callPackage ./misc/mpvqt {};
-
-      oxygen-icons = self.callPackage ./misc/oxygen-icons {};
-
-      phonon = self.callPackage ./misc/phonon {};
+      # Alias because it's just data
       plasma-wayland-protocols = libsForQt5.plasma-wayland-protocols;
 
-      polkit-qt-1 = self.callPackage ./misc/polkit-qt-1 {};
-
-      # FIXME: upstream this
+      # NEWER STABLE RELEASES OF DEPS
+      # FIXME: upstream
+      kdiagram = self.callPackage ./misc/kdiagram {};
       libappimage = self.callPackage ./misc/libappimage {};
 
+      # UNSTABLE RELEASES
+      # These don't have a stable tag that can be upstreamed into nixpkgs yet
+      accounts-qt =
+        (libsForQt5.accounts-qt.override {
+          inherit (qt6Packages) qtbase qmake wrapQtAppsHook;
+        })
+        .overrideAttrs (_: {
+          src = fetchFromGitLab {
+            owner = "nicolasfella";
+            repo = "libaccounts-qt";
+            rev = "18557f7def9af8f4a9e0e93e9f575ae11e5066aa";
+            hash = "sha256-8FGZmg2ljSh1DYZfklMTrWN7Sdlk/Atw0qfpbb+GaBc=";
+          };
+        });
+      kdsoap-ws-discovery-client = self.callPackage ./misc/kdsoap-ws-discovery-client {};
+      kirigami-addons = self.callPackage ./misc/kirigami-addons {};
+      kunifiedpush = self.callPackage ./misc/kunifiedpush {};
+      mpvqt = self.callPackage ./misc/mpvqt {};
+      oxygen-icons = self.callPackage ./misc/oxygen-icons {};
+      polkit-qt-1 = self.callPackage ./misc/polkit-qt-1 {};
+      pulseaudio-qt =
+        (libsForQt5.pulseaudio-qt.override {
+          inherit (qt6Packages) wrapQtAppsHook;
+        })
+        .overrideAttrs (old: {
+          version = "unstable-2023-11-20";
+
+          src = fetchFromGitLab {
+            domain = "invent.kde.org";
+            owner = "libraries";
+            repo = "pulseaudio-qt";
+            rev = "36f5625141cbb4e1707e0f4ed9ece0ce0c2c0cc9";
+            hash = "sha256-zD0j7LTrKgdpG+Ll0ZUSiPiVu/hISUiHpMFmB5FEyGQ=";
+          };
+
+          buildInputs = old.buildInputs ++ [qt6Packages.qtbase];
+          cmakeFlags = ["-DQT_MAJOR_VERSION=6"];
+        });
+
+      signond =
+        (libsForQt5.signond.override {
+          inherit (qt6Packages) qtbase qmake wrapQtAppsHook;
+        })
+        .overrideAttrs (_: {
+          src = fetchFromGitLab {
+            owner = "nicolasfella";
+            repo = "signond";
+            rev = "c8ad98249af541514ff7a81634d3295e712f1a39";
+            hash = "sha256-0FcSVF6cPuFEU9h7JIbanoosW/B4rQhFPOq7iBaOdKw=";
+          };
+        });
+
+      xdg-utils = xdg-utils.overrideAttrs (old: {
+        version = "unstable-2023-12-04";
+
+        src = fetchFromGitLab {
+          domain = "gitlab.freedesktop.org";
+          owner = "xdg";
+          repo = "xdg-utils";
+          rev = "d4f00e1d803038af4f245949d8c747a384117852";
+          hash = "sha256-6s8/3+vsALq8ocAfJ1XBlW9nQhpl2MJ61ueCfjz6tGU=";
+        };
+
+        # Intentionally clobber second patch
+        patches = [(builtins.head old.patches)];
+
+        buildInputs =
+          old.buildInputs
+          ++ [
+            docbook_xml_dtd_43
+          ];
+      });
+
+      # MISC FRAMEWORKS WITH KF6 DEPS
+      # These have KF6 dependencies so can't be upstreamed without KF6
+      ktextaddons = self.callPackage ./misc/ktextaddons {};
+      krdp = self.callPackage ./misc/krdp {};
+      kweathercore = self.callPackage ./misc/kweathercore {};
+      phonon = self.callPackage ./misc/phonon {};
+
+      # THIRD PARTY APPS
       syncthingtray = self.callPackage ./third-party/syncthingtray {};
 
       # STUBS
