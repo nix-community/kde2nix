@@ -234,9 +234,9 @@ in {
     };
     services.xserver.displayManager.sddm = {
       # FIXME: extremely hacky wrapper
-      package = kdePackages.sddm.overrideAttrs (old: {
-        buildInputs = old.buildInputs ++ (with kdePackages; [kirigami qtsvg ksvg plasma5support qt5compat breeze-icons]);
-      });
+      # package = kdePackages.sddm.overrideAttrs (old: {
+      #   buildInputs = old.buildInputs ++ (with kdePackages; [kirigami qtsvg ksvg plasma5support qt5compat breeze-icons]);
+      # });
       theme = mkDefault "breeze";
     };
 
@@ -254,4 +254,15 @@ in {
     programs.firefox.nativeMessagingHosts.packages = [kdePackages.plasma-browser-integration];
     programs.kdeconnect.package = kdePackages.kdeconnect-kde;
   };
+
+  # FIXME: remove this as soon as nixos-unstable updates
+  nixpkgs.overlays = [
+    (final: prev: {
+      libsForQt5 = prev.libsForQt5.overrideScope (_: __: {
+        sddm = kdePackages.sddm.overrideAttrs (old: {
+          buildInputs = old.buildInputs ++ (with kdePackages; [kirigami qtsvg ksvg plasma5support qt5compat breeze-icons]);
+        });
+      });
+    })
+  ];
 }
