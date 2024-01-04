@@ -253,16 +253,16 @@ in {
     programs.dconf.enable = true;
     programs.firefox.nativeMessagingHosts.packages = [kdePackages.plasma-browser-integration];
     programs.kdeconnect.package = kdePackages.kdeconnect-kde;
-  };
 
-  # FIXME: remove this as soon as nixos-unstable updates
-  nixpkgs.overlays = [
-    (final: prev: {
-      libsForQt5 = prev.libsForQt5.overrideScope (_: __: {
-        sddm = kdePackages.sddm.overrideAttrs (old: {
-          buildInputs = old.buildInputs ++ (with kdePackages; [kirigami qtsvg ksvg plasma5support qt5compat breeze-icons]);
+    # FIXME: remove this as soon as nixos-unstable updates
+    nixpkgs.overlays = [
+      (final: prev: {
+        libsForQt5 = prev.libsForQt5.overrideScope (_: __: {
+          sddm = kdePackages.sddm.overrideAttrs (old: {
+            buildInputs = old.buildInputs ++ (with kdePackages; [kirigami qtsvg ksvg plasma5support qt5compat breeze-icons]);
+          });
         });
-      });
-    })
-  ];
+      })
+    ];
+  };
 }
