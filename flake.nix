@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:K900/nixpkgs/qt6ening";
+    nixpkgs.url = "github:NixOS/nixpkgs/staging-next";
     flake-utils.url = "github:numtide/flake-utils";
     pre-commit-hooks = {
       url = "github:cachix/pre-commit-hooks.nix";
@@ -20,6 +20,7 @@
     (flake-utils.lib.eachDefaultSystem (
       system: let
         pkgs = nixpkgs.legacyPackages.${system};
+                
         python = pkgs.python3.withPackages (ps: [
           ps.beautifulsoup4
           ps.click
@@ -28,7 +29,7 @@
           ps.pyyaml
         ]);
       in rec {
-        legacyPackages = pkgs.callPackage ./pkgs/kde {};
+        legacyPackages = (self.overlays.default pkgs pkgs).kdePackages;
         packages = legacyPackages;
 
         checks.pre-commit-check = pre-commit-hooks.lib.${system}.run {
@@ -45,8 +46,10 @@
       }
     ))
     // {
+      overlays.default = final: prev: { kdePackages = final.callPackage ./pkgs/kde {}; };
+
       nixosModules = rec {
-        plasma6 = import ./nixos/plasma6.nix self;
+        plasma6 = import ./nixos/plasma6.nix self.overlays.default;
         default = plasma6;
       };
 
