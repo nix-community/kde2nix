@@ -1,14 +1,14 @@
-self: {
+{
   config,
   lib,
   pkgs,
   utils,
   ...
 }: let
-  kdePackages = self.packages.${pkgs.stdenv.system};
   xcfg = config.services.xserver;
   cfg = xcfg.desktopManager.plasma6;
 
+  inherit (pkgs) kdePackages;
   inherit (lib) literalExpression mkDefault mkIf mkOption mkPackageOptionMD types;
 in {
   options = {
