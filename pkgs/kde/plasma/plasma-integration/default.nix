@@ -2,6 +2,7 @@
   mkKdeDerivation,
   qtbase,
   qtwayland,
+  qqc2-breeze-style,
   libsForQt5,
   xorg,
 }:
@@ -55,6 +56,8 @@ mkKdeDerivation {
   ];
 
   extraBuildInputs = [qtwayland xorg.libXcursor];
+
+  extraPropagatedBuildInputs = [qqc2-breeze-style];
 
   # Move Qt5 plugin to Qt5 plugin path
   postInstall = ''
