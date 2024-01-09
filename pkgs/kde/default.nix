@@ -84,24 +84,7 @@
       mpvqt = self.callPackage ./misc/mpvqt {};
       oxygen-icons = self.callPackage ./misc/oxygen-icons {};
       polkit-qt-1 = self.callPackage ./misc/polkit-qt-1 {};
-      pulseaudio-qt =
-        (libsForQt5.pulseaudio-qt.override {
-          inherit (qt6Packages) wrapQtAppsHook;
-        })
-        .overrideAttrs (old: {
-          version = "unstable-2023-11-20";
-
-          src = fetchFromGitLab {
-            domain = "invent.kde.org";
-            owner = "libraries";
-            repo = "pulseaudio-qt";
-            rev = "36f5625141cbb4e1707e0f4ed9ece0ce0c2c0cc9";
-            hash = "sha256-zD0j7LTrKgdpG+Ll0ZUSiPiVu/hISUiHpMFmB5FEyGQ=";
-          };
-
-          buildInputs = old.buildInputs ++ [qt6Packages.qtbase];
-          cmakeFlags = ["-DQT_MAJOR_VERSION=6"];
-        });
+      pulseaudio-qt = self.callPackage ./misc/pulseaudio-qt {};
 
       signond =
         (libsForQt5.signond.override {
