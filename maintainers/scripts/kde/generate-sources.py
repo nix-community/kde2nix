@@ -54,7 +54,7 @@ def to_sri(hash):
         writable=True,
         path_type=pathlib.Path,
     ),
-    default=pathlib.Path(__file__).parent.parent.parent
+    default=pathlib.Path(__file__).parent.parent.parent.parent
 )
 def main(set: str, version: str, nixpkgs: pathlib.Path):
     root_dir = nixpkgs / "pkgs/kde"

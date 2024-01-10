@@ -1,6 +1,10 @@
-{mkKdeDerivation}:
+{
+  mkKdeDerivation,
+  qtsvg,
+  taglib,
+}:
 mkKdeDerivation {
   pname = "juk";
-  # FIXME(qt5)
-  meta.broken = true;
+
+  extraBuildInputs = [qtsvg taglib];
 }

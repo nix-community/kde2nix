@@ -1,6 +1,15 @@
-{mkKdeDerivation}:
+{
+  mkKdeDerivation,
+  qtwayland,
+  libvncserver,
+  xorg,
+}:
 mkKdeDerivation {
   pname = "krfb";
-  # FIXME(qt5)
-  meta.broken = true;
+
+  extraCmakeFlags = [
+    "-DQtWaylandScanner_EXECUTABLE=${qtwayland}/libexec/qtwaylandscanner"
+  ];
+
+  extraBuildInputs = [qtwayland libvncserver xorg.libXdamage];
 }

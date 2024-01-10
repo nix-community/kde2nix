@@ -1,6 +1,11 @@
-{mkKdeDerivation}:
+{
+  mkKdeDerivation,
+  qtwebengine,
+  taglib,
+  libmaxminddb,
+}:
 mkKdeDerivation {
   pname = "ktorrent";
-  # FIXME(qt5)
-  meta.broken = true;
+
+  extraBuildInputs = [qtwebengine taglib libmaxminddb];
 }

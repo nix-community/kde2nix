@@ -8,7 +8,6 @@
   exiv2,
   kirigami-addons,
   kquickimageeditor,
-  purpose,
 }: let
   # URLs snapshotted through
   # https://web.archive.org/save/$url
@@ -43,6 +42,5 @@ in
       exiv2
       kirigami-addons
       kquickimageeditor
-      purpose
     ];
   }

@@ -78,6 +78,7 @@
             hash = "sha256-8FGZmg2ljSh1DYZfklMTrWN7Sdlk/Atw0qfpbb+GaBc=";
           };
         });
+      alpaka = self.callPackage ./misc/alpaka {};
       kdsoap-ws-discovery-client = self.callPackage ./misc/kdsoap-ws-discovery-client {};
       kirigami-addons = self.callPackage ./misc/kirigami-addons {};
       kunifiedpush = self.callPackage ./misc/kunifiedpush {};

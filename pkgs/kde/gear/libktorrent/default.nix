@@ -10,5 +10,6 @@ mkKdeDerivation {
   pname = "libktorrent";
 
   extraNativeBuildInputs = [doxygen];
-  extraBuildInputs = [qt5compat boost gmp libgcrypt];
+  extraBuildInputs = [qt5compat];
+  extraPropagatedBuildInputs = [boost gmp libgcrypt];
 }

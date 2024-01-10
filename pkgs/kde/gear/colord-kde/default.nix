@@ -1,6 +1,12 @@
-{mkKdeDerivation}:
+{
+  mkKdeDerivation,
+  pkg-config,
+  lcms2,
+  xorg,
+}:
 mkKdeDerivation {
   pname = "colord-kde";
-  # FIXME(qt5)
-  meta.broken = true;
+
+  extraNativeBuildInputs = [pkg-config];
+  extraBuildInputs = [lcms2 xorg.libXrandr];
 }

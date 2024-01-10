@@ -146,6 +146,20 @@
       "kirigami-addons",
       "syndication"
     ],
+    "alpaka": [
+      "extra-cmake-modules",
+      "kconfig",
+      "kcoreaddons",
+      "kcrash",
+      "kdbusaddons",
+      "kguiaddons",
+      "ki18n",
+      "kirigami",
+      "kstatusnotifieritem",
+      "kwidgetsaddons",
+      "kwindowsystem",
+      "kxmlgui"
+    ],
     "amarok": [
       "attica",
       "extra-cmake-modules",
@@ -227,6 +241,7 @@
       "kcrash",
       "kdbusaddons",
       "kdoctools",
+      "kfilemetadata",
       "ki18n",
       "kiconthemes",
       "kio",
@@ -1017,6 +1032,7 @@
       "ki18n",
       "kio",
       "kirigami",
+      "kirigami-addons",
       "kitemmodels",
       "kitinerary",
       "knotifications",
@@ -1042,6 +1058,7 @@
       "kio",
       "kjobwidgets",
       "knotifications",
+      "kstatusnotifieritem",
       "ktextwidgets",
       "kwallet",
       "kwidgetsaddons",
@@ -1075,10 +1092,8 @@
       "kcmutils",
       "kcoreaddons",
       "kdbusaddons",
-      "kdeclarative",
       "ki18n",
       "kio",
-      "kpackage",
       "kwallet",
       "qcoro",
       "signond"
@@ -1086,7 +1101,6 @@
     "kaccounts-providers": [
       "extra-cmake-modules",
       "kaccounts-integration",
-      "kdeclarative",
       "ki18n",
       "kio",
       "kpackage"
@@ -1317,6 +1331,7 @@
     "kauth": [
       "extra-cmake-modules",
       "kcoreaddons",
+      "kwindowsystem",
       "polkit-qt-1"
     ],
     "kbackup": [
@@ -2206,7 +2221,7 @@
       "knotifications",
       "knotifyconfig",
       "kservice",
-      "ktextwidgets",
+      "kstatusnotifieritem",
       "kwallet",
       "kwidgetsaddons",
       "kwindowsystem",
@@ -2259,6 +2274,7 @@
       "kjobwidgets",
       "knotifications",
       "kservice",
+      "kstatusnotifieritem",
       "ktextwidgets",
       "kwidgetsaddons",
       "kwindowsystem",
@@ -3102,7 +3118,8 @@
       "kio",
       "kirigami",
       "knotifications",
-      "kquickimageeditor"
+      "kquickimageeditor",
+      "purpose"
     ],
     "kolf": [
       "extra-cmake-modules",
@@ -3282,6 +3299,7 @@
       "knotifications",
       "knotifyconfig",
       "kparts",
+      "kstatusnotifieritem",
       "kwallet",
       "kwidgetsaddons",
       "kwindowsystem"
@@ -3391,6 +3409,7 @@
     ],
     "kpeople": [
       "extra-cmake-modules",
+      "kcontacts",
       "kcoreaddons",
       "ki18n",
       "kitemviews",
@@ -3571,6 +3590,7 @@
       "ki18n",
       "knotifications",
       "kpipewire",
+      "kstatusnotifieritem",
       "kwallet",
       "kwayland",
       "kwidgetsaddons",
@@ -3793,7 +3813,6 @@
     "ksystemstats": [
       "extra-cmake-modules",
       "kcoreaddons",
-      "kdbusaddons",
       "kio",
       "libksysguard",
       "solid"
@@ -4684,7 +4703,10 @@
       "kdegraphics-mobipocket",
       "ki18n",
       "kio",
+      "kparts",
       "kpty",
+      "ktextwidgets",
+      "kxmlgui",
       "libkexiv2",
       "phonon",
       "plasma-activities",
@@ -4705,7 +4727,8 @@
       "ki18n",
       "kservice",
       "kwidgetsaddons",
-      "kwindowsystem"
+      "kwindowsystem",
+      "libplasma"
     ],
     "oxygen-icons": [
       "extra-cmake-modules"
@@ -5102,7 +5125,6 @@
       "kconfigwidgets",
       "kcoreaddons",
       "kdbusaddons",
-      "kdeclarative",
       "ki18n",
       "kio",
       "kjobwidgets",
@@ -5149,8 +5171,7 @@
       "ki18n",
       "kirigami",
       "kirigami-addons",
-      "kpeople",
-      "kpeoplevcard"
+      "kpeople"
     ],
     "plasma-remotecontrollers": [
       "kcmutils",
@@ -5416,7 +5437,6 @@
       "kauth",
       "kcmutils",
       "kcodecs",
-      "kcompletion",
       "kconfig",
       "kconfigwidgets",
       "kcoreaddons",
@@ -5428,9 +5448,7 @@
       "kio",
       "kjobwidgets",
       "knotifications",
-      "knotifyconfig",
       "kservice",
-      "kwidgetsaddons",
       "kwindowsystem",
       "kxmlgui",
       "libkscreen",
@@ -5482,7 +5500,8 @@
       "kcoreaddons",
       "ki18n",
       "kio",
-      "kirigami"
+      "kirigami",
+      "kservice"
     ],
     "qmlkonsole": [
       "extra-cmake-modules",
@@ -5491,6 +5510,7 @@
       "ki18n",
       "kirigami",
       "kirigami-addons",
+      "kpty",
       "kwindowsystem",
       "qmltermwidget"
     ],
@@ -6095,5 +6115,5 @@
       "kwindowsystem"
     ]
   },
-  "version": "27ffeac6"
+  "version": "c8e12fdb"
 }
