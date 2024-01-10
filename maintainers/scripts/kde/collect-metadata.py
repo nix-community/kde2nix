@@ -15,8 +15,8 @@ import utils
         path_type=pathlib.Path,
     ),
 )
-@click.argument(
-    "nixpkgs",
+@click.option(
+    "--nixpkgs",
     type=click.Path(
         exists=True,
         file_okay=False,
@@ -24,6 +24,7 @@ import utils
         writable=True,
         path_type=pathlib.Path,
     ),
+    default=pathlib.Path(__file__).parent.parent.parent.parent
 )
 def main(repo_metadata: pathlib.Path, nixpkgs: pathlib.Path):
     metadata = utils.KDERepoMetadata.from_repo_metadata_checkout(repo_metadata)

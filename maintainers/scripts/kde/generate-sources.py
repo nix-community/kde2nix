@@ -35,16 +35,6 @@ def to_sri(hash):
 
 
 @click.command
-@click.option(
-    "--nixpkgs",
-    type=click.Path(
-        exists=True,
-        file_okay=False,
-        resolve_path=True,
-        writable=True,
-        path_type=pathlib.Path,
-    ),
-)
 @click.argument(
     "set",
     type=click.Choice(["frameworks", "gear", "plasma"]),
@@ -55,7 +45,18 @@ def to_sri(hash):
     type=str,
     required=True
 )
-def main(nixpkgs: pathlib.Path, set: str, version: str):
+@click.option(
+    "--nixpkgs",
+    type=click.Path(
+        exists=True,
+        file_okay=False,
+        resolve_path=True,
+        writable=True,
+        path_type=pathlib.Path,
+    ),
+    default=pathlib.Path(__file__).parent.parent.parent
+)
+def main(set: str, version: str, nixpkgs: pathlib.Path):
     root_dir = nixpkgs / "pkgs/kde"
     set_dir = root_dir / set
     generated_dir = root_dir / "generated"
