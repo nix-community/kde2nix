@@ -6,11 +6,10 @@ self: {
   cmake,
   qt6,
 }: let
-  readJson = f: builtins.fromJSON (builtins.readFile f);
-  dependencies = (readJson ../generated/dependencies.json).dependencies;
-  projectInfo = readJson ../generated/projects.json;
+  dependencies = (lib.importJSON ../generated/dependencies.json).dependencies;
+  projectInfo = lib.importJSON ../generated/projects.json;
 
-  licenseInfo = readJson ../generated/licenses.json;
+  licenseInfo = lib.importJSON ../generated/licenses.json;
   licensesBySpdxId =
     (lib.mapAttrs' (_: v: {
         name = v.spdxId or "unknown";

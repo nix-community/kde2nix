@@ -21,10 +21,9 @@
     gear = import ./gear {inherit (self) callPackage;};
     plasma = import ./plasma {inherit (self) callPackage;};
 
-    readJson = f: builtins.fromJSON (builtins.readFile f);
     sets = ["gear" "frameworks" "plasma"];
 
-    loadUrls = set: readJson (./generated/sources + "/${set}.json");
+    loadUrls = set: lib.importJSON (./generated/sources + "/${set}.json");
     allUrls = lib.attrsets.mergeAttrsList (map loadUrls sets);
 
     sources = lib.mapAttrs (_: v:
