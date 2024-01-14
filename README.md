@@ -5,13 +5,17 @@ Provisional, experimental Plasma 6 (and friends) pre-release packaging [maintain
 
 **Note**: Make sure you are using NixOS unstable. Release branches are not supported and will not work.
 
-Add this to your flake inputs and include the NixOS module in your config, then `services.xserver.desktopManager.plasma6.enable = true`.
+A binary cache is available at `nix-community.cachix.org`.
+
+## Flakes
+
+Add this repo to your flake inputs and include the NixOS module in your config, then `services.xserver.desktopManager.plasma6.enable = true`.
 
 You can also run applications directly from this flake (`nix run github:nix-community/kde2nix#dolphin`).
 
-Non-flake configurations currently require some extra setup pending staging-next merge.
+## No flakes
 
-A binary cache is available at `nix-community.cachix.org`.
+Add this repo as a channel, then include `<kde2nix/nixos.nix>` in your `imports` list.
 
 # Future
 
