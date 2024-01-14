@@ -167,7 +167,7 @@ in {
       ++ lib.optional config.services.pipewire.pulse.enable plasma-pa
       ++ lib.optional config.powerManagement.enable powerdevil
       # FIXME: broken
-      # ++ lib.optional config.services.colord.enable colord-kde
+      ++ lib.optional config.services.colord.enable colord-kde
       ++ lib.optional config.services.hardware.bolt.enable plasma-thunderbolt
       ++ lib.optionals config.services.samba.enable [kdenetwork-filesharing pkgs.samba]
       ++ lib.optional config.services.xserver.wacom.enable wacomtablet
