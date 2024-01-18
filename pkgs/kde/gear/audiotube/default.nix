@@ -11,31 +11,43 @@
   kirigami-addons,
   kirigami,
   kwindowsystem,
+  purpose,
   qcoro,
   python3,
-}:
-mkKdeDerivation {
-  pname = "audiotube";
-
-  extraBuildInputs = [
-    qtdeclarative
-    qtmultimedia
-    qtsvg
-
-    extra-cmake-modules
-    futuresql
-    kirigami
-    kirigami-addons
-    kcoreaddons
-    ki18n
-    kcrash
-    kwindowsystem
-    qcoro
-
-    (python3.withPackages (ps: [
-      ps.pybind11
-      ps.yt-dlp
-      ps.ytmusicapi
-    ]))
+}: let
+  ps = python3.pkgs;
+  pythonDeps = [
+    ps.yt-dlp
+    ps.ytmusicapi
   ];
-}
+in
+  mkKdeDerivation {
+    pname = "audiotube";
+
+    extraNativeBuildInputs = [
+      ps.pybind11
+    ];
+
+    extraBuildInputs =
+      [
+        qtdeclarative
+        qtmultimedia
+        qtsvg
+
+        extra-cmake-modules
+        futuresql
+        kirigami
+        kirigami-addons
+        kcoreaddons
+        ki18n
+        kcrash
+        kwindowsystem
+        purpose
+        qcoro
+      ]
+      ++ pythonDeps;
+
+    qtWrapperArgs = [
+      "--prefix PYTHONPATH : ${python3.pkgs.makePythonPath pythonDeps}"
+    ];
+  }
