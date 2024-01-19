@@ -52,6 +52,8 @@ in {
       requiredPackages = [
         # Hack? To make everything run on Wayland
         qtwayland
+        # Needed to render SVG icons
+        qtsvg
 
         # Frameworks with globally loadable bits
         frameworkintegration # provides Qt plugin
@@ -106,6 +108,8 @@ in {
         ocean-sound-theme
         plasma-workspace-wallpapers
         pkgs.hicolor-icon-theme # fallback icons
+        qqc2-breeze-style
+        qqc2-desktop-style
 
         # misc Plasma extras
         kdeplasma-addons
