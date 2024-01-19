@@ -185,6 +185,10 @@ in {
 
     environment.etc."X11/xkb".source = xcfg.xkb.dir;
 
+    # Add ~/.config/kdedefaults to XDG_CONFIG_DIRS for shells, since Plasma sets that.
+    # FIXME: maybe we should append to XDG_CONFIG_DIRS in /etc/set-environment instead?
+    environment.sessionVariables.XDG_CONFIG_DIRS = ["$HOME/.config/kdedefaults"];
+
     # Needed for things that depend on other store.kde.org packages to install correctly,
     # notably Plasma look-and-feel packages (a.k.a. Global Themes)
     #
