@@ -8,6 +8,9 @@
 mkKdeDerivation {
   pname = "plasma-integration";
 
+  # force it to check our custom import path too
+  patches = [./qml-path.patch];
+
   outputs = ["out" "dev" "qt5"];
 
   # We can't add qt5 stuff to dependencies or the hooks blow up,
