@@ -78,7 +78,9 @@
           };
         });
       alpaka = self.callPackage ./misc/alpaka {};
-      kdsoap-ws-discovery-client = self.callPackage ./misc/kdsoap-ws-discovery-client {};
+      # kdsoap-ws-discovery-client = self.callPackage ./misc/kdsoap-ws-discovery-client {};
+      # FIXME: broken with kdsoap 2.2.0
+      kdsoap-ws-discovery-client = null;
       kirigami-addons = self.callPackage ./misc/kirigami-addons {};
       kunifiedpush = self.callPackage ./misc/kunifiedpush {};
       mpvqt = self.callPackage ./misc/mpvqt {};
