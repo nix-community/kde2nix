@@ -16,6 +16,11 @@ You can also run applications directly from this flake (`nix run github:nix-comm
 ## No flakes
 
 Add this repo as a channel, then include `<kde2nix/nixos.nix>` in your `imports` list.
+Adding the repo as a channel can be done with e.g.
+```bash
+sudo nix-channel --add https://github.com/nix-community/kde2nix/archive/main.tar.gz kde2nix
+sudo nix-channel --update kde2nix
+```
 
 # Future
 
