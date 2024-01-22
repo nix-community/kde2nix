@@ -57,16 +57,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1705677747,
-        "narHash": "sha256-eyM3okYtMgYDgmYukoUzrmuoY4xl4FUujnsv/P6I/zI=",
-        "owner": "NixOS",
+        "lastModified": 1705911640,
+        "narHash": "sha256-auO4spQ1+4HA8NtpAcrRkKz6I9t/Yk5GBeZgQ5/6pYI=",
+        "owner": "K900",
         "repo": "nixpkgs",
-        "rev": "bbe7d8f876fbbe7c959c90ba2ae2852220573261",
+        "rev": "df8dfca854b41c3addcdb0f0f481c203d9728e3c",
         "type": "github"
       },
       "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
+        "owner": "K900",
+        "ref": "kdsoap-fix",
         "repo": "nixpkgs",
         "type": "github"
       }
