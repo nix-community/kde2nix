@@ -152,6 +152,7 @@ in {
         elisa
         gwenview
         okular
+        kate
         khelpcenter
         print-manager
       ];
