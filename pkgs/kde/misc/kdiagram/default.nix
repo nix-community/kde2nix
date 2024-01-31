@@ -7,11 +7,11 @@
 }:
 mkKdeDerivation rec {
   pname = "kdiagram";
-  version = "3.0.0";
+  version = "3.0.1";
 
   src = fetchurl {
     url = "mirror://kde/stable/${pname}/${version}/${pname}-${version}.tar.xz";
-    hash = "sha256-bV9T390BkBgVHAGToB7tNt8QERqSx8Bu19YxU16UPCE=";
+    hash = "sha256-Rlmwws2dsYFD9avZyAYJHDqrarwalWu/goFas9MYnG0=";
   };
 
   extraNativeBuildInputs = [qttools qtsvg];
