@@ -49,6 +49,9 @@ OK_MISSING_BY_PACKAGE = {
         "PolyClipping",
         "Protobuf",
     },
+    "krfb": {
+        "Qt6XkbCommonSupport",  # not real
+    },
     "kuserfeedback": {
         "Qt6Svg",  # all used for backend console stuff we don't ship
         "QmlLint",
@@ -65,13 +68,17 @@ OK_MISSING_BY_PACKAGE = {
     "powerdevil": {
         "DDCUtil",  # cursed, intentionally disabled
     },
+    "pulseaudio-qt": {
+        "Qt6Qml",  # tests only
+        "Qt6Quick",
+    },
     "syntax-highlighting": {
         "XercesC",  # only used for extra validation at build time
     }
 }
 
 def main():
-    here = pathlib.Path(__file__).parent
+    here = pathlib.Path(__file__).parent.parent.parent.parent
     logs = (here / "logs").glob("*.log")
 
     for log in sorted(logs):
