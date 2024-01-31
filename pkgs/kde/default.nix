@@ -58,10 +58,14 @@
       # Alias because it's just data
       plasma-wayland-protocols = libsForQt5.plasma-wayland-protocols;
 
+      selenium-webdriver-at-spi = null; # Used for integration tests that we don't run, stub
+
       # NEWER STABLE RELEASES OF DEPS
       # FIXME: upstream
       kdiagram = self.callPackage ./misc/kdiagram {};
       libappimage = self.callPackage ./misc/libappimage {};
+      mpvqt = self.callPackage ./misc/mpvqt {};
+      pulseaudio-qt = self.callPackage ./misc/pulseaudio-qt {};
 
       # UNSTABLE RELEASES
       # These don't have a stable tag that can be upstreamed into nixpkgs yet
@@ -81,11 +85,8 @@
       kdsoap-ws-discovery-client = self.callPackage ./misc/kdsoap-ws-discovery-client {};
       kirigami-addons = self.callPackage ./misc/kirigami-addons {};
       kunifiedpush = self.callPackage ./misc/kunifiedpush {};
-      mpvqt = self.callPackage ./misc/mpvqt {};
       oxygen-icons = self.callPackage ./misc/oxygen-icons {};
       polkit-qt-1 = self.callPackage ./misc/polkit-qt-1 {};
-      pulseaudio-qt = self.callPackage ./misc/pulseaudio-qt {};
-
       signond =
         (libsForQt5.signond.override {
           inherit (qt6Packages) qtbase qmake wrapQtAppsHook;
@@ -129,12 +130,6 @@
 
       # THIRD PARTY APPS
       syncthingtray = self.callPackage ./third-party/syncthingtray {};
-
-      # STUBS
-      libmediawiki = null; # FIXME: package
-      okteta = null; # FIXME: is it dead?
-      selenium-webdriver-at-spi = null; # Used for integration tests that we don't run
-      qmltermwidget = null; # FIXME: dead?
 
       # FIXME: hacks for testing
       all = let
