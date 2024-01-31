@@ -72,6 +72,7 @@ in {
         kwalletmanager # provides KCMs and stuff
         plasma-activities # provides plasma-activities-cli tool
         solid # provides solid-hardware6 tool
+        phonon-vlc # provides Phonon plugin
 
         # Core Plasma parts
         kwin

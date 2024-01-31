@@ -127,6 +127,7 @@
       krdp = self.callPackage ./misc/krdp {};
       kweathercore = self.callPackage ./misc/kweathercore {};
       phonon = self.callPackage ./misc/phonon {};
+      phonon-vlc = self.callPackage ./misc/phonon-vlc {};
 
       # THIRD PARTY APPS
       syncthingtray = self.callPackage ./third-party/syncthingtray {};
