@@ -5,16 +5,16 @@
   mpv,
   qtdeclarative,
 }:
-mkKdeDerivation {
+mkKdeDerivation rec {
   pname = "mpvqt";
-  version = "unstable-2023-11-18";
+  version = "1.0.0";
 
   src = fetchFromGitLab {
     domain = "invent.kde.org";
     owner = "libraries";
     repo = "mpvqt";
-    rev = "0d0a62b96b75f6baee7b16e0da8795f754836d90";
-    hash = "sha256-ym70rqNugZ1ZLd72urJVfDugtsWrZU5Q/dJndsnNqQ0=";
+    rev = "v${version}";
+    hash = "sha256-XHiCxH7dJxJamloM2SJbiFHDt8j4rVfv/M9PaBzvgM4=";
   };
 
   extraBuildInputs = [mpv qtdeclarative];
