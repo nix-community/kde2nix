@@ -8,12 +8,10 @@
   libsForQt5,
   qt6Packages,
   cmark,
-  docbook_xml_dtd_43,
   gpgme,
   taglib,
   wayland-protocols,
   wayland,
-  xdg-utils,
   zxing-cpp,
 }: let
   allPackages = self: let
@@ -100,26 +98,8 @@
           };
         });
 
-      xdg-utils = xdg-utils.overrideAttrs (old: {
-        version = "unstable-2023-12-04";
-
-        src = fetchFromGitLab {
-          domain = "gitlab.freedesktop.org";
-          owner = "xdg";
-          repo = "xdg-utils";
-          rev = "d4f00e1d803038af4f245949d8c747a384117852";
-          hash = "sha256-6s8/3+vsALq8ocAfJ1XBlW9nQhpl2MJ61ueCfjz6tGU=";
-        };
-
-        # Intentionally clobber second patch
-        patches = [(builtins.head old.patches)];
-
-        buildInputs =
-          old.buildInputs
-          ++ [
-            docbook_xml_dtd_43
-          ];
-      });
+      # FIXME: temporarily vendored pending nixpkgs merge
+      xdg-utils = self.callPackage ./misc/xdg-utils {};
 
       # MISC FRAMEWORKS WITH KF6 DEPS
       # These have KF6 dependencies so can't be upstreamed without KF6
