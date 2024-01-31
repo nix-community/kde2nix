@@ -8,7 +8,7 @@
   discount,
   alpaka,
   # provided as callPackage input to enable easier overrides through overlays
-  cargoSha256 ? "sha256-Dwq7Oisxs6O1sE+Z8NyU7NTGFc5yMRDxP+5kICvge4o=",
+  cargoSha256 ? "sha256-0bwlPpd741bfH9msKNPOFu7VrhTB7rxOn3d3jjiPqWw=",
 }:
 mkKdeDerivation rec {
   pname = "kdepim-addons";

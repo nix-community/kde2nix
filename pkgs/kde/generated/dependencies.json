@@ -608,7 +608,6 @@
     "colord-kde": [
       "extra-cmake-modules",
       "kcmutils",
-      "kconfigwidgets",
       "kcoreaddons",
       "kdbusaddons",
       "ki18n",
@@ -3384,6 +3383,7 @@
     "kosmindoormap": [
       "extra-cmake-modules",
       "ki18n",
+      "kirigami",
       "kirigami-addons",
       "kopeninghours",
       "kpublictransport",
@@ -3537,7 +3537,8 @@
       "kiconthemes",
       "kservice",
       "ktextwidgets",
-      "kwidgetsaddons"
+      "kwidgetsaddons",
+      "kxmlgui"
     ],
     "krename": [
       "extra-cmake-modules",
@@ -3624,6 +3625,29 @@
       "ki18n",
       "kitemmodels",
       "threadweaver"
+    ],
+    "krusader": [
+      "extra-cmake-modules",
+      "karchive",
+      "kbookmarks",
+      "kcodecs",
+      "kcompletion",
+      "kconfig",
+      "kcoreaddons",
+      "kdoctools",
+      "kguiaddons",
+      "ki18n",
+      "kiconthemes",
+      "kio",
+      "kitemviews",
+      "knotifications",
+      "kparts",
+      "ktextwidgets",
+      "kwallet",
+      "kwidgetsaddons",
+      "kwindowsystem",
+      "kxmlgui",
+      "solid"
     ],
     "ksanecore": [
       "extra-cmake-modules",
@@ -5393,7 +5417,11 @@
       "kconfig",
       "kcoreaddons",
       "ki18n",
-      "libplasma"
+      "knotifications",
+      "kservice",
+      "libksysguard",
+      "libplasma",
+      "solid"
     ],
     "plasmatube": [
       "extra-cmake-modules",
@@ -5481,7 +5509,6 @@
       "kiconthemes",
       "kio",
       "kirigami",
-      "kirigami-addons",
       "knotifications",
       "kwidgetsaddons",
       "kwindowsystem",
@@ -5511,8 +5538,7 @@
       "kirigami",
       "kirigami-addons",
       "kpty",
-      "kwindowsystem",
-      "qmltermwidget"
+      "kwindowsystem"
     ],
     "qqc2-breeze-style": [
       "extra-cmake-modules",
@@ -6115,5 +6141,5 @@
       "kwindowsystem"
     ]
   },
-  "version": "c8e12fdb"
+  "version": "ab939537"
 }

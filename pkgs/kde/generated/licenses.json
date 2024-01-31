@@ -531,6 +531,7 @@
     "BSD-3-Clause",
     "CC0-1.0",
     "GPL-2.0-or-later",
+    "LGPL-2.0-or-later",
     "LGPL-2.1-or-later"
   ],
   "kamera": [
@@ -738,15 +739,12 @@
   "kcoreaddons": [
     "BSD-2-Clause",
     "CC0-1.0",
-    "GPL-2.0-only",
     "GPL-2.0-or-later",
-    "GPL-3.0-only",
     "LGPL-2.0-only",
     "LGPL-2.0-or-later",
     "LGPL-2.1-only",
     "LGPL-2.1-or-later",
     "LGPL-3.0-only",
-    "LicenseRef-KDE-Accepted-GPL",
     "LicenseRef-KDE-Accepted-LGPL",
     "LicenseRef-Qt-Commercial",
     "MPL-1.1",
@@ -874,6 +872,7 @@
     "LicenseRef-KDE-Accepted-LGPL"
   ],
   "kdenlive": [
+    "Apache-2.0",
     "BSD-2-Clause",
     "BSD-3-Clause",
     "BSL-1.0",
@@ -1104,7 +1103,13 @@
     "LicenseRef-KDE-Accepted-LGPL"
   ],
   "khangman": [
-    "CC0-1.0"
+    "BSD-2-Clause",
+    "CC0-1.0",
+    "GPL-2.0-only",
+    "GPL-2.0-or-later",
+    "GPL-3.0-only",
+    "LGPL-2.1-or-later",
+    "LicenseRef-KDE-Accepted-GPL"
   ],
   "khealthcertificate": [
     "Apache-2.0",
@@ -1219,7 +1224,8 @@
     "LGPL-2.1-or-later",
     "LGPL-3.0-only",
     "LicenseRef-KDE-Accepted-GPL",
-    "LicenseRef-KDE-Accepted-LGPL"
+    "LicenseRef-KDE-Accepted-LGPL",
+    "MIT"
   ],
   "kio": [
     "BSD-2-Clause",
@@ -1392,7 +1398,9 @@
   ],
   "kmag": [
     "BSD-3-Clause",
-    "CC0-1.0"
+    "CC0-1.0",
+    "GFDL-1.2-only",
+    "GPL-2.0-or-later"
   ],
   "kmahjongg": [
     "BSD-3-Clause",
@@ -1659,6 +1667,7 @@
     "GPL-2.0-or-later"
   ],
   "kpeople": [
+    "BSD-3-Clause",
     "CC0-1.0",
     "LGPL-2.1-or-later"
   ],
@@ -1965,7 +1974,9 @@
     "LicenseRef-KDE-Accepted-GPL"
   ],
   "kwave": [
-    "CC0-1.0"
+    "BSD-2-Clause",
+    "CC0-1.0",
+    "GPL-2.0-or-later"
   ],
   "kwayland": [
     "CC0-1.0",
@@ -2007,7 +2018,6 @@
     "GPL-2.0-only",
     "GPL-2.0-or-later",
     "GPL-3.0-only",
-    "GPL-3.0-or-later",
     "LGPL-2.0-only",
     "LGPL-2.0-or-later",
     "LGPL-2.1-only",
@@ -2603,7 +2613,6 @@
     "LGPL-3.0-or-later",
     "LicenseRef-KDE-Accepted-GPL",
     "LicenseRef-KDE-Accepted-LGPL",
-    "LicenseRef-Qt-Commercial",
     "MIT",
     "None"
   ],
@@ -2672,7 +2681,8 @@
   ],
   "qmlkonsole": [
     "CC0-1.0",
-    "GPL-2.0-or-later"
+    "GPL-2.0-or-later",
+    "LGPL-2.0-or-later"
   ],
   "qqc2-breeze-style": [
     "CC0-1.0",
@@ -2684,6 +2694,7 @@
     "LicenseRef-KFQF-Accepted-GPL"
   ],
   "qqc2-desktop-style": [
+    "BSD-3-Clause",
     "CC0-1.0",
     "GPL-2.0-only",
     "GPL-2.0-or-later",

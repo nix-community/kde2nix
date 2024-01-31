@@ -2684,7 +2684,7 @@
   "kirigami-addons": {
     "description": "Add-ons for the Kirigami framework",
     "name": "kirigami-addons",
-    "project_path": "libraries/libs/kirigami-addons",
+    "project_path": "extragear/libs/kirigami-addons",
     "repo_path": "libraries/kirigami-addons"
   },
   "kirigami-gallery": {
