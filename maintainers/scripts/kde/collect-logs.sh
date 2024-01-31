@@ -3,6 +3,10 @@ set -eu
 cd "$(dirname "$(readlink -f "$0")")"/../../..
 
 mkdir -p logs
-for name in $(nix-env -qaP -f . -A kdePackages --json | jq -r 'to_entries[] | .key'); do
-    nix-store --read-log "$(nix-instantiate --eval . -A  "${name}.outPath" --json | jq -r)" > "logs/${name}.log" || true
+for name in $(nix-env -qaP -f . -A kdePackages --json | jq -r 'to_entries[] | .key' | sed s/kdePackages.//); do
+    echo "Processing ${name}..."
+    path=$(nix eval ".#${name}.outPath" --json --option warn-dirty false | jq -r)
+    if [ -n "${path}" ]; then
+        nix-store --read-log "${path}" > "logs/${name}.log" || true
+    fi
 done
