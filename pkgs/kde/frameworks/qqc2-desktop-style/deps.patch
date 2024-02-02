@@ -1,0 +1,10 @@
+diff --git a/plugin/CMakeLists.txt b/plugin/CMakeLists.txt
+index 82f9ed6..3b91a0e 100644
+--- a/plugin/CMakeLists.txt
++++ b/plugin/CMakeLists.txt
+@@ -1,4 +1,4 @@
+-ecm_add_qml_module(qqc2desktopstyleplugin URI org.kde.qqc2desktopstyle.private GENERATE_PLUGIN_SOURCE)
++ecm_add_qml_module(qqc2desktopstyleplugin URI org.kde.qqc2desktopstyle.private GENERATE_PLUGIN_SOURCE DEPENDENCIES QtQuick)
+ 
+ target_sources(qqc2desktopstyleplugin PRIVATE
+     kquickstyleitem.cpp
