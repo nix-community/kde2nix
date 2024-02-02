@@ -1,8 +1,9 @@
 {
   mkKdeDerivation,
   pkg-config,
-  qttools,
+  qtquick3d,
   qtsensors,
+  qttools,
   qtvirtualkeyboard,
   qtwayland,
   libinput,
@@ -33,8 +34,9 @@ mkKdeDerivation {
 
   extraNativeBuildInputs = [pkg-config python3];
   extraBuildInputs = [
-    qttools
+    qtquick3d
     qtsensors
+    qttools
     qtvirtualkeyboard
     qtwayland
 
