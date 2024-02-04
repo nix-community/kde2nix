@@ -11,6 +11,40 @@ A binary cache is available at `nix-community.cachix.org`.
 
 Add this repo to your flake inputs and include the NixOS module in your config, then `services.xserver.desktopManager.plasma6.enable = true`.
 
+Example:
+```
+{
+  # this is not a complete flake.nix
+  description = "Plasma 6 beta";
+
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    kde2nix.url = "github:nix-community/kde2nix";
+  };
+
+  outputs = { self, nixpkgs, kde2nix, ... }: {
+    nixosConfigurations.yourHostnameHere = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        kde2nix.nixosModules.plasma6
+        ./configuration.nix
+        (
+          {
+            services.xserver = {
+              enable = true;
+              displayManager.sddm.enable = true;
+              desktopManager.plasma6.enable = true;
+              # Remember to disable plasma5 as they cannot coexist.
+              desktopManager.plasma5.enable = false;
+            };
+          }
+        )
+      ];
+    };
+  };
+}
+```
+
 You can also run applications directly from this flake (`nix run github:nix-community/kde2nix#dolphin`).
 
 ## No flakes
