@@ -16,6 +16,7 @@
   bash,
   coreutils,
   dbus,
+  glib,
   file,
   gawk,
   gnugrep,
@@ -78,7 +79,7 @@
     {
       scripts = ["bin/xdg-email"];
       interpreter = "${bash}/bin/bash";
-      inputs = commonDeps ++ [gawk "${placeholder "out"}/bin"];
+      inputs = commonDeps ++ [gawk glib.bin "${placeholder "out"}/bin"];
       execer = [
         "cannot:${placeholder "out"}/bin/xdg-mime"
         "cannot:${placeholder "out"}/bin/xdg-open"
@@ -88,7 +89,6 @@
         ++ [
           "exo-open"
           "gconftool-2"
-          "gdbus"
           "gio"
           "gnome-open"
           "gvfs-open"
@@ -143,7 +143,7 @@
     {
       scripts = ["bin/xdg-open"];
       interpreter = "${bash}/bin/bash";
-      inputs = commonDeps ++ [nettools "${placeholder "out"}/bin"];
+      inputs = commonDeps ++ [nettools glib.bin "${placeholder "out"}/bin"];
       execer = [
         "cannot:${placeholder "out"}/bin/xdg-mime"
       ];
@@ -155,7 +155,6 @@
           "enlightenment_open"
           "env"
           "exo-open"
-          "gdbus"
           "gio"
           "gnome-open"
           "gvfs-open"
